@@ -118,3 +118,4 @@ fetchProductGroupUrls()
         process.exit(1);
     });
 
+

@@ -192,3 +192,4 @@ async function mergeCardMarketPrices() {
 // Run the script
 mergeCardMarketPrices();
 
+

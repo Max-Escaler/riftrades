@@ -4,3 +4,4 @@ export const calculateTotal = (list) =>
 export const calculateDiff = (haveTotal, wantTotal) =>
     haveTotal - wantTotal;
 
+

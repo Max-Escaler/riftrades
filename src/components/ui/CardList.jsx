@@ -17,6 +17,7 @@ import SearchIcon from '@mui/icons-material/Search';
 import { formatCurrency } from "../../utils/helpers.js";
 import { getCardGradient } from "../../utils/searchUtils.js";
 import { SearchInput, SearchDialog } from "../search";
+import { usePriceType } from "../../contexts/PriceContext.jsx";
 
 const CardList = ({ 
     cards, 
@@ -34,6 +35,20 @@ const CardList = ({
     const theme = useTheme();
     const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
     const [searchDialogOpen, setSearchDialogOpen] = useState(false);
+    const { priceSource } = usePriceType();
+
+    // Format price based on source
+    const formatPrice = (amount) => {
+        if (priceSource === 'cardmarket') {
+            return new Intl.NumberFormat('de-DE', {
+                style: 'currency',
+                currency: 'EUR',
+                minimumFractionDigits: 0,
+                maximumFractionDigits: 2
+            }).format(amount);
+        }
+        return formatCurrency(amount);
+    };
 
     const handleQuantityChange = (cardIndex, newQuantity) => {
         if (onUpdateQuantity) {
@@ -195,7 +210,7 @@ const CardList = ({
                             }}>
                                 {/* Price Chip */}
                                 <Chip
-                                    label={`${formatCurrency((card.price || 0).toFixed(2))}`}
+                                    label={formatPrice(card.price || 0)}
                                     color="primary"
                                     size="small"
                                     sx={{
@@ -297,4 +312,5 @@ const CardList = ({
 };
 
 export default CardList;
+
 

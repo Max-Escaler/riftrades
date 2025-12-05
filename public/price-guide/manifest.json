@@ -1,0 +1,36 @@
+{
+  "lastUpdated": "2025-12-05T16:06:16.153Z",
+  "totalFiles": 6,
+  "files": [
+    {
+      "name": "set_1.csv",
+      "url": "https://tcgcsv.com/tcgplayer/89/24519/ProductsAndPrices.csv",
+      "status": "downloaded"
+    },
+    {
+      "name": "set_2.csv",
+      "url": "https://tcgcsv.com/tcgplayer/89/24344/ProductsAndPrices.csv",
+      "status": "downloaded"
+    },
+    {
+      "name": "set_3.csv",
+      "url": "https://tcgcsv.com/tcgplayer/89/24439/ProductsAndPrices.csv",
+      "status": "downloaded"
+    },
+    {
+      "name": "set_4.csv",
+      "url": "https://tcgcsv.com/tcgplayer/89/24528/ProductsAndPrices.csv",
+      "status": "downloaded"
+    },
+    {
+      "name": "set_5.csv",
+      "url": "https://tcgcsv.com/tcgplayer/89/24343/ProductsAndPrices.csv",
+      "status": "downloaded"
+    },
+    {
+      "name": "set_6.csv",
+      "url": "https://tcgcsv.com/tcgplayer/89/24502/ProductsAndPrices.csv",
+      "status": "downloaded"
+    }
+  ]
+}

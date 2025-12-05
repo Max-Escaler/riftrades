@@ -11,9 +11,9 @@ const Header = ({ lastUpdatedTimestamp }) => {
             position="static" 
             elevation={0}
             sx={{ 
-                background: 'linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #ec4899 100%)',
-                borderBottom: '3px solid rgba(236, 72, 153, 0.5)',
-                boxShadow: '0 4px 20px rgba(99, 102, 241, 0.3)'
+                background: 'linear-gradient(135deg, #0a2540 0%, #0d3050 50%, #1a4a6e 100%)',
+                borderBottom: '3px solid #d4a853',
+                boxShadow: '0 4px 20px rgba(10, 37, 64, 0.5)'
             }}
         >
             <Toolbar sx={{
@@ -38,24 +38,24 @@ const Header = ({ lastUpdatedTimestamp }) => {
                         sx={{
                             fontWeight: 800,
                             fontSize: { xs: '1.4rem', sm: '1.75rem', md: '2rem' },
-                            background: 'linear-gradient(135deg, #ffffff 0%, #fce7f3 100%)',
+                            background: 'linear-gradient(135deg, #e5c078 0%, #d4a853 50%, #b8892e 100%)',
                             WebkitBackgroundClip: 'text',
                             WebkitTextFillColor: 'transparent',
                             backgroundClip: 'text',
                             letterSpacing: '0.02em',
-                            textShadow: '0 2px 10px rgba(0, 0, 0, 0.1)'
+                            textShadow: '0 2px 10px rgba(0, 0, 0, 0.3)'
                         }}
                     >
-                        🌀 Riftrades
+                        ⚔️ Riftrades
                     </Typography>
                     <Typography
                         variant="body2"
                         sx={{
                             fontSize: { xs: '0.7rem', sm: '0.8rem' },
                             mt: 0.5,
-                            opacity: 0.95,
+                            opacity: 0.9,
                             fontWeight: 500,
-                            color: 'white'
+                            color: '#a0c4d4'
                         }}
                     >
                         Prices last updated: {lastUpdatedTimestamp ? formatTimestamp(lastUpdatedTimestamp) : 'Loading...'}
@@ -67,9 +67,9 @@ const Header = ({ lastUpdatedTimestamp }) => {
                     <IconButton
                         onClick={toggleMode}
                         sx={{
-                            color: 'white',
+                            color: '#d4a853',
                             '&:hover': {
-                                backgroundColor: 'rgba(255, 255, 255, 0.15)',
+                                backgroundColor: 'rgba(212, 168, 83, 0.15)',
                             }
                         }}
                     >

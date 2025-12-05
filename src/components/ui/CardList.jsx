@@ -95,7 +95,9 @@ const CardList = ({
                     <ListItem
                         key={`${card.name}-${index}`}
                         sx={{
-                            border: '1px solid rgba(99, 102, 241, 0.15)',
+                            border: isDark 
+                                ? '1px solid rgba(58, 154, 186, 0.2)' 
+                                : '1px solid rgba(26, 90, 122, 0.15)',
                             borderRadius: 2,
                             mb: 1,
                             background: gradient.background,
@@ -106,10 +108,10 @@ const CardList = ({
                             position: 'relative',
                             cursor: 'pointer',
                             width: '100%',
-                            boxShadow: '0 2px 6px rgba(99, 102, 241, 0.08)',
+                            boxShadow: '0 2px 6px rgba(10, 37, 64, 0.1)',
                             '&:hover': {
-                                borderColor: '#6366f1',
-                                boxShadow: '0 4px 12px rgba(99, 102, 241, 0.15)',
+                                borderColor: '#d4a853',
+                                boxShadow: '0 4px 12px rgba(212, 168, 83, 0.2)',
                                 transform: 'translateY(-1px)',
                                 background: gradient.backgroundHover,
                             },
@@ -121,7 +123,7 @@ const CardList = ({
                                 left: 0,
                                 width: '4px',
                                 height: '100%',
-                                background: 'linear-gradient(180deg, #6366f1 0%, #a855f7 100%)',
+                                background: 'linear-gradient(180deg, #d4a853 0%, #b8892e 100%)',
                                 borderTopLeftRadius: 8,
                                 borderBottomLeftRadius: 8,
                                 opacity: 0,
@@ -247,17 +249,19 @@ const CardList = ({
             
             {/* Search Input at End of List */}
             <ListItem sx={{ 
-                border: '2px dashed rgba(99, 102, 241, 0.2)',
+                border: isDark 
+                    ? '2px dashed rgba(58, 154, 186, 0.3)' 
+                    : '2px dashed rgba(26, 90, 122, 0.2)',
                 borderRadius: 2,
                 mb: 0,
-                backgroundColor: isDark ? 'rgba(30, 30, 50, 0.6)' : 'rgba(255, 255, 255, 0.6)',
+                backgroundColor: isDark ? 'rgba(13, 48, 80, 0.6)' : 'rgba(255, 255, 255, 0.6)',
                 p: { xs: 1, sm: 1.25, md: 1.5, lg: 1.75, xl: 2 },
                 width: '100%',
                 transition: 'all 0.25s ease',
                 '&:hover': {
-                    backgroundColor: isDark ? 'rgba(40, 40, 60, 0.8)' : '#ffffff',
-                    borderColor: '#6366f1',
-                    boxShadow: '0 2px 8px rgba(99, 102, 241, 0.1)'
+                    backgroundColor: isDark ? 'rgba(13, 48, 80, 0.8)' : '#ffffff',
+                    borderColor: '#d4a853',
+                    boxShadow: '0 2px 8px rgba(212, 168, 83, 0.15)'
                 }
             }}>
                 {isSmallScreen ? (
@@ -270,18 +274,18 @@ const CardList = ({
                             alignItems: 'center',
                             gap: 1,
                             p: 1.5,
-                            border: isDark ? '1px solid #3a3a5a' : '1px solid #e0e0e0',
+                            border: isDark ? '1px solid rgba(58, 154, 186, 0.3)' : '1px solid #c0dce8',
                             borderRadius: 1,
-                            backgroundColor: isDark ? '#2a2a40' : '#f5f5f5',
+                            backgroundColor: isDark ? '#0a2540' : '#e8f4f8',
                             cursor: 'pointer',
                             '&:hover': {
-                                backgroundColor: isDark ? '#3a3a50' : '#e0e0e0'
+                                backgroundColor: isDark ? '#0d3050' : '#d0e8f0'
                             },
                             transition: 'background-color 0.2s ease'
                         }}
                     >
-                        <SearchIcon color="action" />
-                        <Typography variant="body1" color="text.secondary">
+                        <SearchIcon sx={{ color: isDark ? '#a0c4d4' : '#1a5a7a' }} />
+                        <Typography variant="body1" sx={{ color: isDark ? '#a0c4d4' : '#1a4a6e' }}>
                             Search for cards...
                         </Typography>
                     </Box>
@@ -314,5 +318,3 @@ const CardList = ({
 };
 
 export default CardList;
-
-

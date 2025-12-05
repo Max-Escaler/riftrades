@@ -4,6 +4,7 @@ import ClearIcon from '@mui/icons-material/Clear';
 import SearchIcon from '@mui/icons-material/Search';
 import { useSearch } from '../../hooks/useSearch';
 import SearchDropdown from './SearchDropdown';
+import { useThemeMode } from '../../contexts/ThemeContext.jsx';
 
 /**
  * SearchInput Component
@@ -21,6 +22,8 @@ const SearchInput = ({
     placement = 'bottom',
     autoFocus = false
 }) => {
+    const { isDark } = useThemeMode();
+    
     const {
         isOpen,
         highlightedIndex,
@@ -59,7 +62,12 @@ const SearchInput = ({
                 InputProps={{
                     startAdornment: (
                         <InputAdornment position="start">
-                            <SearchIcon color="action" sx={{ fontSize: '1.25rem' }} />
+                            <SearchIcon 
+                                sx={{ 
+                                    fontSize: '1.25rem',
+                                    color: isDark ? '#a0c4d4' : '#1a5a7a'
+                                }} 
+                            />
                         </InputAdornment>
                     ),
                     endAdornment: value && !disabled ? (
@@ -70,8 +78,9 @@ const SearchInput = ({
                                 edge="end"
                                 aria-label="clear search"
                                 sx={{
+                                    color: isDark ? '#a0c4d4' : '#1a5a7a',
                                     '&:hover': {
-                                        backgroundColor: 'rgba(0, 0, 0, 0.04)'
+                                        backgroundColor: isDark ? 'rgba(160, 196, 212, 0.1)' : 'rgba(26, 90, 122, 0.08)'
                                     }
                                 }}
                             >
@@ -82,23 +91,38 @@ const SearchInput = ({
                 }}
                 sx={{
                     '& .MuiOutlinedInput-root': {
-                        backgroundColor: disabled ? 'rgba(0, 0, 0, 0.02)' : '#ffffff',
+                        backgroundColor: disabled 
+                            ? (isDark ? 'rgba(255, 255, 255, 0.02)' : 'rgba(0, 0, 0, 0.02)')
+                            : (isDark ? '#0d3050' : '#ffffff'),
                         transition: 'all 0.2s ease',
+                        '& .MuiOutlinedInput-notchedOutline': {
+                            borderColor: isDark ? 'rgba(58, 154, 186, 0.3)' : 'rgba(26, 90, 122, 0.23)'
+                        },
                         '&:hover': {
                             '& .MuiOutlinedInput-notchedOutline': {
-                                borderColor: disabled ? 'rgba(0, 0, 0, 0.23)' : 'rgba(99, 102, 241, 0.5)'
+                                borderColor: disabled 
+                                    ? (isDark ? 'rgba(58, 154, 186, 0.3)' : 'rgba(26, 90, 122, 0.23)')
+                                    : (isDark ? 'rgba(212, 168, 83, 0.5)' : 'rgba(26, 90, 122, 0.5)')
                             }
                         },
                         '&.Mui-focused': {
                             '& .MuiOutlinedInput-notchedOutline': {
-                                borderColor: '#6366f1',
+                                borderColor: isDark ? '#d4a853' : '#1a5a7a',
                                 borderWidth: '2px'
                             }
                         }
                     },
+                    '& .MuiOutlinedInput-input': {
+                        color: isDark ? '#e8f4f8' : 'inherit',
+                        '&::placeholder': {
+                            color: isDark ? '#6a8a9a' : 'inherit',
+                            opacity: isDark ? 1 : 0.7
+                        }
+                    },
                     '& .MuiInputLabel-root': {
+                        color: isDark ? '#a0c4d4' : '#1a5a7a',
                         '&.Mui-focused': {
-                            color: '#6366f1'
+                            color: isDark ? '#d4a853' : '#1a5a7a'
                         }
                     }
                 }}
@@ -120,5 +144,3 @@ const SearchInput = ({
 };
 
 export default SearchInput;
-
-

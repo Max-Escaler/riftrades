@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Box, Typography } from '@mui/material';
 import { getCardGradient, highlightMatch } from '../../utils/searchUtils';
+import { useThemeMode } from '../../contexts/ThemeContext.jsx';
 
 /**
  * SearchOption Component
@@ -13,8 +14,9 @@ const SearchOption = ({
     onClick,
     onMouseEnter
 }) => {
+    const { isDark } = useThemeMode();
     const [isHovered, setIsHovered] = useState(false);
-    const gradient = getCardGradient(option.subTypeName);
+    const gradient = getCardGradient(option.subTypeName, '', isDark);
     const textSegments = highlightMatch(option.label, searchTerm);
 
     const handleMouseEnter = () => {
@@ -37,7 +39,9 @@ const SearchOption = ({
                 cursor: 'pointer',
                 background: (isHighlighted || isHovered) ? gradient.backgroundHover : gradient.background,
                 transition: 'all 0.2s ease',
-                borderBottom: '1px solid rgba(0, 0, 0, 0.05)',
+                borderBottom: isDark 
+                    ? '1px solid rgba(58, 154, 186, 0.1)' 
+                    : '1px solid rgba(26, 90, 122, 0.08)',
                 '&:last-child': {
                     borderBottom: 'none'
                 },
@@ -51,7 +55,7 @@ const SearchOption = ({
                 sx={{
                     fontSize: { xs: '0.875rem', sm: '0.9rem' },
                     fontWeight: isHighlighted || isHovered ? 500 : 400,
-                    color: '#1a1625'
+                    color: isDark ? '#e8f4f8' : '#0a2540'
                 }}
             >
                 {textSegments.map((segment, index) => (
@@ -59,7 +63,9 @@ const SearchOption = ({
                         key={index}
                         style={{
                             fontWeight: segment.highlight ? 700 : 'inherit',
-                            backgroundColor: segment.highlight ? 'rgba(99, 102, 241, 0.15)' : 'transparent',
+                            backgroundColor: segment.highlight 
+                                ? (isDark ? 'rgba(212, 168, 83, 0.3)' : 'rgba(26, 90, 122, 0.15)')
+                                : 'transparent',
                             padding: segment.highlight ? '2px 4px' : '0',
                             borderRadius: segment.highlight ? '3px' : '0'
                         }}
@@ -73,5 +79,3 @@ const SearchOption = ({
 };
 
 export default SearchOption;
-
-

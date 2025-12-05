@@ -89,7 +89,7 @@ export const highlightMatch = (text, searchTerm) => {
 
 /**
  * Get gradient style based on card rarity/type
- * Adapted for Riftbound card types
+ * Adapted for Riftbound card types with teal/gold theme
  * @param {string} subTypeName - Card's subTypeName field (foil type)
  * @param {string} rarity - Card's rarity field
  * @param {boolean} isDark - Whether dark mode is active
@@ -99,38 +99,38 @@ export const getCardGradient = (subTypeName, rarity = '', isDark = false) => {
     const subType = (subTypeName || '').toLowerCase();
     const rarityLower = (rarity || '').toLowerCase();
     
-    // Foil variants - cosmic/ethereal theme
+    // Foil variants - gold shimmer theme for Riftbound
     if (subType.includes('foil') || subType.includes('holo')) {
         if (isDark) {
             return {
-                background: 'linear-gradient(135deg, #2a2040 0%, #352535 20%, #203040 40%, #253530 60%, #352530 80%, #2a2040 100%)',
-                backgroundHover: 'linear-gradient(135deg, #352550 0%, #402a40 20%, #253550 40%, #304040 60%, #402a40 80%, #352550 100%)'
+                background: 'linear-gradient(135deg, #1a3a4a 0%, #2a4a3a 20%, #3a4a2a 40%, #4a3a2a 60%, #3a2a4a 80%, #1a3a4a 100%)',
+                backgroundHover: 'linear-gradient(135deg, #2a4a5a 0%, #3a5a4a 20%, #4a5a3a 40%, #5a4a3a 60%, #4a3a5a 80%, #2a4a5a 100%)'
             };
         }
         return {
-            background: 'linear-gradient(135deg, #e8e0ff 0%, #fff0f5 20%, #e0f5ff 40%, #f0ffe0 60%, #ffe0f0 80%, #e8e0ff 100%)',
-            backgroundHover: 'linear-gradient(135deg, #d8d0ff 0%, #ffe0e8 20%, #d0e8ff 40%, #e0ffd0 60%, #ffd0e0 80%, #d8d0ff 100%)'
+            background: 'linear-gradient(135deg, #e8f4f8 0%, #f0f8e8 20%, #f8f4e0 40%, #f8e8d8 60%, #f0e0f0 80%, #e8f4f8 100%)',
+            backgroundHover: 'linear-gradient(135deg, #d0e8f0 0%, #e0f0d8 20%, #f0e8d0 40%, #f0d8c8 60%, #e8d0e8 80%, #d0e8f0 100%)'
         };
     }
     
-    // Premium/special variants
+    // Premium/special variants - gold accent
     if (subType.includes('premium') || subType.includes('special')) {
         return {
-            background: 'linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #ec4899 100%)',
-            backgroundHover: 'linear-gradient(135deg, #4f46e5 0%, #9333ea 50%, #db2777 100%)'
+            background: 'linear-gradient(135deg, #0a2540 0%, #1a4a6e 50%, #d4a853 100%)',
+            backgroundHover: 'linear-gradient(135deg, #0d3050 0%, #2a5a7e 50%, #e5c078 100%)'
         };
     }
     
-    // Normal cards - clean gradient
+    // Normal cards - teal theme
     if (isDark) {
         return {
-            background: 'linear-gradient(135deg, #1a1a2e 0%, #222238 100%)',
-            backgroundHover: 'linear-gradient(135deg, #222238 0%, #2a2a42 100%)'
+            background: 'linear-gradient(135deg, #0d3050 0%, #0a2540 100%)',
+            backgroundHover: 'linear-gradient(135deg, #1a4a6e 0%, #0d3050 100%)'
         };
     }
     return {
-        background: 'linear-gradient(135deg, #ffffff 0%, #f8f8ff 100%)',
-        backgroundHover: 'linear-gradient(135deg, #f8f8ff 0%, #f0f0ff 100%)'
+        background: 'linear-gradient(135deg, #ffffff 0%, #e8f4f8 100%)',
+        backgroundHover: 'linear-gradient(135deg, #e8f4f8 0%, #d0e8f0 100%)'
     };
 };
 
@@ -151,5 +151,3 @@ export const debounce = (func, wait = 300) => {
         timeout = setTimeout(later, wait);
     };
 };
-
-

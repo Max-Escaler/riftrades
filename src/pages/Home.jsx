@@ -39,10 +39,10 @@ const Home = () => {
         fetchTimestamp();
     }, []);
 
-    // Background gradients based on theme
+    // Background gradients based on theme - Riftbound teal/navy
     const bgGradient = isDark 
-        ? 'linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16132b 100%)'
-        : 'linear-gradient(135deg, #f5f3ff 0%, #ede9fe 50%, #fae8ff 100%)';
+        ? 'linear-gradient(135deg, #061825 0%, #0a2540 50%, #0d3050 100%)'
+        : 'linear-gradient(135deg, #e8f4f8 0%, #d0e8f0 50%, #c0dce8 100%)';
 
     if (error) {
         return (

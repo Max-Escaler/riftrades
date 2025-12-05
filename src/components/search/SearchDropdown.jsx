@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { Paper, Box, Typography } from '@mui/material';
 import SearchOption from './SearchOption';
+import { useThemeMode } from '../../contexts/ThemeContext.jsx';
 
 /**
  * SearchDropdown Component
@@ -16,6 +17,7 @@ const SearchDropdown = ({
     dropdownRef,
     placement = 'bottom'
 }) => {
+    const { isDark } = useThemeMode();
     const highlightedRef = useRef(null);
 
     // Scroll highlighted item into view
@@ -44,29 +46,36 @@ const SearchDropdown = ({
                 maxHeight: '320px',
                 overflowY: 'auto',
                 borderRadius: 2,
-                boxShadow: '0 8px 24px rgba(0, 0, 0, 0.2)',
-                border: '1px solid rgba(99, 102, 241, 0.3)',
-                background: '#ffffff',
+                boxShadow: isDark 
+                    ? '0 8px 24px rgba(0, 0, 0, 0.5)' 
+                    : '0 8px 24px rgba(10, 37, 64, 0.2)',
+                border: isDark 
+                    ? '1px solid rgba(212, 168, 83, 0.3)' 
+                    : '1px solid rgba(26, 90, 122, 0.3)',
+                background: isDark ? '#0d3050' : '#ffffff',
                 // Custom scrollbar
                 '&::-webkit-scrollbar': {
                     width: '8px'
                 },
                 '&::-webkit-scrollbar-track': {
-                    background: '#f1f1f1',
+                    background: isDark ? '#0a2540' : '#e8f4f8',
                     borderRadius: '4px'
                 },
                 '&::-webkit-scrollbar-thumb': {
-                    background: 'linear-gradient(180deg, #6366f1 0%, #a855f7 100%)',
+                    background: 'linear-gradient(180deg, #1a5a7a 0%, #d4a853 100%)',
                     borderRadius: '4px',
                     '&:hover': {
-                        background: 'linear-gradient(180deg, #4f46e5 0%, #9333ea 100%)'
+                        background: 'linear-gradient(180deg, #2a7a9a 0%, #e5c078 100%)'
                     }
                 }
             }}
         >
             {items.length === 0 ? (
                 <Box sx={{ px: 2, py: 3, textAlign: 'center' }}>
-                    <Typography variant="body2" color="text.secondary">
+                    <Typography 
+                        variant="body2" 
+                        sx={{ color: isDark ? '#a0c4d4' : '#1a4a6e' }}
+                    >
                         {searchTerm ? 'No cards found' : 'Start typing to search...'}
                     </Typography>
                 </Box>
@@ -91,5 +100,3 @@ const SearchDropdown = ({
 };
 
 export default SearchDropdown;
-
-

@@ -11,21 +11,26 @@ export const useThemeMode = () => {
     return context;
 };
 
+// Riftbound color palette
+// Primary: Deep teal/navy blue
+// Accent: Gold/Orange
+// Secondary: Lighter teal/cyan
+
 // Light theme
 const lightTheme = createTheme({
     palette: {
         mode: 'light',
         primary: {
-            main: '#6366f1',
-            light: '#818cf8',
-            dark: '#4f46e5',
+            main: '#1a5a7a',      // Deep teal
+            light: '#2a7a9a',
+            dark: '#0d4560',
             contrastText: '#ffffff',
         },
         secondary: {
-            main: '#a855f7',
-            light: '#c084fc',
-            dark: '#9333ea',
-            contrastText: '#ffffff',
+            main: '#d4a853',      // Gold
+            light: '#e5c078',
+            dark: '#b8892e',
+            contrastText: '#0a2540',
         },
         success: {
             main: '#10b981',
@@ -38,22 +43,22 @@ const lightTheme = createTheme({
             dark: '#dc2626',
         },
         warning: {
-            main: '#f59e0b',
-            light: '#fbbf24',
-            dark: '#d97706',
+            main: '#d4a853',      // Gold for warning too
+            light: '#e5c078',
+            dark: '#b8892e',
         },
         info: {
-            main: '#3b82f6',
-            light: '#60a5fa',
-            dark: '#2563eb',
+            main: '#2a7a9a',
+            light: '#4a9aba',
+            dark: '#1a5a7a',
         },
         background: {
-            default: '#f5f3ff',
+            default: '#e8f4f8',   // Light teal tint
             paper: '#ffffff',
         },
         text: {
-            primary: '#1a1625',
-            secondary: '#4c4359',
+            primary: '#0a2540',
+            secondary: '#1a4a6e',
         },
     },
     typography: {
@@ -75,9 +80,9 @@ const lightTheme = createTheme({
                     boxShadow: 'none',
                 },
                 contained: {
-                    background: 'linear-gradient(135deg, #6366f1 0%, #a855f7 100%)',
+                    background: 'linear-gradient(135deg, #1a5a7a 0%, #2a7a9a 100%)',
                     '&:hover': {
-                        background: 'linear-gradient(135deg, #4f46e5 0%, #9333ea 100%)',
+                        background: 'linear-gradient(135deg, #0d4560 0%, #1a5a7a 100%)',
                     },
                 },
             },
@@ -89,7 +94,7 @@ const lightTheme = createTheme({
                     borderRadius: 8,
                 },
                 colorPrimary: {
-                    background: 'linear-gradient(135deg, #6366f1 0%, #818cf8 100%)',
+                    background: 'linear-gradient(135deg, #1a5a7a 0%, #2a7a9a 100%)',
                 },
                 colorSuccess: {
                     background: 'linear-gradient(135deg, #10b981 0%, #34d399 100%)',
@@ -99,21 +104,21 @@ const lightTheme = createTheme({
     },
 });
 
-// Dark theme
+// Dark theme - matches Riftbound's deep teal/navy aesthetic
 const darkTheme = createTheme({
     palette: {
         mode: 'dark',
         primary: {
-            main: '#818cf8',
-            light: '#a5b4fc',
-            dark: '#6366f1',
-            contrastText: '#0f0f23',
+            main: '#3a9aba',      // Lighter teal for visibility
+            light: '#5abada',
+            dark: '#2a7a9a',
+            contrastText: '#0a2540',
         },
         secondary: {
-            main: '#c084fc',
-            light: '#d8b4fe',
-            dark: '#a855f7',
-            contrastText: '#0f0f23',
+            main: '#e5c078',      // Gold
+            light: '#f0d498',
+            dark: '#d4a853',
+            contrastText: '#0a2540',
         },
         success: {
             main: '#34d399',
@@ -126,22 +131,22 @@ const darkTheme = createTheme({
             dark: '#ef4444',
         },
         warning: {
-            main: '#fbbf24',
-            light: '#fcd34d',
-            dark: '#f59e0b',
+            main: '#e5c078',
+            light: '#f0d498',
+            dark: '#d4a853',
         },
         info: {
-            main: '#60a5fa',
-            light: '#93c5fd',
-            dark: '#3b82f6',
+            main: '#5abada',
+            light: '#7acafa',
+            dark: '#3a9aba',
         },
         background: {
-            default: '#0f0f23',
-            paper: '#1a1a2e',
+            default: '#0a2540',   // Deep navy/teal from Riftbound
+            paper: '#0d3050',
         },
         text: {
-            primary: '#f0f0f5',
-            secondary: '#a0a0b0',
+            primary: '#e8f4f8',
+            secondary: '#a0c4d4',
         },
     },
     typography: {
@@ -163,9 +168,9 @@ const darkTheme = createTheme({
                     boxShadow: 'none',
                 },
                 contained: {
-                    background: 'linear-gradient(135deg, #6366f1 0%, #a855f7 100%)',
+                    background: 'linear-gradient(135deg, #1a5a7a 0%, #3a9aba 100%)',
                     '&:hover': {
-                        background: 'linear-gradient(135deg, #818cf8 0%, #c084fc 100%)',
+                        background: 'linear-gradient(135deg, #2a7a9a 0%, #5abada 100%)',
                     },
                 },
             },
@@ -177,7 +182,7 @@ const darkTheme = createTheme({
                     borderRadius: 8,
                 },
                 colorPrimary: {
-                    background: 'linear-gradient(135deg, #6366f1 0%, #818cf8 100%)',
+                    background: 'linear-gradient(135deg, #1a5a7a 0%, #3a9aba 100%)',
                 },
                 colorSuccess: {
                     background: 'linear-gradient(135deg, #10b981 0%, #34d399 100%)',
@@ -239,4 +244,3 @@ export const ThemeModeProvider = ({ children }) => {
 };
 
 export default ThemeContext;
-

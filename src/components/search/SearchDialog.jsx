@@ -10,6 +10,7 @@ import {
 } from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
 import SearchInput from './SearchInput';
+import { useThemeMode } from '../../contexts/ThemeContext.jsx';
 
 /**
  * SearchDialog Component
@@ -22,6 +23,7 @@ const SearchDialog = ({
     items = [],
     onSelect
 }) => {
+    const { isDark } = useThemeMode();
     const [searchValue, setSearchValue] = useState('');
 
     // Reset search when dialog closes
@@ -44,7 +46,7 @@ const SearchDialog = ({
             onClose={onClose}
             sx={{
                 '& .MuiDialog-paper': {
-                    backgroundColor: '#fafafa'
+                    backgroundColor: isDark ? '#0a2540' : '#e8f4f8'
                 }
             }}
         >
@@ -52,9 +54,9 @@ const SearchDialog = ({
                 position="static" 
                 elevation={0}
                 sx={{ 
-                    background: 'linear-gradient(135deg, #6366f1 0%, #a855f7 100%)',
-                    borderBottom: '3px solid rgba(168, 85, 247, 0.5)',
-                    boxShadow: '0 4px 20px rgba(99, 102, 241, 0.3)'
+                    background: 'linear-gradient(135deg, #0a2540 0%, #0d3050 50%, #1a4a6e 100%)',
+                    borderBottom: '3px solid #d4a853',
+                    boxShadow: '0 4px 20px rgba(10, 37, 64, 0.3)'
                 }}
             >
                 <Toolbar>
@@ -63,17 +65,27 @@ const SearchDialog = ({
                         color="inherit"
                         onClick={onClose}
                         aria-label="close"
-                        sx={{ mr: 2 }}
+                        sx={{ mr: 2, color: '#d4a853' }}
                     >
                         <CloseIcon />
                     </IconButton>
-                    <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+                    <Typography 
+                        variant="h6" 
+                        component="div" 
+                        sx={{ 
+                            flexGrow: 1,
+                            color: '#e5c078'
+                        }}
+                    >
                         {title}
                     </Typography>
                 </Toolbar>
             </AppBar>
             
-            <DialogContent sx={{ p: 2, backgroundColor: '#fafafa' }}>
+            <DialogContent sx={{ 
+                p: 2, 
+                backgroundColor: isDark ? '#0a2540' : '#e8f4f8' 
+            }}>
                 <SearchInput
                     label="Search for Cards"
                     placeholder="Start typing to search..."
@@ -87,7 +99,10 @@ const SearchDialog = ({
                 />
                 
                 <Box sx={{ mt: 3, px: 1 }}>
-                    <Typography variant="body2" color="text.secondary">
+                    <Typography 
+                        variant="body2" 
+                        sx={{ color: isDark ? '#a0c4d4' : '#1a4a6e' }}
+                    >
                         Select a card from the dropdown to add it to your list, or type to search for specific cards.
                     </Typography>
                 </Box>
@@ -97,5 +112,3 @@ const SearchDialog = ({
 };
 
 export default SearchDialog;
-
-

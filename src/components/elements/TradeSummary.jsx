@@ -161,33 +161,33 @@ const TradeSummary = ({
         return `${Math.round(ageInDays / 30)} month${Math.round(ageInDays / 30) !== 1 ? 's' : ''}`;
     };
 
-    // Common toggle button styles
+    // Common toggle button styles - Riftbound teal/gold
     const toggleButtonSx = {
         '& .MuiToggleButton-root': {
             px: { xs: 0.75, sm: 1 },
             py: { xs: 0.25, sm: 0.5 },
             fontSize: { xs: '0.65rem', sm: '0.7rem' },
             textTransform: 'none',
-            border: isDark ? '1px solid rgba(129, 140, 248, 0.4)' : '1px solid rgba(99, 102, 241, 0.3)',
-            color: isDark ? '#a5b4fc' : '#6366f1',
+            border: isDark ? '1px solid rgba(58, 154, 186, 0.4)' : '1px solid rgba(26, 90, 122, 0.3)',
+            color: isDark ? '#5abada' : '#1a5a7a',
             '&.Mui-selected': {
-                backgroundColor: isDark ? '#818cf8' : '#6366f1',
-                color: isDark ? '#0f0f23' : '#ffffff',
+                backgroundColor: isDark ? '#3a9aba' : '#1a5a7a',
+                color: isDark ? '#0a2540' : '#ffffff',
                 '&:hover': {
-                    backgroundColor: isDark ? '#a5b4fc' : '#4f46e5'
+                    backgroundColor: isDark ? '#5abada' : '#0d4560'
                 }
             },
             '&:hover': {
-                backgroundColor: isDark ? 'rgba(129, 140, 248, 0.15)' : 'rgba(99, 102, 241, 0.08)'
+                backgroundColor: isDark ? 'rgba(58, 154, 186, 0.15)' : 'rgba(26, 90, 122, 0.08)'
             }
         }
     };
 
-    // Theme-aware colors
-    const textColor = isDark ? '#f0f0f5' : '#1a1625';
+    // Theme-aware colors - Riftbound palette
+    const textColor = isDark ? '#e8f4f8' : '#0a2540';
     const bgGradient = isLandscape 
-        ? (isDark ? 'linear-gradient(180deg, #1a1a2e 0%, #252540 100%)' : 'linear-gradient(180deg, #ffffff 0%, #faf5ff 100%)')
-        : (isDark ? 'linear-gradient(90deg, #252540 0%, #1a1a2e 50%, #252540 100%)' : 'linear-gradient(90deg, #faf5ff 0%, #ffffff 50%, #faf5ff 100%)');
+        ? (isDark ? 'linear-gradient(180deg, #0d3050 0%, #0a2540 100%)' : 'linear-gradient(180deg, #ffffff 0%, #e8f4f8 100%)')
+        : (isDark ? 'linear-gradient(90deg, #0a2540 0%, #0d3050 50%, #0a2540 100%)' : 'linear-gradient(90deg, #e8f4f8 0%, #ffffff 50%, #e8f4f8 100%)');
 
     return (
         <>
@@ -199,15 +199,15 @@ const TradeSummary = ({
             gap: 0,
             p: isLandscape ? 2.5 : 0,
             background: bgGradient,
-            borderTop: isLandscape ? 'none' : `3px solid ${isDark ? 'rgba(168, 85, 247, 0.3)' : 'rgba(168, 85, 247, 0.5)'}`,
-            borderBottom: isLandscape ? 'none' : `3px solid ${isDark ? 'rgba(168, 85, 247, 0.3)' : 'rgba(168, 85, 247, 0.5)'}`,
+            borderTop: isLandscape ? 'none' : `3px solid #d4a853`,
+            borderBottom: isLandscape ? 'none' : `3px solid #d4a853`,
             borderRadius: isLandscape ? 3 : 0,
-            border: isLandscape ? `2px solid ${isDark ? 'rgba(99, 102, 241, 0.25)' : 'rgba(99, 102, 241, 0.15)'}` : 'none',
+            border: isLandscape ? `2px solid ${isDark ? 'rgba(212, 168, 83, 0.3)' : 'rgba(26, 90, 122, 0.15)'}` : 'none',
             width: isLandscape ? '280px' : '100%',
             minWidth: isLandscape ? '280px' : 'auto',
             maxWidth: isLandscape ? '320px' : '100%',
             boxSizing: 'border-box',
-            boxShadow: isLandscape ? '0 8px 24px rgba(99, 102, 241, 0.15)' : '0 4px 12px rgba(99, 102, 241, 0.08)'
+            boxShadow: isLandscape ? '0 8px 24px rgba(10, 37, 64, 0.2)' : '0 4px 12px rgba(10, 37, 64, 0.1)'
         }}>
             {/* Price Source & Type Selectors - Landscape mode (stacked) */}
             {isLandscape && (
@@ -219,7 +219,7 @@ const TradeSummary = ({
                     gap: 1,
                     px: 1,
                     py: 1.5,
-                    borderBottom: '2px solid rgba(99, 102, 241, 0.1)',
+                    borderBottom: `2px solid ${isDark ? 'rgba(212, 168, 83, 0.2)' : 'rgba(26, 90, 122, 0.1)'}`,
                     width: '100%'
                 }}>
                     {/* Price Source: TCGPlayer vs CardMarket */}
@@ -289,16 +289,16 @@ const TradeSummary = ({
                 px: isLandscape ? 2 : { xs: 1 },
                 py: isLandscape ? 2 : { xs: 0.75 },
                 background: isDark 
-                    ? 'linear-gradient(135deg, #1a1a2e 0%, #222238 100%)' 
-                    : 'linear-gradient(135deg, #ffffff 0%, #fafafa 100%)',
-                borderTop: isLandscape ? 'none' : `2px solid ${isDark ? 'rgba(99, 102, 241, 0.2)' : 'rgba(99, 102, 241, 0.1)'}`,
-                borderBottom: isLandscape ? 'none' : `2px solid ${isDark ? 'rgba(99, 102, 241, 0.2)' : 'rgba(99, 102, 241, 0.1)'}`,
+                    ? 'linear-gradient(135deg, #0a2540 0%, #0d3050 100%)' 
+                    : 'linear-gradient(135deg, #ffffff 0%, #f0f8fa 100%)',
+                borderTop: isLandscape ? 'none' : `2px solid ${isDark ? 'rgba(212, 168, 83, 0.2)' : 'rgba(26, 90, 122, 0.1)'}`,
+                borderBottom: isLandscape ? 'none' : `2px solid ${isDark ? 'rgba(212, 168, 83, 0.2)' : 'rgba(26, 90, 122, 0.1)'}`,
                 borderRadius: isLandscape ? 2 : 0,
                 mx: isLandscape ? 0 : 0,
                 my: isLandscape ? 1 : 0,
                 flexDirection: isLandscape ? 'column' : 'row',
                 flexWrap: 'wrap',
-                boxShadow: isLandscape ? '0 2px 8px rgba(99, 102, 241, 0.08)' : 'none'
+                boxShadow: isLandscape ? '0 2px 8px rgba(10, 37, 64, 0.1)' : 'none'
             }}>
                 {/* Price Source & Type Selectors - Portrait mode */}
                 {!isLandscape && (
@@ -443,12 +443,12 @@ const TradeSummary = ({
                     gap: 0.5,
                     px: isLandscape ? 1 : { xs: 0.5, sm: 0.75, md: 1 },
                     py: 0.5,
-                    backgroundColor: '#fff3cd',
-                    borderTop: '1px solid #ffeaa7',
-                    borderBottom: '1px solid #ffeaa7'
+                    backgroundColor: isDark ? 'rgba(212, 168, 83, 0.2)' : '#fff3cd',
+                    borderTop: `1px solid ${isDark ? 'rgba(212, 168, 83, 0.3)' : '#ffeaa7'}`,
+                    borderBottom: `1px solid ${isDark ? 'rgba(212, 168, 83, 0.3)' : '#ffeaa7'}`
                 }}>
-                    <WarningIcon fontSize="small" sx={{ color: '#856404' }} />
-                    <Typography variant="caption" sx={{ color: '#856404', fontSize: '0.7rem' }}>
+                    <WarningIcon fontSize="small" sx={{ color: isDark ? '#e5c078' : '#856404' }} />
+                    <Typography variant="caption" sx={{ color: isDark ? '#e5c078' : '#856404', fontSize: '0.7rem' }}>
                         Trade data is {formatAge(urlTradeData.ageInDays)} old
                     </Typography>
                 </Box>
@@ -460,7 +460,7 @@ const TradeSummary = ({
                 gap: 1,
                 px: isLandscape ? 1 : { xs: 0.5, sm: 0.75, md: 1 },
                 py: isLandscape ? 1.5 : 1,
-                borderTop: '1px solid rgba(99, 102, 241, 0.1)',
+                borderTop: `1px solid ${isDark ? 'rgba(58, 154, 186, 0.15)' : 'rgba(26, 90, 122, 0.1)'}`,
                 flexDirection: isLandscape ? 'column' : 'row',
                 justifyContent: 'center'
             }}>
@@ -473,17 +473,17 @@ const TradeSummary = ({
                             onClick={handleShare}
                             disabled={!hasCards}
                             sx={{
-                                borderColor: isDark ? '#818cf8' : '#6366f1',
-                                color: isDark ? '#a5b4fc' : '#6366f1',
+                                borderColor: isDark ? '#d4a853' : '#1a5a7a',
+                                color: isDark ? '#e5c078' : '#1a5a7a',
                                 fontSize: isLandscape ? '0.7rem' : '0.75rem',
                                 px: isLandscape ? 1.5 : 2,
                                 '&:hover': {
-                                    borderColor: isDark ? '#a5b4fc' : '#4f46e5',
-                                    backgroundColor: isDark ? 'rgba(129, 140, 248, 0.15)' : 'rgba(99, 102, 241, 0.08)',
+                                    borderColor: isDark ? '#e5c078' : '#0d4560',
+                                    backgroundColor: isDark ? 'rgba(212, 168, 83, 0.15)' : 'rgba(26, 90, 122, 0.08)',
                                 },
                                 '&:disabled': {
-                                    borderColor: isDark ? 'rgba(129, 140, 248, 0.3)' : 'rgba(99, 102, 241, 0.3)',
-                                    color: isDark ? 'rgba(129, 140, 248, 0.3)' : 'rgba(99, 102, 241, 0.3)',
+                                    borderColor: isDark ? 'rgba(212, 168, 83, 0.3)' : 'rgba(26, 90, 122, 0.3)',
+                                    color: isDark ? 'rgba(212, 168, 83, 0.3)' : 'rgba(26, 90, 122, 0.3)',
                                 }
                             }}
                         >

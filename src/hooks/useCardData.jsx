@@ -60,6 +60,8 @@ const getIntegerValue = (row, possibleKeys, defaultValue = 0) => {
 
 // Function to create a standardized card object from a JSON record
 const createCardObject = (row) => {
+    const isFoil = (row.subTypeName || '').toLowerCase().includes('foil');
+    
     const card = {
         // Unique identifiers from consolidation
         _id: row._id || 0,
@@ -78,14 +80,26 @@ const createCardObject = (row) => {
         modifiedOn: row.modifiedOn || '',
         imageCount: getIntegerValue(row, ['imageCount']),
 
-        // Price properties
+        // TCGPlayer Price properties (USD)
         lowPrice: getNumericValue(row, ['lowPrice']),
         midPrice: getNumericValue(row, ['midPrice']),
         highPrice: getNumericValue(row, ['highPrice']),
         marketPrice: getNumericValue(row, ['marketPrice']),
         directLowPrice: getNumericValue(row, ['directLowPrice']),
 
-        // Card properties - adapt these based on Riftbound's column structure
+        // CardMarket Price properties (EUR)
+        cardmarketId: row.cardmarketId || null,
+        cardmarketAvg: getNumericValue(row, ['cardmarketAvg']),
+        cardmarketLow: getNumericValue(row, ['cardmarketLow']),
+        cardmarketTrend: getNumericValue(row, ['cardmarketTrend']),
+        cardmarketAvgFoil: getNumericValue(row, ['cardmarketAvgFoil']),
+        cardmarketLowFoil: getNumericValue(row, ['cardmarketLowFoil']),
+        cardmarketTrendFoil: getNumericValue(row, ['cardmarketTrendFoil']),
+        
+        // Flag for foil
+        isFoil: isFoil,
+
+        // Card properties
         subTypeName: row.subTypeName || '',
         extRarity: row.extRarity || row.rarity || '',
         extNumber: row.extNumber || row.number || '',
@@ -119,6 +133,7 @@ const checkConsolidatedData = async () => {
             totalRecords: data.metadata?.totalRecords || 0,
             totalFiles: data.metadata?.totalFiles || 0,
             generatedAt: data.metadata?.generatedAt || null,
+            hasCardmarket: !!data.metadata?.cardmarketMergedAt,
             dataSize: text.length
         };
     } catch (error) {
@@ -204,8 +219,28 @@ const enhanceDisplayNames = (cards) => {
     });
 };
 
+/**
+ * Get the appropriate price for a card based on source and type
+ * @param {Object} card - Card object
+ * @param {string} priceSource - 'tcgplayer' or 'cardmarket'
+ * @param {string} priceType - 'market' or 'low'
+ * @returns {number} The price value
+ */
+const getCardPrice = (card, priceSource, priceType) => {
+    if (priceSource === 'cardmarket') {
+        // CardMarket prices (EUR)
+        if (card.isFoil) {
+            return priceType === 'market' ? card.cardmarketTrendFoil : card.cardmarketLowFoil;
+        }
+        return priceType === 'market' ? card.cardmarketTrend : card.cardmarketLow;
+    } else {
+        // TCGPlayer prices (USD)
+        return priceType === 'market' ? card.marketPrice : card.lowPrice;
+    }
+};
+
 // Function to group cards by display name and their editions
-const groupCardsByEdition = (cards, priceType = 'market') => {
+const groupCardsByEdition = (cards, priceType = 'market', priceSource = 'tcgplayer') => {
     const grouped = {};
 
     cards.forEach(card => {
@@ -227,8 +262,10 @@ const groupCardsByEdition = (cards, priceType = 'market') => {
             grouped[displayName].editions.push({
                 subTypeName: card.subTypeName,
                 productId: card.productId,
-                cardPrice: priceType === 'market' ? card.marketPrice : card.lowPrice,
-                uniqueId: card._uniqueId
+                cardPrice: getCardPrice(card, priceSource, priceType),
+                uniqueId: card._uniqueId,
+                isFoil: card.isFoil,
+                hasCardmarket: card.cardmarketId !== null
             });
         }
     });
@@ -238,7 +275,7 @@ const groupCardsByEdition = (cards, priceType = 'market') => {
 
 // Main provider component
 export const CardDataProvider = ({ children }) => {
-    const { priceType } = usePriceType();
+    const { priceType, priceSource } = usePriceType();
     const [cards, setCards] = useState([]);
     const [cardIdLookup, setCardIdLookup] = useState({});
     const [loading, setLoading] = useState(false);
@@ -278,6 +315,9 @@ export const CardDataProvider = ({ children }) => {
                     setCardIdLookup(idLookup);
 
                     console.log(`Successfully loaded ${enhancedCards.length} cards from consolidated JSON`);
+                    if (consolidatedStatus.hasCardmarket) {
+                        console.log('CardMarket prices available');
+                    }
                 } else {
                     throw new Error(`Consolidated data not available: ${consolidatedStatus.reason}`);
                 }
@@ -294,11 +334,11 @@ export const CardDataProvider = ({ children }) => {
         loadCardData();
     }, []);
 
-    // Recalculate cardGroups whenever priceType changes
+    // Recalculate cardGroups whenever priceType or priceSource changes
     const cardGroups = useMemo(() => {
         if (cards.length === 0) return [];
-        return groupCardsByEdition(cards, priceType);
-    }, [cards, priceType]);
+        return groupCardsByEdition(cards, priceType, priceSource);
+    }, [cards, priceType, priceSource]);
 
     const value = useMemo(() => ({
         cards,
@@ -308,8 +348,10 @@ export const CardDataProvider = ({ children }) => {
         dataReady,
         error,
         dataSource,
-        metadata
-    }), [cards, cardGroups, cardIdLookup, loading, dataReady, error, dataSource, metadata]);
+        metadata,
+        // Helper function for components to get prices
+        getCardPrice: (card) => getCardPrice(card, priceSource, priceType)
+    }), [cards, cardGroups, cardIdLookup, loading, dataReady, error, dataSource, metadata, priceSource, priceType]);
 
     return (
         <CardDataContext.Provider value={value}>
@@ -317,4 +359,3 @@ export const CardDataProvider = ({ children }) => {
         </CardDataContext.Provider>
     );
 };
-

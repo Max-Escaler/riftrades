@@ -10,6 +10,7 @@
     "download-csvs": "node scripts/downloadCSVs.js",
     "download-csvs:force": "node scripts/downloadCSVs.js --force",
     "consolidate-csvs": "node scripts/consolidateCSVs.js",
+    "merge-cardmarket": "node scripts/mergeCardMarketPrices.js",
     "csv-status": "node -e \"import('./src/services/csv/index.js').then(m => m.checkCSVStatus())\""
   },
   "dependencies": {

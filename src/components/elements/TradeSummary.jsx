@@ -39,7 +39,7 @@ const TradeSummary = ({
     urlTradeData,
     hasLoadedFromURL
 }) => {
-    const { priceType, setPriceType } = usePriceType();
+    const { priceType, setPriceType, priceSource, setPriceSource } = usePriceType();
     const [showShareDialog, setShowShareDialog] = useState(false);
     const [shareURL, setShareURL] = useState('');
     const [copySuccess, setCopySuccess] = useState(false);
@@ -48,10 +48,32 @@ const TradeSummary = ({
 
     const hasCards = haveList.length > 0 || wantList.length > 0;
 
+    // Currency symbol based on price source
+    const currencySymbol = priceSource === 'cardmarket' ? '€' : '$';
+
     const handlePriceTypeChange = (event, newPriceType) => {
         if (newPriceType !== null) {
             setPriceType(newPriceType);
         }
+    };
+
+    const handlePriceSourceChange = (event, newPriceSource) => {
+        if (newPriceSource !== null) {
+            setPriceSource(newPriceSource);
+        }
+    };
+
+    // Format currency based on price source
+    const formatPrice = (amount) => {
+        if (priceSource === 'cardmarket') {
+            return new Intl.NumberFormat('de-DE', {
+                style: 'currency',
+                currency: 'EUR',
+                minimumFractionDigits: 0,
+                maximumFractionDigits: 2
+            }).format(amount);
+        }
+        return formatCurrency(amount);
     };
 
     const handleShare = async () => {
@@ -113,7 +135,7 @@ const TradeSummary = ({
             try {
                 await navigator.share({
                     title: 'Rift Trade Proposal',
-                    text: `Trade proposal: ${haveList.length} cards (${formatCurrency(haveTotal.toFixed(2))}) for ${wantList.length} cards (${formatCurrency(wantTotal.toFixed(2))})`,
+                    text: `Trade proposal: ${haveList.length} cards (${formatPrice(haveTotal.toFixed(2))}) for ${wantList.length} cards (${formatPrice(wantTotal.toFixed(2))})`,
                     url: shareURL
                 });
                 setShowShareDialog(false);
@@ -135,6 +157,28 @@ const TradeSummary = ({
         if (ageInDays < 7) return `${Math.round(ageInDays)} day${Math.round(ageInDays) !== 1 ? 's' : ''}`;
         if (ageInDays < 30) return `${Math.round(ageInDays / 7)} week${Math.round(ageInDays / 7) !== 1 ? 's' : ''}`;
         return `${Math.round(ageInDays / 30)} month${Math.round(ageInDays / 30) !== 1 ? 's' : ''}`;
+    };
+
+    // Common toggle button styles
+    const toggleButtonSx = {
+        '& .MuiToggleButton-root': {
+            px: { xs: 0.75, sm: 1 },
+            py: { xs: 0.25, sm: 0.5 },
+            fontSize: { xs: '0.65rem', sm: '0.7rem' },
+            textTransform: 'none',
+            border: '1px solid rgba(99, 102, 241, 0.3)',
+            color: '#6366f1',
+            '&.Mui-selected': {
+                backgroundColor: '#6366f1',
+                color: '#ffffff',
+                '&:hover': {
+                    backgroundColor: '#4f46e5'
+                }
+            },
+            '&:hover': {
+                backgroundColor: 'rgba(99, 102, 241, 0.08)'
+            }
+        }
     };
 
     return (
@@ -159,47 +203,48 @@ const TradeSummary = ({
             boxSizing: 'border-box',
             boxShadow: isLandscape ? '0 8px 24px rgba(99, 102, 241, 0.15)' : '0 4px 12px rgba(99, 102, 241, 0.08)'
         }}>
-            {/* Price Type Selector - Only show at top for landscape mode */}
+            {/* Price Source & Type Selectors - Landscape mode (stacked) */}
             {isLandscape && (
                 <Box sx={{
                     display: 'flex',
+                    flexDirection: 'column',
                     justifyContent: 'center',
                     alignItems: 'center',
+                    gap: 1,
                     px: 1,
                     py: 1.5,
-                    borderBottom: '2px solid rgba(99, 102, 241, 0.1)'
+                    borderBottom: '2px solid rgba(99, 102, 241, 0.1)',
+                    width: '100%'
                 }}>
+                    {/* Price Source: TCGPlayer vs CardMarket */}
+                    <ToggleButtonGroup
+                        value={priceSource}
+                        exclusive
+                        onChange={handlePriceSourceChange}
+                        size="small"
+                        sx={toggleButtonSx}
+                    >
+                        <ToggleButton value="tcgplayer" aria-label="TCGPlayer prices (USD)">
+                            🇺🇸 TCGPlayer
+                        </ToggleButton>
+                        <ToggleButton value="cardmarket" aria-label="CardMarket prices (EUR)">
+                            🇪🇺 CardMarket
+                        </ToggleButton>
+                    </ToggleButtonGroup>
+                    
+                    {/* Price Type: Market vs Low */}
                     <ToggleButtonGroup
                         value={priceType}
                         exclusive
                         onChange={handlePriceTypeChange}
                         size="small"
-                        sx={{
-                            '& .MuiToggleButton-root': {
-                                px: 1,
-                                py: 0.5,
-                                fontSize: '0.65rem',
-                                textTransform: 'none',
-                                border: '1px solid rgba(99, 102, 241, 0.3)',
-                                color: '#6366f1',
-                                '&.Mui-selected': {
-                                    backgroundColor: '#6366f1',
-                                    color: '#ffffff',
-                                    '&:hover': {
-                                        backgroundColor: '#4f46e5'
-                                    }
-                                },
-                                '&:hover': {
-                                    backgroundColor: 'rgba(99, 102, 241, 0.08)'
-                                }
-                            }
-                        }}
+                        sx={toggleButtonSx}
                     >
-                        <ToggleButton value="market" aria-label="tcgplayer market price">
-                            TCGMarket
+                        <ToggleButton value="market" aria-label="market/trend price">
+                            {priceSource === 'cardmarket' ? 'Trend' : 'Market'}
                         </ToggleButton>
-                        <ToggleButton value="low" aria-label="tcgplayer low price">
-                            TCGLow
+                        <ToggleButton value="low" aria-label="low price">
+                            Low
                         </ToggleButton>
                     </ToggleButtonGroup>
                 </Box>
@@ -223,7 +268,7 @@ const TradeSummary = ({
                     My {haveList.length} cards
                 </Typography>
                 <Chip 
-                    label={`${formatCurrency(haveTotal.toFixed(2))}`} 
+                    label={formatPrice(haveTotal.toFixed(2))} 
                     color="primary" 
                     variant="filled" 
                     size={isLandscape ? 'small' : 'medium'}
@@ -232,9 +277,9 @@ const TradeSummary = ({
 
             <Box sx={{
                 display: 'flex',
-                justifyContent: (!isLandscape && hasLoadedFromURL && urlTradeData) ? 'space-between' : 'center',
+                justifyContent: 'center',
                 alignItems: 'center',
-                gap: isLandscape ? 1 : 2,
+                gap: isLandscape ? 1 : 1,
                 px: isLandscape ? 2 : { xs: 1 },
                 py: isLandscape ? 2 : { xs: 0.75 },
                 background: 'linear-gradient(135deg, #ffffff 0%, #fafafa 100%)',
@@ -244,47 +289,47 @@ const TradeSummary = ({
                 mx: isLandscape ? 0 : 0,
                 my: isLandscape ? 1 : 0,
                 flexDirection: isLandscape ? 'column' : 'row',
+                flexWrap: 'wrap',
                 boxShadow: isLandscape ? '0 2px 8px rgba(99, 102, 241, 0.08)' : 'none'
             }}>
-                {/* Price Type Selector - Only show on left for portrait mode */}
+                {/* Price Source & Type Selectors - Portrait mode */}
                 {!isLandscape && (
                     <Box sx={{ 
                         display: 'flex', 
+                        flexDirection: 'column',
                         alignItems: 'center',
-                        minWidth: { xs: 80, sm: 100 },
-                        justifyContent: 'flex-start'
+                        gap: 0.5,
+                        mr: 1
                     }}>
+                        {/* Price Source: TCGPlayer vs CardMarket */}
+                        <ToggleButtonGroup
+                            value={priceSource}
+                            exclusive
+                            onChange={handlePriceSourceChange}
+                            size="small"
+                            sx={toggleButtonSx}
+                        >
+                            <ToggleButton value="tcgplayer" aria-label="TCGPlayer prices (USD)">
+                                🇺🇸 TCG
+                            </ToggleButton>
+                            <ToggleButton value="cardmarket" aria-label="CardMarket prices (EUR)">
+                                🇪🇺 CM
+                            </ToggleButton>
+                        </ToggleButtonGroup>
+                        
+                        {/* Price Type: Market vs Low */}
                         <ToggleButtonGroup
                             value={priceType}
                             exclusive
                             onChange={handlePriceTypeChange}
                             size="small"
-                            sx={{
-                                '& .MuiToggleButton-root': {
-                                    px: { xs: 1, sm: 1.5 },
-                                    py: { xs: 0.25, sm: 0.5 },
-                                    fontSize: { xs: '0.7rem', sm: '0.75rem' },
-                                    textTransform: 'none',
-                                    border: '1px solid rgba(99, 102, 241, 0.3)',
-                                    color: '#6366f1',
-                                    '&.Mui-selected': {
-                                        backgroundColor: '#6366f1',
-                                        color: '#ffffff',
-                                        '&:hover': {
-                                            backgroundColor: '#4f46e5'
-                                        }
-                                    },
-                                    '&:hover': {
-                                        backgroundColor: 'rgba(99, 102, 241, 0.08)'
-                                    }
-                                }
-                            }}
+                            sx={toggleButtonSx}
                         >
-                            <ToggleButton value="market" aria-label="tcgplayer market price">
-                                TCGMarket
+                            <ToggleButton value="market" aria-label="market/trend price">
+                                {priceSource === 'cardmarket' ? 'Trend' : 'Market'}
                             </ToggleButton>
-                            <ToggleButton value="low" aria-label="tcgplayer low price">
-                                TCGLow
+                            <ToggleButton value="low" aria-label="low price">
+                                Low
                             </ToggleButton>
                         </ToggleButtonGroup>
                     </Box>
@@ -308,7 +353,7 @@ const TradeSummary = ({
                         Difference
                     </Typography>
                     <Chip
-                        label={diff > 0 ? `+${formatCurrency(diff.toFixed(2))}` : `${formatCurrency(diff.toFixed(2))}`}
+                        label={diff > 0 ? `+${formatPrice(diff.toFixed(2))}` : formatPrice(diff.toFixed(2))}
                         color={diff > 0 ? 'primary' : diff < 0 ? 'success' : 'default'}
                         variant="filled"
                         size={isLandscape ? 'small' : 'medium'}
@@ -321,8 +366,7 @@ const TradeSummary = ({
                         display: 'flex',
                         alignItems: 'center',
                         gap: 0.5,
-                        minWidth: { xs: 80, sm: 100 },
-                        justifyContent: 'flex-end'
+                        ml: 1
                     }}>
                         <Tooltip title="Clear loaded trade data from URL">
                             <IconButton
@@ -376,7 +420,7 @@ const TradeSummary = ({
                     Their {wantList.length} cards
                 </Typography>
                 <Chip 
-                    label={`${formatCurrency(wantTotal.toFixed(2))}`} 
+                    label={formatPrice(wantTotal.toFixed(2))} 
                     color="success" 
                     variant="filled" 
                     size={isLandscape ? 'small' : 'medium'}
@@ -487,8 +531,8 @@ const TradeSummary = ({
                 </Box>
                 
                 <Typography variant="caption" color="text.secondary" display="block">
-                    Trade includes {haveList.length} cards you have ({formatCurrency(haveTotal.toFixed(2))}) 
-                    and {wantList.length} cards you want ({formatCurrency(wantTotal.toFixed(2))})
+                    Trade includes {haveList.length} cards you have ({formatPrice(haveTotal.toFixed(2))}) 
+                    and {wantList.length} cards you want ({formatPrice(wantTotal.toFixed(2))})
                 </Typography>
             </DialogContent>
             <DialogActions>
@@ -539,4 +583,3 @@ const TradeSummary = ({
 };
 
 export default TradeSummary;
-

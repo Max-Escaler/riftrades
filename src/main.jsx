@@ -6,10 +6,13 @@ import './index.css'
 import App from './App.jsx'
 import { CardDataProvider } from "./hooks/useCardData.jsx";
 import { PriceProvider } from "./contexts/PriceContext.jsx";
-import theme from './theme'
+import { ThemeModeProvider, useThemeMode } from "./contexts/ThemeContext.jsx";
 
-createRoot(document.getElementById('root')).render(
-    <StrictMode>
+// Wrapper component that applies the dynamic theme
+const ThemedApp = () => {
+    const { theme } = useThemeMode();
+    
+    return (
         <ThemeProvider theme={theme}>
             <CssBaseline />
             <PriceProvider>
@@ -18,7 +21,13 @@ createRoot(document.getElementById('root')).render(
                 </CardDataProvider>
             </PriceProvider>
         </ThemeProvider>
+    );
+};
+
+createRoot(document.getElementById('root')).render(
+    <StrictMode>
+        <ThemeModeProvider>
+            <ThemedApp />
+        </ThemeModeProvider>
     </StrictMode>,
 )
-
-

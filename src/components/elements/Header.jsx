@@ -1,7 +1,11 @@
-import { AppBar, Toolbar, Typography, Box } from '@mui/material';
+import { AppBar, Toolbar, Typography, Box, IconButton, Tooltip } from '@mui/material';
+import { DarkMode, LightMode } from '@mui/icons-material';
 import { formatTimestamp } from "../../utils/helpers.js";
+import { useThemeMode } from "../../contexts/ThemeContext.jsx";
 
 const Header = ({ lastUpdatedTimestamp }) => {
+    const { isDark, toggleMode } = useThemeMode();
+
     return (
         <AppBar 
             position="static" 
@@ -17,8 +21,12 @@ const Header = ({ lastUpdatedTimestamp }) => {
                 py: { xs: 1, sm: 1.25, md: 1.75 },
                 display: 'flex',
                 alignItems: 'center',
-                justifyContent: 'center'
+                justifyContent: 'space-between'
             }}>
+                {/* Spacer for balance */}
+                <Box sx={{ width: 40 }} />
+
+                {/* Center content */}
                 <Box sx={{ 
                     display: 'flex', 
                     flexDirection: 'column',
@@ -53,11 +61,24 @@ const Header = ({ lastUpdatedTimestamp }) => {
                         Prices last updated: {lastUpdatedTimestamp ? formatTimestamp(lastUpdatedTimestamp) : 'Loading...'}
                     </Typography>
                 </Box>
+
+                {/* Dark mode toggle */}
+                <Tooltip title={isDark ? 'Switch to light mode' : 'Switch to dark mode'}>
+                    <IconButton
+                        onClick={toggleMode}
+                        sx={{
+                            color: 'white',
+                            '&:hover': {
+                                backgroundColor: 'rgba(255, 255, 255, 0.15)',
+                            }
+                        }}
+                    >
+                        {isDark ? <LightMode /> : <DarkMode />}
+                    </IconButton>
+                </Tooltip>
             </Toolbar>
         </AppBar>
     );
 };
 
 export default Header;
-
-

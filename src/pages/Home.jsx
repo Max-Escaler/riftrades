@@ -6,9 +6,11 @@ import Header from "../components/elements/Header.jsx";
 import CardPanel from "../components/ui/CardPanel.jsx";
 import TradeSummary from "../components/elements/TradeSummary.jsx";
 import { fetchLastUpdatedTimestamp } from "../services/api.js";
+import { useThemeMode } from "../contexts/ThemeContext.jsx";
 
 const Home = () => {
     const [lastUpdatedTimestamp, setLastUpdatedTimestamp] = useState(null);
+    const { isDark } = useThemeMode();
 
     const theme = useTheme();
     const isMobile = useMediaQuery(theme.breakpoints.down('md'));
@@ -37,6 +39,11 @@ const Home = () => {
         fetchTimestamp();
     }, []);
 
+    // Background gradients based on theme
+    const bgGradient = isDark 
+        ? 'linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16132b 100%)'
+        : 'linear-gradient(135deg, #f5f3ff 0%, #ede9fe 50%, #fae8ff 100%)';
+
     if (error) {
         return (
             <Box sx={{ 
@@ -45,7 +52,7 @@ const Home = () => {
                 height: '100vh', 
                 alignItems: 'center', 
                 justifyContent: 'center',
-                background: 'linear-gradient(135deg, #f5f3ff 0%, #ede9fe 50%, #fae8ff 100%)'
+                background: bgGradient
             }}>
                 <Typography variant="h6" color="error" sx={{ mb: 2 }}>
                     Error loading card data
@@ -66,7 +73,7 @@ const Home = () => {
             flexDirection: 'column', 
             height: '100vh', 
             width: '100%',
-            background: 'linear-gradient(135deg, #f5f3ff 0%, #ede9fe 50%, #fae8ff 100%)',
+            background: bgGradient,
             backgroundAttachment: 'fixed'
         }}>
             <Header 
@@ -136,5 +143,3 @@ const Home = () => {
 };
 
 export default Home;
-
-

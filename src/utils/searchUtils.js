@@ -92,14 +92,21 @@ export const highlightMatch = (text, searchTerm) => {
  * Adapted for Riftbound card types
  * @param {string} subTypeName - Card's subTypeName field (foil type)
  * @param {string} rarity - Card's rarity field
+ * @param {boolean} isDark - Whether dark mode is active
  * @returns {Object} Object with background and backgroundHover properties
  */
-export const getCardGradient = (subTypeName, rarity = '') => {
+export const getCardGradient = (subTypeName, rarity = '', isDark = false) => {
     const subType = (subTypeName || '').toLowerCase();
     const rarityLower = (rarity || '').toLowerCase();
     
     // Foil variants - cosmic/ethereal theme
     if (subType.includes('foil') || subType.includes('holo')) {
+        if (isDark) {
+            return {
+                background: 'linear-gradient(135deg, #2a2040 0%, #352535 20%, #203040 40%, #253530 60%, #352530 80%, #2a2040 100%)',
+                backgroundHover: 'linear-gradient(135deg, #352550 0%, #402a40 20%, #253550 40%, #304040 60%, #402a40 80%, #352550 100%)'
+            };
+        }
         return {
             background: 'linear-gradient(135deg, #e8e0ff 0%, #fff0f5 20%, #e0f5ff 40%, #f0ffe0 60%, #ffe0f0 80%, #e8e0ff 100%)',
             backgroundHover: 'linear-gradient(135deg, #d8d0ff 0%, #ffe0e8 20%, #d0e8ff 40%, #e0ffd0 60%, #ffd0e0 80%, #d8d0ff 100%)'
@@ -115,6 +122,12 @@ export const getCardGradient = (subTypeName, rarity = '') => {
     }
     
     // Normal cards - clean gradient
+    if (isDark) {
+        return {
+            background: 'linear-gradient(135deg, #1a1a2e 0%, #222238 100%)',
+            backgroundHover: 'linear-gradient(135deg, #222238 0%, #2a2a42 100%)'
+        };
+    }
     return {
         background: 'linear-gradient(135deg, #ffffff 0%, #f8f8ff 100%)',
         backgroundHover: 'linear-gradient(135deg, #f8f8ff 0%, #f0f0ff 100%)'

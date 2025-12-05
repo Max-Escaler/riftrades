@@ -18,6 +18,7 @@ import { formatCurrency } from "../../utils/helpers.js";
 import { getCardGradient } from "../../utils/searchUtils.js";
 import { SearchInput, SearchDialog } from "../search";
 import { usePriceType } from "../../contexts/PriceContext.jsx";
+import { useThemeMode } from "../../contexts/ThemeContext.jsx";
 
 const CardList = ({ 
     cards, 
@@ -36,6 +37,7 @@ const CardList = ({
     const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
     const [searchDialogOpen, setSearchDialogOpen] = useState(false);
     const { priceSource } = usePriceType();
+    const { isDark } = useThemeMode();
 
     // Format price based on source
     const formatPrice = (amount) => {
@@ -88,7 +90,7 @@ const CardList = ({
             }
         }}>
             {cards.map((card, index) => {
-                const gradient = getCardGradient(card.subTypeName);
+                const gradient = getCardGradient(card.subTypeName, '', isDark);
                 return (
                     <ListItem
                         key={`${card.name}-${index}`}
@@ -248,12 +250,12 @@ const CardList = ({
                 border: '2px dashed rgba(99, 102, 241, 0.2)',
                 borderRadius: 2,
                 mb: 0,
-                backgroundColor: 'rgba(255, 255, 255, 0.6)',
+                backgroundColor: isDark ? 'rgba(30, 30, 50, 0.6)' : 'rgba(255, 255, 255, 0.6)',
                 p: { xs: 1, sm: 1.25, md: 1.5, lg: 1.75, xl: 2 },
                 width: '100%',
                 transition: 'all 0.25s ease',
                 '&:hover': {
-                    backgroundColor: '#ffffff',
+                    backgroundColor: isDark ? 'rgba(40, 40, 60, 0.8)' : '#ffffff',
                     borderColor: '#6366f1',
                     boxShadow: '0 2px 8px rgba(99, 102, 241, 0.1)'
                 }
@@ -268,12 +270,12 @@ const CardList = ({
                             alignItems: 'center',
                             gap: 1,
                             p: 1.5,
-                            border: '1px solid #e0e0e0',
+                            border: isDark ? '1px solid #3a3a5a' : '1px solid #e0e0e0',
                             borderRadius: 1,
-                            backgroundColor: '#f5f5f5',
+                            backgroundColor: isDark ? '#2a2a40' : '#f5f5f5',
                             cursor: 'pointer',
                             '&:hover': {
-                                backgroundColor: '#e0e0e0'
+                                backgroundColor: isDark ? '#3a3a50' : '#e0e0e0'
                             },
                             transition: 'background-color 0.2s ease'
                         }}

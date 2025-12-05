@@ -1,6 +1,7 @@
 import React from 'react';
 import { Box, Paper, Typography } from '@mui/material';
 import CardList from './CardList.jsx';
+import { useThemeMode } from "../../contexts/ThemeContext.jsx";
 
 const CardPanel = ({ 
     allCards, 
@@ -17,6 +18,8 @@ const CardPanel = ({
     disabled = false,
     isLandscape = false
 }) => {
+    const { isDark } = useThemeMode();
+
     return (
         <Paper 
             elevation={isLandscape ? 3 : 0}
@@ -30,10 +33,16 @@ const CardPanel = ({
                 flexDirection: 'column',
                 transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
                 borderRadius: isLandscape ? 3 : 0,
-                border: isLandscape ? '2px solid rgba(99, 102, 241, 0.1)' : '1px solid rgba(99, 102, 241, 0.15)',
-                borderTop: isLandscape ? '2px solid rgba(99, 102, 241, 0.1)' : '4px solid #6366f1',
+                border: isLandscape 
+                    ? `2px solid ${isDark ? 'rgba(129, 140, 248, 0.15)' : 'rgba(99, 102, 241, 0.1)'}` 
+                    : `1px solid ${isDark ? 'rgba(129, 140, 248, 0.2)' : 'rgba(99, 102, 241, 0.15)'}`,
+                borderTop: isLandscape 
+                    ? `2px solid ${isDark ? 'rgba(129, 140, 248, 0.15)' : 'rgba(99, 102, 241, 0.1)'}` 
+                    : `4px solid ${isDark ? '#818cf8' : '#6366f1'}`,
                 boxSizing: 'border-box',
-                background: 'linear-gradient(180deg, #ffffff 0%, #fafafa 100%)',
+                background: isDark 
+                    ? 'linear-gradient(180deg, #1a1a2e 0%, #16162a 100%)' 
+                    : 'linear-gradient(180deg, #ffffff 0%, #fafafa 100%)',
                 boxShadow: isLandscape 
                     ? '0 8px 24px rgba(99, 102, 241, 0.12)' 
                     : '0 2px 8px rgba(99, 102, 241, 0.08)',
@@ -42,7 +51,7 @@ const CardPanel = ({
                         ? '0 12px 32px rgba(99, 102, 241, 0.18)' 
                         : '0 4px 12px rgba(99, 102, 241, 0.12)',
                     transform: isLandscape ? 'translateY(-2px)' : 'none',
-                    borderTopColor: '#a855f7'
+                    borderTopColor: isDark ? '#c084fc' : '#a855f7'
                 }
             }}
         >
@@ -54,14 +63,14 @@ const CardPanel = ({
                 transition: 'all 0.3s ease',
                 width: '100%',
                 pb: 1.5,
-                borderBottom: '2px solid rgba(99, 102, 241, 0.1)'
+                borderBottom: `2px solid ${isDark ? 'rgba(129, 140, 248, 0.15)' : 'rgba(99, 102, 241, 0.1)'}`
             }}>
                 <Typography 
                     variant="h6" 
                     sx={{ 
                         fontSize: { xs: '1.1rem', sm: '1.25rem', md: '1.35rem', lg: '1.5rem', xl: '1.65rem' },
                         fontWeight: 700,
-                        color: '#1a1625',
+                        color: isDark ? '#f0f0f5' : '#1a1625',
                         letterSpacing: '-0.01em',
                         transition: 'font-size 0.3s ease'
                     }}
@@ -89,5 +98,3 @@ const CardPanel = ({
 };
 
 export default CardPanel;
-
-

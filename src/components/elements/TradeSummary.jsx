@@ -24,6 +24,7 @@ import {
 } from '@mui/icons-material';
 import { formatCurrency } from "../../utils/helpers.js";
 import { usePriceType } from "../../contexts/PriceContext.jsx";
+import { useThemeMode } from "../../contexts/ThemeContext.jsx";
 
 const TradeSummary = ({ 
     haveList, 
@@ -40,6 +41,7 @@ const TradeSummary = ({
     hasLoadedFromURL
 }) => {
     const { priceType, setPriceType, priceSource, setPriceSource } = usePriceType();
+    const { isDark } = useThemeMode();
     const [showShareDialog, setShowShareDialog] = useState(false);
     const [shareURL, setShareURL] = useState('');
     const [copySuccess, setCopySuccess] = useState(false);
@@ -166,20 +168,26 @@ const TradeSummary = ({
             py: { xs: 0.25, sm: 0.5 },
             fontSize: { xs: '0.65rem', sm: '0.7rem' },
             textTransform: 'none',
-            border: '1px solid rgba(99, 102, 241, 0.3)',
-            color: '#6366f1',
+            border: isDark ? '1px solid rgba(129, 140, 248, 0.4)' : '1px solid rgba(99, 102, 241, 0.3)',
+            color: isDark ? '#a5b4fc' : '#6366f1',
             '&.Mui-selected': {
-                backgroundColor: '#6366f1',
-                color: '#ffffff',
+                backgroundColor: isDark ? '#818cf8' : '#6366f1',
+                color: isDark ? '#0f0f23' : '#ffffff',
                 '&:hover': {
-                    backgroundColor: '#4f46e5'
+                    backgroundColor: isDark ? '#a5b4fc' : '#4f46e5'
                 }
             },
             '&:hover': {
-                backgroundColor: 'rgba(99, 102, 241, 0.08)'
+                backgroundColor: isDark ? 'rgba(129, 140, 248, 0.15)' : 'rgba(99, 102, 241, 0.08)'
             }
         }
     };
+
+    // Theme-aware colors
+    const textColor = isDark ? '#f0f0f5' : '#1a1625';
+    const bgGradient = isLandscape 
+        ? (isDark ? 'linear-gradient(180deg, #1a1a2e 0%, #252540 100%)' : 'linear-gradient(180deg, #ffffff 0%, #faf5ff 100%)')
+        : (isDark ? 'linear-gradient(90deg, #252540 0%, #1a1a2e 50%, #252540 100%)' : 'linear-gradient(90deg, #faf5ff 0%, #ffffff 50%, #faf5ff 100%)');
 
     return (
         <>
@@ -190,13 +198,11 @@ const TradeSummary = ({
             alignItems: 'center',
             gap: 0,
             p: isLandscape ? 2.5 : 0,
-            background: isLandscape 
-                ? 'linear-gradient(180deg, #ffffff 0%, #faf5ff 100%)'
-                : 'linear-gradient(90deg, #faf5ff 0%, #ffffff 50%, #faf5ff 100%)',
-            borderTop: isLandscape ? 'none' : '3px solid rgba(168, 85, 247, 0.5)',
-            borderBottom: isLandscape ? 'none' : '3px solid rgba(168, 85, 247, 0.5)',
+            background: bgGradient,
+            borderTop: isLandscape ? 'none' : `3px solid ${isDark ? 'rgba(168, 85, 247, 0.3)' : 'rgba(168, 85, 247, 0.5)'}`,
+            borderBottom: isLandscape ? 'none' : `3px solid ${isDark ? 'rgba(168, 85, 247, 0.3)' : 'rgba(168, 85, 247, 0.5)'}`,
             borderRadius: isLandscape ? 3 : 0,
-            border: isLandscape ? '2px solid rgba(99, 102, 241, 0.15)' : 'none',
+            border: isLandscape ? `2px solid ${isDark ? 'rgba(99, 102, 241, 0.25)' : 'rgba(99, 102, 241, 0.15)'}` : 'none',
             width: isLandscape ? '280px' : '100%',
             minWidth: isLandscape ? '280px' : 'auto',
             maxWidth: isLandscape ? '320px' : '100%',
@@ -261,7 +267,7 @@ const TradeSummary = ({
             }}>
                 <Typography variant="h6" sx={{ 
                     fontWeight: 'medium', 
-                    color: '#1a1625', 
+                    color: textColor, 
                     fontSize: isLandscape ? '0.75rem' : { xs: '0.8rem', sm: '0.9rem' },
                     textAlign: 'center'
                 }}>
@@ -282,9 +288,11 @@ const TradeSummary = ({
                 gap: isLandscape ? 1 : 1,
                 px: isLandscape ? 2 : { xs: 1 },
                 py: isLandscape ? 2 : { xs: 0.75 },
-                background: 'linear-gradient(135deg, #ffffff 0%, #fafafa 100%)',
-                borderTop: isLandscape ? 'none' : '2px solid rgba(99, 102, 241, 0.1)',
-                borderBottom: isLandscape ? 'none' : '2px solid rgba(99, 102, 241, 0.1)',
+                background: isDark 
+                    ? 'linear-gradient(135deg, #1a1a2e 0%, #222238 100%)' 
+                    : 'linear-gradient(135deg, #ffffff 0%, #fafafa 100%)',
+                borderTop: isLandscape ? 'none' : `2px solid ${isDark ? 'rgba(99, 102, 241, 0.2)' : 'rgba(99, 102, 241, 0.1)'}`,
+                borderBottom: isLandscape ? 'none' : `2px solid ${isDark ? 'rgba(99, 102, 241, 0.2)' : 'rgba(99, 102, 241, 0.1)'}`,
                 borderRadius: isLandscape ? 2 : 0,
                 mx: isLandscape ? 0 : 0,
                 my: isLandscape ? 1 : 0,
@@ -346,7 +354,7 @@ const TradeSummary = ({
                 }}>
                     <Typography variant="h6" sx={{ 
                         fontWeight: 'bold', 
-                        color: '#1a1625', 
+                        color: textColor, 
                         fontSize: isLandscape ? '0.75rem' : { xs: '0.8rem' },
                         textAlign: 'center'
                     }}>
@@ -413,7 +421,7 @@ const TradeSummary = ({
             }}>
                 <Typography variant="h6" sx={{ 
                     fontWeight: 'medium', 
-                    color: '#1a1625', 
+                    color: textColor, 
                     fontSize: isLandscape ? '0.75rem' : { xs: '0.8rem', sm: '0.9rem' },
                     textAlign: 'center'
                 }}>
@@ -465,17 +473,17 @@ const TradeSummary = ({
                             onClick={handleShare}
                             disabled={!hasCards}
                             sx={{
-                                borderColor: '#6366f1',
-                                color: '#6366f1',
+                                borderColor: isDark ? '#818cf8' : '#6366f1',
+                                color: isDark ? '#a5b4fc' : '#6366f1',
                                 fontSize: isLandscape ? '0.7rem' : '0.75rem',
                                 px: isLandscape ? 1.5 : 2,
                                 '&:hover': {
-                                    borderColor: '#4f46e5',
-                                    backgroundColor: 'rgba(99, 102, 241, 0.08)',
+                                    borderColor: isDark ? '#a5b4fc' : '#4f46e5',
+                                    backgroundColor: isDark ? 'rgba(129, 140, 248, 0.15)' : 'rgba(99, 102, 241, 0.08)',
                                 },
                                 '&:disabled': {
-                                    borderColor: 'rgba(99, 102, 241, 0.3)',
-                                    color: 'rgba(99, 102, 241, 0.3)',
+                                    borderColor: isDark ? 'rgba(129, 140, 248, 0.3)' : 'rgba(99, 102, 241, 0.3)',
+                                    color: isDark ? 'rgba(129, 140, 248, 0.3)' : 'rgba(99, 102, 241, 0.3)',
                                 }
                             }}
                         >

@@ -41,22 +41,27 @@ export const CardThumbnail = ({ imageUrl, alt, size = 40, onClick }) => {
                     width: size,
                     height: size * 1.4,
                     borderRadius: 1,
-                    backgroundColor: isDark ? 'rgba(58, 154, 186, 0.1)' : 'rgba(26, 90, 122, 0.08)',
+                    backgroundColor: isDark ? 'rgba(58, 154, 186, 0.15)' : 'rgba(26, 90, 122, 0.1)',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
                     flexShrink: 0,
-                    cursor: onClick ? 'pointer' : 'default'
+                    cursor: onClick ? 'pointer' : 'default',
+                    border: isDark ? '1px solid rgba(58, 154, 186, 0.2)' : '1px solid rgba(26, 90, 122, 0.15)'
                 }}
             >
                 <Box
+                    component="span"
                     sx={{
-                        width: '60%',
-                        height: '60%',
-                        borderRadius: 0.5,
-                        backgroundColor: isDark ? 'rgba(58, 154, 186, 0.2)' : 'rgba(26, 90, 122, 0.15)'
+                        fontSize: '0.5rem',
+                        color: isDark ? 'rgba(160, 196, 212, 0.5)' : 'rgba(26, 90, 122, 0.4)',
+                        textAlign: 'center',
+                        lineHeight: 1.1,
+                        px: 0.25
                     }}
-                />
+                >
+                    No Image
+                </Box>
             </Box>
         );
     }
@@ -293,10 +298,12 @@ export const CardImageModal = ({ open, onClose, imageUrl, cardName }) => {
                                     alignItems: 'center',
                                     justifyContent: 'center',
                                     backgroundColor: isDark ? '#0d3050' : '#e8f4f8',
-                                    color: isDark ? '#a0c4d4' : '#1a4a6e'
+                                    color: isDark ? '#a0c4d4' : '#1a4a6e',
+                                    textAlign: 'center',
+                                    px: 3
                                 }}
                             >
-                                Failed to load image
+                                No Card Image Available
                             </Box>
                         )}
                         <img

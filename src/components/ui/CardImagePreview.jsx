@@ -235,9 +235,7 @@ export const CardImageModal = ({ open, onClose, imageUrl, cardName }) => {
                 <Box
                     sx={{
                         position: 'relative',
-                        outline: 'none',
-                        maxWidth: '90vw',
-                        maxHeight: '90vh'
+                        outline: 'none'
                     }}
                 >
                     {/* Close button */}
@@ -267,15 +265,16 @@ export const CardImageModal = ({ open, onClose, imageUrl, cardName }) => {
                             border: `3px solid ${isDark ? '#d4a853' : '#1a5a7a'}`,
                             backgroundColor: isDark ? '#0d3050' : '#ffffff',
                             position: 'relative',
-                            minWidth: 280,
-                            minHeight: 392
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center'
                         }}
                     >
                         {!loaded && !error && (
                             <Box
                                 sx={{
-                                    position: 'absolute',
-                                    inset: 0,
+                                    width: 280,
+                                    height: 392,
                                     display: 'flex',
                                     alignItems: 'center',
                                     justifyContent: 'center',
@@ -306,9 +305,8 @@ export const CardImageModal = ({ open, onClose, imageUrl, cardName }) => {
                             onLoad={() => setLoaded(true)}
                             onError={() => setError(true)}
                             style={{
-                                maxWidth: '80vw',
-                                maxHeight: '80vh',
-                                objectFit: 'contain',
+                                maxWidth: '85vw',
+                                maxHeight: '85vh',
                                 display: loaded ? 'block' : 'none'
                             }}
                         />

@@ -4,7 +4,81 @@
  */
 
 /**
+ * Normalize a string for fuzzy matching
+ * - Lowercase
+ * - Remove special characters (apostrophes, hyphens, etc.)
+ * - Collapse multiple spaces
+ */
+const normalizeForSearch = (str) => {
+    if (!str) return '';
+    return str
+        .toLowerCase()
+        .replace(/[''`]/g, '')      // Remove apostrophes
+        .replace(/[-–—]/g, ' ')     // Replace hyphens with spaces
+        .replace(/[^\w\s]/g, ' ')   // Remove other special chars
+        .replace(/\s+/g, ' ')       // Collapse multiple spaces
+        .trim();
+};
+
+/**
+ * Check if all search words are found in the text (order-independent)
+ * @param {string} text - The text to search in
+ * @param {string[]} searchWords - Array of search words
+ * @returns {boolean} True if all words are found
+ */
+const matchesAllWords = (text, searchWords) => {
+    const normalizedText = normalizeForSearch(text);
+    return searchWords.every(word => normalizedText.includes(word));
+};
+
+/**
+ * Calculate a match score for sorting results
+ * Higher score = better match
+ */
+const calculateMatchScore = (label, searchWords, originalTerm) => {
+    const normalizedLabel = normalizeForSearch(label);
+    const lowerLabel = label.toLowerCase();
+    let score = 0;
+    
+    // Exact match (normalized) gets highest score
+    if (normalizedLabel === normalizeForSearch(originalTerm)) {
+        score += 1000;
+    }
+    
+    // Original term appears as-is (substring match)
+    if (lowerLabel.includes(originalTerm.toLowerCase())) {
+        score += 500;
+    }
+    
+    // Label starts with first search word
+    if (normalizedLabel.startsWith(searchWords[0])) {
+        score += 200;
+    }
+    
+    // Words appear in order
+    let lastIndex = -1;
+    let inOrder = true;
+    for (const word of searchWords) {
+        const index = normalizedLabel.indexOf(word);
+        if (index <= lastIndex) {
+            inOrder = false;
+            break;
+        }
+        lastIndex = index;
+    }
+    if (inOrder) {
+        score += 100;
+    }
+    
+    // Bonus for shorter labels (more specific matches)
+    score += Math.max(0, 50 - label.length);
+    
+    return score;
+};
+
+/**
  * Filter card options based on search input
+ * Supports fuzzy matching: word order independent, ignores special characters
  * @param {Array} options - Array of card option objects
  * @param {string} searchTerm - Search string
  * @param {number} limit - Maximum number of results to return
@@ -15,33 +89,30 @@ export const filterCardOptions = (options, searchTerm, limit = 10) => {
         return options.slice(0, Math.min(limit, 20));
     }
 
-    const term = searchTerm.toLowerCase().trim();
+    const normalizedTerm = normalizeForSearch(searchTerm);
+    const searchWords = normalizedTerm.split(' ').filter(w => w.length > 0);
     
-    // Filter options that contain the search term
+    if (searchWords.length === 0) {
+        return options.slice(0, Math.min(limit, 20));
+    }
+    
+    // Filter options where all search words are found
     const filtered = options.filter(option => {
-        const label = option.label?.toLowerCase() || '';
-        return label.includes(term);
+        const label = option.label || '';
+        return matchesAllWords(label, searchWords);
     });
 
-    // Sort with priority: exact match > starts with > contains
+    // Sort by match score (best matches first)
     const sorted = filtered.sort((a, b) => {
-        const aLabel = a.label?.toLowerCase() || '';
-        const bLabel = b.label?.toLowerCase() || '';
+        const scoreA = calculateMatchScore(a.label || '', searchWords, searchTerm);
+        const scoreB = calculateMatchScore(b.label || '', searchWords, searchTerm);
         
-        // Check for exact match
-        const aExact = aLabel === term;
-        const bExact = bLabel === term;
-        if (aExact && !bExact) return -1;
-        if (!aExact && bExact) return 1;
+        if (scoreB !== scoreA) {
+            return scoreB - scoreA; // Higher score first
+        }
         
-        // Check for starts with
-        const aStarts = aLabel.startsWith(term);
-        const bStarts = bLabel.startsWith(term);
-        if (aStarts && !bStarts) return -1;
-        if (!aStarts && bStarts) return 1;
-        
-        // Both contain but don't start with - sort alphabetically
-        return aLabel.localeCompare(bLabel);
+        // Alphabetical as tiebreaker
+        return (a.label || '').localeCompare(b.label || '');
     });
 
     return sorted.slice(0, limit);
@@ -49,6 +120,7 @@ export const filterCardOptions = (options, searchTerm, limit = 10) => {
 
 /**
  * Highlight matching text in a string
+ * Highlights all occurrences of search words
  * @param {string} text - Original text
  * @param {string} searchTerm - Term to highlight
  * @returns {Array} Array of text segments with highlight flags
@@ -58,33 +130,68 @@ export const highlightMatch = (text, searchTerm) => {
         return [{ text, highlight: false }];
     }
 
-    const term = searchTerm.toLowerCase();
-    const lowerText = text.toLowerCase();
-    const index = lowerText.indexOf(term);
-
-    if (index === -1) {
+    const normalizedTerm = normalizeForSearch(searchTerm);
+    const searchWords = normalizedTerm.split(' ').filter(w => w.length > 0);
+    
+    if (searchWords.length === 0) {
         return [{ text, highlight: false }];
     }
 
+    // Create a map of character positions to highlight
+    const highlightMap = new Array(text.length).fill(false);
+    const lowerText = text.toLowerCase();
+    const normalizedText = normalizeForSearch(text);
+    
+    // For each search word, find and mark matching positions
+    for (const word of searchWords) {
+        // Try to find in normalized text and map back to original positions
+        let searchIndex = 0;
+        let normalizedIndex = 0;
+        
+        // Build a mapping from normalized positions to original positions
+        const positionMap = [];
+        for (let i = 0; i < text.length; i++) {
+            const char = text[i].toLowerCase();
+            const normalizedChar = normalizeForSearch(char);
+            if (normalizedChar.length > 0) {
+                positionMap.push(i);
+            }
+        }
+        
+        // Find word in normalized text
+        let wordIndex = normalizedText.indexOf(word);
+        while (wordIndex !== -1) {
+            // Map normalized positions back to original text
+            for (let i = 0; i < word.length && wordIndex + i < positionMap.length; i++) {
+                const originalPos = positionMap[wordIndex + i];
+                if (originalPos !== undefined) {
+                    highlightMap[originalPos] = true;
+                }
+            }
+            wordIndex = normalizedText.indexOf(word, wordIndex + 1);
+        }
+    }
+    
+    // Convert highlight map to segments
     const segments = [];
+    let currentHighlight = highlightMap[0];
+    let currentText = text[0] || '';
     
-    if (index > 0) {
-        segments.push({ text: text.slice(0, index), highlight: false });
+    for (let i = 1; i < text.length; i++) {
+        if (highlightMap[i] === currentHighlight) {
+            currentText += text[i];
+        } else {
+            segments.push({ text: currentText, highlight: currentHighlight });
+            currentHighlight = highlightMap[i];
+            currentText = text[i];
+        }
     }
     
-    segments.push({ 
-        text: text.slice(index, index + searchTerm.length), 
-        highlight: true 
-    });
-    
-    if (index + searchTerm.length < text.length) {
-        segments.push({ 
-            text: text.slice(index + searchTerm.length), 
-            highlight: false 
-        });
+    if (currentText) {
+        segments.push({ text: currentText, highlight: currentHighlight });
     }
-
-    return segments;
+    
+    return segments.length > 0 ? segments : [{ text, highlight: false }];
 };
 
 /**

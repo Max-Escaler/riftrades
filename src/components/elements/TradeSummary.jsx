@@ -3,22 +3,17 @@ import {
     Box, 
     Typography, 
     Chip, 
-    Button, 
-    Snackbar, 
-    Alert, 
+    Button,
     Tooltip,
     IconButton,
     Dialog,
     DialogTitle,
     DialogContent,
     DialogActions,
-    TextField,
     ToggleButtonGroup,
     ToggleButton
 } from '@mui/material';
 import { 
-    Share as ShareIcon, 
-    ContentCopy as CopyIcon,
     Warning as WarningIcon,
     Clear as ClearIcon
 } from '@mui/icons-material';
@@ -33,25 +28,13 @@ const TradeSummary = ({
     wantTotal, 
     diff, 
     isLandscape = false,
-    generateShareURL,
     clearURLTradeData,
-    getURLSizeInfo,
-    testURLRoundTrip,
     urlTradeData,
     hasLoadedFromURL
 }) => {
     const { priceType, setPriceType, priceSource, setPriceSource } = usePriceType();
     const { isDark } = useThemeMode();
-    const [showShareDialog, setShowShareDialog] = useState(false);
-    const [shareURL, setShareURL] = useState('');
-    const [copySuccess, setCopySuccess] = useState(false);
-    const [shareError, setShareError] = useState('');
     const [showClearConfirm, setShowClearConfirm] = useState(false);
-
-    const hasCards = haveList.length > 0 || wantList.length > 0;
-
-    // Currency symbol based on price source
-    const currencySymbol = priceSource === 'cardmarket' ? '€' : '$';
 
     const handlePriceTypeChange = (event, newPriceType) => {
         if (newPriceType !== null) {
@@ -76,77 +59,6 @@ const TradeSummary = ({
             }).format(amount);
         }
         return formatCurrency(amount);
-    };
-
-    const handleShare = async () => {
-        try {
-            const testResult = testURLRoundTrip();
-            
-            if (!testResult.success) {
-                setShareError(`URL encoding test failed: ${testResult.error}`);
-                return;
-            }
-
-            const url = generateShareURL();
-            if (!url) {
-                setShareError('Failed to generate share URL');
-                return;
-            }
-
-            const sizeInfo = getURLSizeInfo();
-            
-            setShareURL(url);
-            setShowShareDialog(true);
-            
-            if (sizeInfo.isTooLarge) {
-                setShareError('Trade is too complex for URL sharing (>2000 characters)');
-            } else if (sizeInfo.isLarge) {
-                setShareError('Trade URL is long (>1500 characters), may not work in all browsers');
-            } else {
-                setShareError('');
-            }
-        } catch (error) {
-            setShareError('Failed to generate share URL: ' + error.message);
-        }
-    };
-
-    const handleCopyURL = async () => {
-        try {
-            if (navigator.clipboard) {
-                await navigator.clipboard.writeText(shareURL);
-                setCopySuccess(true);
-                setTimeout(() => setCopySuccess(false), 3000);
-            } else {
-                const textArea = document.createElement('textarea');
-                textArea.value = shareURL;
-                document.body.appendChild(textArea);
-                textArea.select();
-                document.execCommand('copy');
-                document.body.removeChild(textArea);
-                setCopySuccess(true);
-                setTimeout(() => setCopySuccess(false), 3000);
-            }
-        } catch (err) {
-            console.error('Failed to copy URL:', err);
-            setShareError('Failed to copy URL to clipboard');
-        }
-    };
-
-    const handleNativeShare = async () => {
-        if (navigator.share) {
-            try {
-                await navigator.share({
-                    title: 'Rift Trade Proposal',
-                    text: `Trade proposal: ${haveList.length} cards (${formatPrice(haveTotal.toFixed(2))}) for ${wantList.length} cards (${formatPrice(wantTotal.toFixed(2))})`,
-                    url: shareURL
-                });
-                setShowShareDialog(false);
-            } catch (err) {
-                if (err.name !== 'AbortError') {
-                    setShareError('Failed to share: ' + err.message);
-                }
-            }
-        }
     };
 
     const handleClearTradeData = () => {
@@ -453,110 +365,7 @@ const TradeSummary = ({
                     </Typography>
                 </Box>
             )}
-
-            {/* Share Actions */}
-            <Box sx={{
-                display: 'flex',
-                gap: 1,
-                px: isLandscape ? 1 : { xs: 0.5, sm: 0.75, md: 1 },
-                py: isLandscape ? 1.5 : 1,
-                borderTop: `1px solid ${isDark ? 'rgba(58, 154, 186, 0.15)' : 'rgba(26, 90, 122, 0.1)'}`,
-                flexDirection: isLandscape ? 'column' : 'row',
-                justifyContent: 'center'
-            }}>
-                <Tooltip title="Share this trade via URL">
-                    <span>
-                        <Button
-                            variant="outlined"
-                            size="small"
-                            startIcon={<ShareIcon />}
-                            onClick={handleShare}
-                            disabled={!hasCards}
-                            sx={{
-                                borderColor: isDark ? '#d4a853' : '#1a5a7a',
-                                color: isDark ? '#e5c078' : '#1a5a7a',
-                                fontSize: isLandscape ? '0.7rem' : '0.75rem',
-                                px: isLandscape ? 1.5 : 2,
-                                '&:hover': {
-                                    borderColor: isDark ? '#e5c078' : '#0d4560',
-                                    backgroundColor: isDark ? 'rgba(212, 168, 83, 0.15)' : 'rgba(26, 90, 122, 0.08)',
-                                },
-                                '&:disabled': {
-                                    borderColor: isDark ? 'rgba(212, 168, 83, 0.3)' : 'rgba(26, 90, 122, 0.3)',
-                                    color: isDark ? 'rgba(212, 168, 83, 0.3)' : 'rgba(26, 90, 122, 0.3)',
-                                }
-                            }}
-                        >
-                            Share
-                        </Button>
-                    </span>
-                </Tooltip>
-            </Box>
         </Box>
-
-        {/* Share Dialog */}
-        <Dialog open={showShareDialog} onClose={() => setShowShareDialog(false)} maxWidth="md" fullWidth>
-            <DialogTitle>Share Trade</DialogTitle>
-            <DialogContent>
-                <Box sx={{ mb: 2 }}>
-                    <Typography variant="body2" color="text.secondary" gutterBottom>
-                        Share this URL to send your trade proposal to others:
-                    </Typography>
-                </Box>
-                
-                {shareError && (
-                    <Alert severity={shareError.includes('too complex') ? 'error' : 'warning'} sx={{ mb: 2 }}>
-                        {shareError}
-                    </Alert>
-                )}
-                
-                <TextField
-                    fullWidth
-                    multiline
-                    rows={3}
-                    value={shareURL}
-                    variant="outlined"
-                    sx={{ mb: 2 }}
-                    InputProps={{
-                        readOnly: true,
-                        endAdornment: (
-                            <Tooltip title="Copy to clipboard">
-                                <IconButton onClick={handleCopyURL} edge="end">
-                                    <CopyIcon />
-                                </IconButton>
-                            </Tooltip>
-                        )
-                    }}
-                />
-                
-                <Box sx={{ display: 'flex', gap: 1, alignItems: 'center', mb: 1 }}>
-                    <Typography variant="caption" color="text.secondary">
-                        URL Length: {shareURL.length} characters
-                    </Typography>
-                    {shareURL.length > 1500 && (
-                        <Chip size="small" label="Long URL" color="warning" />
-                    )}
-                </Box>
-                
-                <Typography variant="caption" color="text.secondary" display="block">
-                    Trade includes {haveList.length} cards you have ({formatPrice(haveTotal.toFixed(2))}) 
-                    and {wantList.length} cards you want ({formatPrice(wantTotal.toFixed(2))})
-                </Typography>
-            </DialogContent>
-            <DialogActions>
-                <Button onClick={() => setShowShareDialog(false)}>
-                    Close
-                </Button>
-                <Button onClick={handleCopyURL} startIcon={<CopyIcon />}>
-                    Copy URL
-                </Button>
-                {navigator.share && (
-                    <Button onClick={handleNativeShare} startIcon={<ShareIcon />} variant="contained">
-                        Share
-                    </Button>
-                )}
-            </DialogActions>
-        </Dialog>
 
         {/* Clear Confirmation Dialog */}
         <Dialog open={showClearConfirm} onClose={() => setShowClearConfirm(false)}>
@@ -574,18 +383,6 @@ const TradeSummary = ({
                 </Button>
             </DialogActions>
         </Dialog>
-
-        {/* Success Snackbar */}
-        <Snackbar
-            open={copySuccess}
-            autoHideDuration={3000}
-            onClose={() => setCopySuccess(false)}
-            anchorOrigin={{ vertical: 'bottom', horizontal: 'center' }}
-        >
-            <Alert severity="success" onClose={() => setCopySuccess(false)}>
-                Trade URL copied to clipboard!
-            </Alert>
-        </Snackbar>
         </>
     );
 };

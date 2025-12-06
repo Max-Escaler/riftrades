@@ -36,6 +36,14 @@ const TradeSummary = ({
     const { isDark } = useThemeMode();
     const [showClearConfirm, setShowClearConfirm] = useState(false);
 
+    // Calculate total card count including quantities
+    const getTotalCardCount = (cardList) => {
+        return cardList.reduce((sum, card) => sum + (card.quantity || 1), 0);
+    };
+
+    const haveCardCount = getTotalCardCount(haveList);
+    const wantCardCount = getTotalCardCount(wantList);
+
     const handlePriceTypeChange = (event, newPriceType) => {
         if (newPriceType !== null) {
             setPriceType(newPriceType);
@@ -183,7 +191,7 @@ const TradeSummary = ({
                     fontSize: isLandscape ? '0.75rem' : { xs: '0.8rem', sm: '0.9rem' },
                     textAlign: 'center'
                 }}>
-                    My {haveList.length} cards
+                    My {haveCardCount} cards
                 </Typography>
                 <Chip 
                     label={formatPrice(haveTotal.toFixed(2))} 
@@ -337,7 +345,7 @@ const TradeSummary = ({
                     fontSize: isLandscape ? '0.75rem' : { xs: '0.8rem', sm: '0.9rem' },
                     textAlign: 'center'
                 }}>
-                    Their {wantList.length} cards
+                    Their {wantCardCount} cards
                 </Typography>
                 <Chip 
                     label={formatPrice(wantTotal.toFixed(2))} 

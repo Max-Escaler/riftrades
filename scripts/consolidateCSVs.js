@@ -9,7 +9,7 @@
  * Features:
  * - Processes all set_*.csv files numerically in order
  * - Preserves original CSV schema with all columns
- * - Adds metadata (_sourceFile, _setNumber) to each record
+ * - Adds metadata (_sourceFile, _setNumber, setName) to each record
  * - Assigns unique IDs to each card
  * - Includes comprehensive metadata about the consolidation process
  * 
@@ -21,6 +21,7 @@
 
 import fs from 'fs';
 import path from 'path';
+import https from 'https';
 import Papa from 'papaparse';
 import { fileURLToPath } from 'url';
 
@@ -31,6 +32,61 @@ const __dirname = path.dirname(__filename);
 const PRICE_GUIDE_DIR = path.join(__dirname, '..', 'public', 'price-guide');
 const MANIFEST_PATH = path.join(PRICE_GUIDE_DIR, 'manifest.json');
 const OUTPUT_PATH = path.join(PRICE_GUIDE_DIR, 'consolidated-data.json');
+
+// Riftbound Game ID
+const RIFTBOUND_GAME_ID = 89;
+
+/**
+ * Fetch product groups (set names) from the API
+ * @returns {Promise<Object>} Map of groupId to group name
+ */
+async function fetchProductGroups() {
+    const PRODUCT_GROUPS_URL = `https://tcgcsv.com/tcgplayer/${RIFTBOUND_GAME_ID}/groups`;
+    
+    return new Promise((resolve, reject) => {
+        console.log('📡 Fetching set names from API...');
+        
+        https.get(PRODUCT_GROUPS_URL, (res) => {
+            if (res.statusCode !== 200) {
+                console.warn(`Failed to fetch product groups: ${res.statusCode}`);
+                resolve({});
+                return;
+            }
+
+            let data = '';
+            res.on('data', (chunk) => {
+                data += chunk;
+            });
+
+            res.on('end', () => {
+                try {
+                    const json = JSON.parse(data);
+                    
+                    if (!json.success || !json.results || !Array.isArray(json.results)) {
+                        console.warn('Invalid product groups response');
+                        resolve({});
+                        return;
+                    }
+
+                    // Create a map of groupId to group name
+                    const groupMap = {};
+                    json.results.forEach(group => {
+                        groupMap[group.groupId] = group.name;
+                    });
+
+                    console.log(`   ✓ Fetched ${Object.keys(groupMap).length} set names`);
+                    resolve(groupMap);
+                } catch (err) {
+                    console.warn(`Failed to parse product groups JSON: ${err.message}`);
+                    resolve({});
+                }
+            });
+        }).on('error', (err) => {
+            console.warn(`Error fetching product groups: ${err.message}`);
+            resolve({});
+        });
+    });
+}
 
 /**
  * Parse a single CSV file and return the data
@@ -114,6 +170,9 @@ async function consolidateCSVs() {
     console.log('🌀 Starting Riftbound CSV consolidation...');
     
     try {
+        // Fetch product groups (set names) first
+        const groupMap = await fetchProductGroups();
+        
         // Load manifest
         const manifest = loadManifest();
         
@@ -138,16 +197,22 @@ async function consolidateCSVs() {
             try {
                 const csvData = await parseCSVFile(csvFile);
                 
-                // Add metadata to each record including unique ID
+                // Add metadata to each record including unique ID and set name
                 const setNumber = parseInt(fileName.match(/set_(\d+)\.csv/)?.[1] || '0');
                 const enrichedData = csvData.map((record, index) => {
                     globalCardIndex++;
+                    
+                    // Look up set name from groupId
+                    const groupId = record.groupId;
+                    const setName = groupMap[groupId] || '';
+                    
                     return {
                         // Assign unique ID first
                         _id: globalCardIndex,
                         _uniqueId: `RB${globalCardIndex.toString().padStart(6, '0')}`,
                         _sourceFile: fileName,
                         _setNumber: setNumber,
+                        _setName: setName,
                         // Spread all original card data
                         ...record
                     };
@@ -178,12 +243,13 @@ async function consolidateCSVs() {
                 schema: {
                     description: "Consolidated Riftbound card data from all CSV files",
                     metadataFields: [
-                        "_id", "_uniqueId", "_sourceFile", "_setNumber"
+                        "_id", "_uniqueId", "_sourceFile", "_setNumber", "_setName"
                     ],
                     priceFields: [
                         "lowPrice", "midPrice", "highPrice", "marketPrice", "directLowPrice"
                     ]
-                }
+                },
+                setNames: groupMap
             },
             data: allData
         };
@@ -197,6 +263,7 @@ async function consolidateCSVs() {
         console.log(`📊 Summary:`);
         console.log(`   • Files processed: ${processedFiles}`);
         console.log(`   • Total records: ${totalRecords}`);
+        console.log(`   • Set names included: ${Object.keys(groupMap).length}`);
         console.log(`   • Output file: ${OUTPUT_PATH}`);
         console.log(`   • File size: ${(fs.statSync(OUTPUT_PATH).size / 1024 / 1024).toFixed(2)} MB`);
 
@@ -220,6 +287,3 @@ if (isMainModule) {
 }
 
 export { consolidateCSVs };
-
-
-

@@ -97,9 +97,36 @@ export const highlightMatch = (text, searchTerm) => {
  */
 export const getCardGradient = (subTypeName, rarity = '', isDark = false) => {
     const subType = (subTypeName || '').toLowerCase();
-    const rarityLower = (rarity || '').toLowerCase();
     
-    // Foil variants - gold shimmer theme for Riftbound
+    // Pack Foil - subtle gold shimmer
+    if (subType.includes('pack foil')) {
+        if (isDark) {
+            return {
+                background: 'linear-gradient(135deg, #1a3040 0%, #2a3a30 50%, #3a3020 100%)',
+                backgroundHover: 'linear-gradient(135deg, #2a4050 0%, #3a4a40 50%, #4a4030 100%)'
+            };
+        }
+        return {
+            background: 'linear-gradient(135deg, #f0f8f8 0%, #f4f8f0 50%, #f8f4e8 100%)',
+            backgroundHover: 'linear-gradient(135deg, #e0f0f0 0%, #e8f0e0 50%, #f0e8d8 100%)'
+        };
+    }
+    
+    // Nexus Night / Promo - purple/special tint
+    if (subType.includes('nexus night') || subType.includes('promo')) {
+        if (isDark) {
+            return {
+                background: 'linear-gradient(135deg, #1a2040 0%, #2a2050 50%, #3a2060 100%)',
+                backgroundHover: 'linear-gradient(135deg, #2a3050 0%, #3a3060 50%, #4a3070 100%)'
+            };
+        }
+        return {
+            background: 'linear-gradient(135deg, #f4f0f8 0%, #f0e8f8 50%, #ece0f8 100%)',
+            backgroundHover: 'linear-gradient(135deg, #e8e0f0 0%, #e0d8f0 50%, #dcd0f0 100%)'
+        };
+    }
+    
+    // Generic Foil variants - gold shimmer theme for Riftbound
     if (subType.includes('foil') || subType.includes('holo')) {
         if (isDark) {
             return {
@@ -121,7 +148,7 @@ export const getCardGradient = (subTypeName, rarity = '', isDark = false) => {
         };
     }
     
-    // Normal cards - teal theme
+    // Normal cards - clean teal theme
     if (isDark) {
         return {
             background: 'linear-gradient(135deg, #0d3050 0%, #0a2540 100%)',

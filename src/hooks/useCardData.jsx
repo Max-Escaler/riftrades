@@ -68,6 +68,7 @@ const createCardObject = (row) => {
         _uniqueId: row._uniqueId || '',
         _sourceFile: row._sourceFile || '',
         _setNumber: row._setNumber || 0,
+        _setName: row._setName || '',
 
         // Core properties
         productId: row.productId || '',
@@ -109,10 +110,8 @@ const createCardObject = (row) => {
         sourceUrl: `set_${row._setNumber}`
     };
 
-    // Create display name based on available data
-    const name = card.name || '';
-    const edition = card.subTypeName || '';
-    card.displayName = edition ? `${name} (${edition})` : name;
+    // Create display name - just the card name (set name will be shown separately)
+    card.displayName = card.name || '';
 
     return card;
 };
@@ -200,16 +199,14 @@ const enhanceDisplayNames = (cards) => {
 
     // Enhance display names for cards with multiple editions
     return cards.map(card => {
-        const extNumber = card.extNumber || '';
         const subTypeName = card.subTypeName || '';
+        const setName = card._setName || '';
         
-        // Create base display name
+        // Create base display name - just the card name
         let enhancedName = card.name;
-        if (extNumber) {
-            enhancedName += ` (${extNumber})`;
-        }
         
-        const uniqueId = `${enhancedName}|${subTypeName}`;
+        // Create unique ID using name, subType, and setName
+        const uniqueId = `${enhancedName}|${subTypeName}|${setName}`;
 
         return {
             ...card,

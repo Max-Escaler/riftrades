@@ -25,6 +25,7 @@ const Home = () => {
         label: card.displayName,
         value: card._uniqueDisplayId,
         subTypeName: card.subTypeName,
+        setName: card._setName || '',
         card: card
     }));
 

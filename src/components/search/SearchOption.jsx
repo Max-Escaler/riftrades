@@ -3,7 +3,7 @@ import { Box, Typography, Chip } from '@mui/material';
 import { getCardGradient, highlightMatch } from '../../utils/searchUtils';
 import { useThemeMode } from '../../contexts/ThemeContext.jsx';
 import { usePriceType } from '../../contexts/PriceContext.jsx';
-import { CardThumbnail, CardHoverPreview } from '../ui/CardImagePreview.jsx';
+import { CardThumbnail } from '../ui/CardImagePreview.jsx';
 
 /**
  * Format a card type into a cleaner display name
@@ -26,7 +26,7 @@ const formatCardType = (subTypeName) => {
 
 /**
  * SearchOption Component
- * Renders an individual search result option with gradient support and image preview
+ * Renders an individual search result option - full width, compact design
  */
 const SearchOption = ({ 
     option, 
@@ -79,17 +79,17 @@ const SearchOption = ({
         setIsHovered(false);
     };
 
-    const optionContent = (
+    return (
         <Box
             onClick={onClick}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
             sx={{
                 px: 1.5,
-                py: 1,
+                py: 0.75,
                 cursor: 'pointer',
                 background: (isHighlighted || isHovered) ? gradient.backgroundHover : gradient.background,
-                transition: 'all 0.2s ease',
+                transition: 'all 0.15s ease',
                 borderBottom: isDark 
                     ? '1px solid rgba(58, 154, 186, 0.1)' 
                     : '1px solid rgba(26, 90, 122, 0.08)',
@@ -101,40 +101,43 @@ const SearchOption = ({
                 },
                 display: 'flex',
                 alignItems: 'center',
-                gap: 1.5
+                gap: 1,
+                width: '100%',
+                boxSizing: 'border-box'
             }}
         >
-            {/* Card thumbnail */}
+            {/* Card thumbnail - smaller */}
             <CardThumbnail 
                 imageUrl={imageUrl} 
                 alt={option.label} 
-                size={36}
+                size={28}
             />
             
-            {/* Card info: name, set, type badge */}
+            {/* Card info: name and set - takes remaining space */}
             <Box sx={{ 
-                display: 'flex', 
-                flexDirection: 'column',
-                minWidth: 0,
                 flex: 1,
-                gap: 0.25
+                minWidth: 0,
+                display: 'flex',
+                flexDirection: 'column',
+                gap: 0
             }}>
-                {/* Card name row */}
+                {/* Card name */}
                 <Box sx={{ 
                     display: 'flex', 
                     alignItems: 'center', 
-                    gap: 1,
+                    gap: 0.75,
                     minWidth: 0
                 }}>
                     <Typography
-                        variant="body2"
+                        component="span"
                         sx={{
-                            fontSize: { xs: '0.85rem', sm: '0.9rem' },
+                            fontSize: '0.8rem',
                             fontWeight: isHighlighted || isHovered ? 600 : 500,
                             color: isDark ? '#e8f4f8' : '#0a2540',
                             whiteSpace: 'nowrap',
                             overflow: 'hidden',
-                            textOverflow: 'ellipsis'
+                            textOverflow: 'ellipsis',
+                            lineHeight: 1.3
                         }}
                     >
                         {textSegments.map((segment, index) => (
@@ -145,8 +148,8 @@ const SearchOption = ({
                                     backgroundColor: segment.highlight 
                                         ? (isDark ? 'rgba(212, 168, 83, 0.3)' : 'rgba(26, 90, 122, 0.15)')
                                         : 'transparent',
-                                    padding: segment.highlight ? '2px 4px' : '0',
-                                    borderRadius: segment.highlight ? '3px' : '0'
+                                    padding: segment.highlight ? '1px 3px' : '0',
+                                    borderRadius: segment.highlight ? '2px' : '0'
                                 }}
                             >
                                 {segment.text}
@@ -154,14 +157,14 @@ const SearchOption = ({
                         ))}
                     </Typography>
                     
-                    {/* Card Type Badge */}
+                    {/* Card Type Badge - inline, smaller */}
                     {cardType && (
                         <Chip
                             label={cardType}
                             size="small"
                             sx={{
-                                height: '18px',
-                                fontSize: '0.6rem',
+                                height: '16px',
+                                fontSize: '0.55rem',
                                 fontWeight: 600,
                                 backgroundColor: isDark 
                                     ? 'rgba(212, 168, 83, 0.25)' 
@@ -171,7 +174,8 @@ const SearchOption = ({
                                     ? '1px solid rgba(212, 168, 83, 0.4)' 
                                     : '1px solid rgba(26, 90, 122, 0.25)',
                                 '& .MuiChip-label': {
-                                    px: 0.75
+                                    px: 0.5,
+                                    py: 0
                                 },
                                 flexShrink: 0
                             }}
@@ -182,11 +186,11 @@ const SearchOption = ({
                 {/* Set name - smaller, subtle text */}
                 {setName && (
                     <Typography
-                        variant="caption"
+                        component="span"
                         sx={{
-                            fontSize: '0.7rem',
+                            fontSize: '0.65rem',
                             fontWeight: 400,
-                            color: isDark ? 'rgba(160, 196, 212, 0.7)' : 'rgba(26, 74, 110, 0.6)',
+                            color: isDark ? 'rgba(160, 196, 212, 0.6)' : 'rgba(26, 74, 110, 0.5)',
                             whiteSpace: 'nowrap',
                             overflow: 'hidden',
                             textOverflow: 'ellipsis',
@@ -198,11 +202,11 @@ const SearchOption = ({
                 )}
             </Box>
             
-            {/* Right side: Price */}
+            {/* Price - right aligned */}
             <Typography
-                variant="body2"
+                component="span"
                 sx={{
-                    fontSize: { xs: '0.8rem', sm: '0.85rem' },
+                    fontSize: '0.75rem',
                     fontWeight: 600,
                     color: isDark ? '#5abada' : '#1a5a7a',
                     whiteSpace: 'nowrap',
@@ -212,17 +216,6 @@ const SearchOption = ({
                 {formatPrice(price)}
             </Typography>
         </Box>
-    );
-
-    // Wrap with hover preview for larger screens
-    return (
-        <CardHoverPreview 
-            imageUrl={imageUrl} 
-            alt={option.label}
-            placement="right"
-        >
-            {optionContent}
-        </CardHoverPreview>
     );
 };
 

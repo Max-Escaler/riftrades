@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { 
     Box, 
     Modal, 
@@ -10,24 +10,13 @@ import CloseIcon from '@mui/icons-material/Close';
 import { useThemeMode } from '../../contexts/ThemeContext.jsx';
 
 /**
- * Get higher resolution image URL from TCGPlayer CDN
- * @param {string} imageUrl - Original image URL (usually 200w)
- * @param {string} size - Desired size: 'thumbnail' (200w), 'medium' (400w), 'large' (original)
+ * Get image URL - TCGPlayer CDN uses _200w suffix
+ * For larger sizes, we just use the original URL as-is since higher res might not exist
  */
 export const getImageUrl = (imageUrl, size = 'medium') => {
     if (!imageUrl) return null;
-    
-    switch (size) {
-        case 'thumbnail':
-            return imageUrl.replace(/_\d+w\.jpg$/, '_200w.jpg');
-        case 'medium':
-            return imageUrl.replace(/_\d+w\.jpg$/, '_400w.jpg');
-        case 'large':
-            // Remove the size suffix for full resolution
-            return imageUrl.replace(/_\d+w\.jpg$/, '.jpg');
-        default:
-            return imageUrl;
-    }
+    // Just return the original URL - TCGPlayer provides 200w by default which is sufficient
+    return imageUrl;
 };
 
 /**
@@ -38,9 +27,16 @@ export const CardThumbnail = ({ imageUrl, alt, size = 40, onClick }) => {
     const [error, setError] = useState(false);
     const { isDark } = useThemeMode();
 
+    // Reset state when imageUrl changes
+    useEffect(() => {
+        setLoaded(false);
+        setError(false);
+    }, [imageUrl]);
+
     if (!imageUrl || error) {
         return (
             <Box
+                onClick={onClick}
                 sx={{
                     width: size,
                     height: size * 1.4,
@@ -49,7 +45,8 @@ export const CardThumbnail = ({ imageUrl, alt, size = 40, onClick }) => {
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
-                    flexShrink: 0
+                    flexShrink: 0,
+                    cursor: onClick ? 'pointer' : 'default'
                 }}
             >
                 <Box
@@ -98,11 +95,11 @@ export const CardThumbnail = ({ imageUrl, alt, size = 40, onClick }) => {
                         backgroundColor: isDark ? 'rgba(13, 48, 80, 0.5)' : 'rgba(232, 244, 248, 0.5)'
                     }}
                 >
-                    <CircularProgress size={16} sx={{ color: isDark ? '#5abada' : '#1a5a7a' }} />
+                    <CircularProgress size={12} sx={{ color: isDark ? '#5abada' : '#1a5a7a' }} />
                 </Box>
             )}
             <img
-                src={getImageUrl(imageUrl, 'thumbnail')}
+                src={imageUrl}
                 alt={alt}
                 onLoad={() => setLoaded(true)}
                 onError={() => setError(true)}
@@ -137,7 +134,7 @@ export const CardHoverPreview = ({ imageUrl, alt, children, placement = 'right' 
                 setShowPreview(false);
                 setLoaded(false);
             }}
-            sx={{ position: 'relative', display: 'inline-flex', width: '100%' }}
+            sx={{ position: 'relative', display: 'flex', width: '100%' }}
         >
             {children}
             
@@ -157,8 +154,8 @@ export const CardHoverPreview = ({ imageUrl, alt, children, placement = 'right' 
                 >
                     <Box
                         sx={{
-                            width: 180,
-                            height: 252,
+                            width: 150,
+                            height: 210,
                             borderRadius: 2,
                             overflow: 'hidden',
                             boxShadow: isDark 
@@ -180,11 +177,11 @@ export const CardHoverPreview = ({ imageUrl, alt, children, placement = 'right' 
                                     backgroundColor: isDark ? '#0d3050' : '#e8f4f8'
                                 }}
                             >
-                                <CircularProgress size={32} sx={{ color: isDark ? '#d4a853' : '#1a5a7a' }} />
+                                <CircularProgress size={24} sx={{ color: isDark ? '#d4a853' : '#1a5a7a' }} />
                             </Box>
                         )}
                         <img
-                            src={getImageUrl(imageUrl, 'medium')}
+                            src={imageUrl}
                             alt={alt}
                             onLoad={() => setLoaded(true)}
                             style={{
@@ -207,12 +204,22 @@ export const CardHoverPreview = ({ imageUrl, alt, children, placement = 'right' 
  */
 export const CardImageModal = ({ open, onClose, imageUrl, cardName }) => {
     const [loaded, setLoaded] = useState(false);
+    const [error, setError] = useState(false);
     const { isDark } = useThemeMode();
 
+    // Reset state when modal opens/closes or imageUrl changes
+    useEffect(() => {
+        if (open) {
+            setLoaded(false);
+            setError(false);
+        }
+    }, [open, imageUrl]);
+
     const handleClose = () => {
-        setLoaded(false);
         onClose();
     };
+
+    if (!imageUrl) return null;
 
     return (
         <Modal
@@ -244,7 +251,8 @@ export const CardImageModal = ({ open, onClose, imageUrl, cardName }) => {
                             backgroundColor: 'rgba(0, 0, 0, 0.5)',
                             '&:hover': {
                                 backgroundColor: 'rgba(0, 0, 0, 0.7)'
-                            }
+                            },
+                            zIndex: 1
                         }}
                     >
                         <CloseIcon />
@@ -258,14 +266,16 @@ export const CardImageModal = ({ open, onClose, imageUrl, cardName }) => {
                             boxShadow: '0 16px 48px rgba(0, 0, 0, 0.5)',
                             border: `3px solid ${isDark ? '#d4a853' : '#1a5a7a'}`,
                             backgroundColor: isDark ? '#0d3050' : '#ffffff',
-                            position: 'relative'
+                            position: 'relative',
+                            minWidth: 280,
+                            minHeight: 392
                         }}
                     >
-                        {!loaded && (
+                        {!loaded && !error && (
                             <Box
                                 sx={{
-                                    width: 300,
-                                    height: 420,
+                                    position: 'absolute',
+                                    inset: 0,
                                     display: 'flex',
                                     alignItems: 'center',
                                     justifyContent: 'center',
@@ -275,10 +285,26 @@ export const CardImageModal = ({ open, onClose, imageUrl, cardName }) => {
                                 <CircularProgress size={48} sx={{ color: isDark ? '#d4a853' : '#1a5a7a' }} />
                             </Box>
                         )}
+                        {error && (
+                            <Box
+                                sx={{
+                                    width: 280,
+                                    height: 392,
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    justifyContent: 'center',
+                                    backgroundColor: isDark ? '#0d3050' : '#e8f4f8',
+                                    color: isDark ? '#a0c4d4' : '#1a4a6e'
+                                }}
+                            >
+                                Failed to load image
+                            </Box>
+                        )}
                         <img
-                            src={getImageUrl(imageUrl, 'large')}
+                            src={imageUrl}
                             alt={cardName}
                             onLoad={() => setLoaded(true)}
+                            onError={() => setError(true)}
                             style={{
                                 maxWidth: '80vw',
                                 maxHeight: '80vh',
@@ -294,4 +320,3 @@ export const CardImageModal = ({ open, onClose, imageUrl, cardName }) => {
 };
 
 export default { CardThumbnail, CardHoverPreview, CardImageModal, getImageUrl };
-

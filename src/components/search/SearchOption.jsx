@@ -3,6 +3,7 @@ import { Box, Typography, Chip } from '@mui/material';
 import { getCardGradient, highlightMatch } from '../../utils/searchUtils';
 import { useThemeMode } from '../../contexts/ThemeContext.jsx';
 import { usePriceType } from '../../contexts/PriceContext.jsx';
+import { CardThumbnail, CardHoverPreview } from '../ui/CardImagePreview.jsx';
 
 /**
  * Format a card type into a cleaner display name
@@ -25,7 +26,7 @@ const formatCardType = (subTypeName) => {
 
 /**
  * SearchOption Component
- * Renders an individual search result option with gradient support
+ * Renders an individual search result option with gradient support and image preview
  */
 const SearchOption = ({ 
     option, 
@@ -43,8 +44,9 @@ const SearchOption = ({
     // Get the card type badge
     const cardType = formatCardType(option.subTypeName);
     
-    // Get set name
+    // Get set name and image URL
     const setName = option.setName || option.card?._setName || '';
+    const imageUrl = option.card?.imageUrl || '';
     
     // Get price from card object
     const price = option.card?.marketPrice || option.card?.lowPrice || 0;
@@ -77,13 +79,13 @@ const SearchOption = ({
         setIsHovered(false);
     };
 
-    return (
+    const optionContent = (
         <Box
             onClick={onClick}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
             sx={{
-                px: 2,
+                px: 1.5,
                 py: 1,
                 cursor: 'pointer',
                 background: (isHighlighted || isHovered) ? gradient.backgroundHover : gradient.background,
@@ -99,11 +101,17 @@ const SearchOption = ({
                 },
                 display: 'flex',
                 alignItems: 'center',
-                justifyContent: 'space-between',
                 gap: 1.5
             }}
         >
-            {/* Left side: Card name, set name, and type badge */}
+            {/* Card thumbnail */}
+            <CardThumbnail 
+                imageUrl={imageUrl} 
+                alt={option.label} 
+                size={36}
+            />
+            
+            {/* Card info: name, set, type badge */}
             <Box sx={{ 
                 display: 'flex', 
                 flexDirection: 'column',
@@ -204,6 +212,17 @@ const SearchOption = ({
                 {formatPrice(price)}
             </Typography>
         </Box>
+    );
+
+    // Wrap with hover preview for larger screens
+    return (
+        <CardHoverPreview 
+            imageUrl={imageUrl} 
+            alt={option.label}
+            placement="right"
+        >
+            {optionContent}
+        </CardHoverPreview>
     );
 };
 

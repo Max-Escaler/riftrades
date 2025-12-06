@@ -19,6 +19,7 @@ import { getCardGradient } from "../../utils/searchUtils.js";
 import { SearchInput, SearchDialog } from "../search";
 import { usePriceType } from "../../contexts/PriceContext.jsx";
 import { useThemeMode } from "../../contexts/ThemeContext.jsx";
+import { CardThumbnail, CardImageModal } from "./CardImagePreview.jsx";
 
 const CardList = ({ 
     cards, 
@@ -36,6 +37,8 @@ const CardList = ({
     const theme = useTheme();
     const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
     const [searchDialogOpen, setSearchDialogOpen] = useState(false);
+    const [imageModalOpen, setImageModalOpen] = useState(false);
+    const [selectedCard, setSelectedCard] = useState(null);
     const { priceSource } = usePriceType();
     const { isDark } = useThemeMode();
 
@@ -74,10 +77,21 @@ const CardList = ({
         }
     };
 
+    const handleImageClick = (card) => {
+        setSelectedCard(card);
+        setImageModalOpen(true);
+    };
+
+    const handleImageModalClose = () => {
+        setImageModalOpen(false);
+        setSelectedCard(null);
+    };
+
     // Generate quantity options (1-6)
     const quantityOptions = Array.from({ length: 6 }, (_, i) => i + 1);
 
     return (
+        <>
         <List sx={{
             flexGrow: 1,
             overflow: 'auto',
@@ -101,12 +115,11 @@ const CardList = ({
                             borderRadius: 2,
                             mb: 1,
                             background: gradient.background,
-                            flexDirection: 'column',
-                            alignItems: 'stretch',
-                            gap: 0.5,
+                            flexDirection: 'row',
+                            alignItems: 'center',
+                            gap: 1.5,
                             p: { xs: 1, sm: 1.25, md: 1.5, lg: 1.75, xl: 2 },
                             position: 'relative',
-                            cursor: 'pointer',
                             width: '100%',
                             boxShadow: '0 2px 6px rgba(10, 37, 64, 0.1)',
                             '&:hover': {
@@ -134,114 +147,103 @@ const CardList = ({
                             }
                         }}
                     >
-                        {/* Main Card Info Row */}
-                        <Box sx={{
-                            display: 'flex',
-                            justifyContent: 'space-between',
-                            alignItems: 'flex-start',
-                            width: '100%',
-                            gap: 1,
-                            minWidth: 0
-                        }}>
-                            {/* Card Name and Edition Info */}
-                            <Box sx={{ flexGrow: 1, minWidth: 0, width: '100%' }}>
-                                <Box sx={{
-                                    display: 'flex',
-                                    alignItems: 'center',
-                                    gap: 1,
-                                    mb: 0.5,
-                                    width: '100%'
-                                }}>
-                                    {/* Quantity Dropdown */}
-                                    <FormControl
-                                        size="small"
-                                        sx={{
-                                            minWidth: { xs: 50, sm: 55, md: 60, lg: 65, xl: 70 },
-                                            flexShrink: 0,
-                                            '& .MuiOutlinedInput-root': {
-                                                fontSize: { xs: '0.7rem', sm: '0.75rem', md: '0.8rem', lg: '0.85rem', xl: '0.9rem' },
-                                                height: { xs: 26, sm: 28, md: 30, lg: 32, xl: 34 }
-                                            }
-                                        }}
-                                        onClick={(event) => event.stopPropagation()}
-                                    >
-                                        <Select
-                                            value={card.quantity || 1}
-                                            onChange={(e) => handleQuantityChange(index, e.target.value)}
-                                            sx={{
-                                                fontSize: { xs: '0.7rem', sm: '0.75rem', md: '0.8rem', lg: '0.85rem', xl: '0.9rem' },
-                                                '& .MuiSelect-select': {
-                                                    py: { xs: 0.25, sm: 0.5, md: 0.75, lg: 1, xl: 1.25 },
-                                                    px: { xs: 0.75, sm: 1, md: 1.25, lg: 1.5, xl: 1.75 }
-                                                }
-                                            }}
-                                        >
-                                            {quantityOptions.map((qty) => (
-                                                <MenuItem key={qty} value={qty} sx={{ 
-                                                    fontSize: { xs: '0.7rem', sm: '0.75rem', md: '0.8rem', lg: '0.85rem', xl: '0.9rem' }
-                                                }}>
-                                                    {qty}
-                                                </MenuItem>
-                                            ))}
-                                        </Select>
-                                    </FormControl>
-
-                                    <Typography
-                                        variant="body2"
-                                        sx={{
-                                            fontSize: { xs: '0.8rem', sm: '0.875rem', md: '0.95rem', lg: '1rem', xl: '1.125rem' },
-                                            fontWeight: 'medium',
-                                            overflow: 'hidden',
-                                            textOverflow: 'ellipsis',
-                                            whiteSpace: 'nowrap',
-                                            flex: 1,
-                                            minWidth: 0,
-                                            maxWidth: '100%'
-                                        }}
-                                    >
-                                        {card.name}
-                                    </Typography>
-                                </Box>
-                            </Box>
-
-                            {/* Price and Delete Button */}
-                            <Box sx={{
-                                display: 'flex',
-                                alignItems: 'center',
-                                gap: 1,
-                                flexShrink: 0,
-                                minWidth: 'fit-content'
-                            }}>
-                                {/* Price Chip */}
-                                <Chip
-                                    label={formatPrice(card.price || 0)}
-                                    color="primary"
-                                    size="small"
+                        {/* Card Thumbnail */}
+                        <CardThumbnail 
+                            imageUrl={card.imageUrl} 
+                            alt={card.name}
+                            size={40}
+                            onClick={() => handleImageClick(card)}
+                        />
+                        
+                        {/* Card Name and Quantity */}
+                        <Box sx={{ flexGrow: 1, minWidth: 0, display: 'flex', alignItems: 'center', gap: 1 }}>
+                            {/* Quantity Dropdown */}
+                            <FormControl
+                                size="small"
+                                sx={{
+                                    minWidth: { xs: 50, sm: 55, md: 60, lg: 65, xl: 70 },
+                                    flexShrink: 0,
+                                    '& .MuiOutlinedInput-root': {
+                                        fontSize: { xs: '0.7rem', sm: '0.75rem', md: '0.8rem', lg: '0.85rem', xl: '0.9rem' },
+                                        height: { xs: 26, sm: 28, md: 30, lg: 32, xl: 34 }
+                                    }
+                                }}
+                                onClick={(event) => event.stopPropagation()}
+                            >
+                                <Select
+                                    value={card.quantity || 1}
+                                    onChange={(e) => handleQuantityChange(index, e.target.value)}
                                     sx={{
-                                        fontSize: { xs: '0.65rem', sm: '0.7rem', md: '0.75rem', lg: '0.8rem', xl: '0.875rem' },
-                                        minWidth: 'fit-content'
-                                    }}
-                                />
-
-                                {/* Delete Button */}
-                                <IconButton
-                                    onClick={(event) => {
-                                        event.stopPropagation();
-                                        onRemoveCard(index);
-                                    }}
-                                    size="small"
-                                    aria-label={`Delete ${card.name || 'card'}`}
-                                    sx={{
-                                        color: 'error.main',
-                                        p: { xs: 0.25, sm: 0.5, md: 0.75, lg: 1, xl: 1.25 },
-                                        '&:hover': {
-                                            backgroundColor: 'rgba(244, 67, 54, 0.1)'
+                                        fontSize: { xs: '0.7rem', sm: '0.75rem', md: '0.8rem', lg: '0.85rem', xl: '0.9rem' },
+                                        '& .MuiSelect-select': {
+                                            py: { xs: 0.25, sm: 0.5, md: 0.75, lg: 1, xl: 1.25 },
+                                            px: { xs: 0.75, sm: 1, md: 1.25, lg: 1.5, xl: 1.75 }
                                         }
                                     }}
                                 >
-                                    <DeleteIcon fontSize="small" />
-                                </IconButton>
-                            </Box>
+                                    {quantityOptions.map((qty) => (
+                                        <MenuItem key={qty} value={qty} sx={{ 
+                                            fontSize: { xs: '0.7rem', sm: '0.75rem', md: '0.8rem', lg: '0.85rem', xl: '0.9rem' }
+                                        }}>
+                                            {qty}
+                                        </MenuItem>
+                                    ))}
+                                </Select>
+                            </FormControl>
+
+                            <Typography
+                                variant="body2"
+                                sx={{
+                                    fontSize: { xs: '0.8rem', sm: '0.875rem', md: '0.95rem', lg: '1rem', xl: '1.125rem' },
+                                    fontWeight: 'medium',
+                                    overflow: 'hidden',
+                                    textOverflow: 'ellipsis',
+                                    whiteSpace: 'nowrap',
+                                    flex: 1,
+                                    minWidth: 0
+                                }}
+                            >
+                                {card.name}
+                            </Typography>
+                        </Box>
+
+                        {/* Price and Delete Button */}
+                        <Box sx={{
+                            display: 'flex',
+                            alignItems: 'center',
+                            gap: 1,
+                            flexShrink: 0,
+                            minWidth: 'fit-content'
+                        }}>
+                            {/* Price Chip */}
+                            <Chip
+                                label={formatPrice(card.price || 0)}
+                                color="primary"
+                                size="small"
+                                sx={{
+                                    fontSize: { xs: '0.65rem', sm: '0.7rem', md: '0.75rem', lg: '0.8rem', xl: '0.875rem' },
+                                    minWidth: 'fit-content'
+                                }}
+                            />
+
+                            {/* Delete Button */}
+                            <IconButton
+                                onClick={(event) => {
+                                    event.stopPropagation();
+                                    onRemoveCard(index);
+                                }}
+                                size="small"
+                                aria-label={`Delete ${card.name || 'card'}`}
+                                sx={{
+                                    color: 'error.main',
+                                    p: { xs: 0.25, sm: 0.5, md: 0.75, lg: 1, xl: 1.25 },
+                                    '&:hover': {
+                                        backgroundColor: 'rgba(244, 67, 54, 0.1)'
+                                    }
+                                }}
+                            >
+                                <DeleteIcon fontSize="small" />
+                            </IconButton>
                         </Box>
                     </ListItem>
                 );
@@ -314,6 +316,15 @@ const CardList = ({
                 onSelect={handleDialogAddCard}
             />
         </List>
+
+        {/* Image Modal for viewing full-size card images */}
+        <CardImageModal
+            open={imageModalOpen}
+            onClose={handleImageModalClose}
+            imageUrl={selectedCard?.imageUrl}
+            cardName={selectedCard?.name}
+        />
+        </>
     );
 };
 

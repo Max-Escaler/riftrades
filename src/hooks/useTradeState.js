@@ -58,7 +58,8 @@ export function useTradeState(cardGroups, cardIdLookup = {}) {
                         availableEditions: cardGroup.editions,
                         quantity: 1,
                         subTypeName: subTypeName,
-                        uniqueId: selectedCard ? selectedCard._uniqueId : edition.uniqueId
+                        uniqueId: selectedCard ? selectedCard._uniqueId : edition.uniqueId,
+                        imageUrl: selectedCard ? selectedCard.imageUrl : ''
                     }
                 ]);
                 inputSetter("");

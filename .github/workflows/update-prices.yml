@@ -1,9 +1,9 @@
 name: Update Card Prices
 
 on:
-  # Run daily at 6:00 AM UTC
+  # Run daily at 4:00 PM UTC
   schedule:
-    - cron: '0 6 * * *'
+    - cron: '0 16 * * *'
   
   # Allow manual trigger from GitHub Actions tab
   workflow_dispatch:

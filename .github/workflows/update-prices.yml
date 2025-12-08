@@ -1,0 +1,64 @@
+name: Update Card Prices
+
+on:
+  # Run daily at 6:00 AM UTC
+  schedule:
+    - cron: '0 6 * * *'
+  
+  # Allow manual trigger from GitHub Actions tab
+  workflow_dispatch:
+
+jobs:
+  update-prices:
+    runs-on: ubuntu-latest
+    
+    permissions:
+      contents: write
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: package-lock.json
+      
+      - name: Install dependencies
+        run: npm ci
+      
+      - name: Download TCGPlayer CSVs
+        run: npm run download-csvs
+      
+      - name: Consolidate CSVs to JSON
+        run: npm run consolidate-csvs
+      
+      - name: Merge CardMarket prices
+        run: npm run merge-cardmarket
+      
+      - name: Check for changes
+        id: changes
+        run: |
+          if git diff --quiet public/price-guide/; then
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+          else
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+          fi
+      
+      - name: Commit and push changes
+        if: steps.changes.outputs.has_changes == 'true'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add public/price-guide/
+          git commit -m "🔄 Auto-update card prices - $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git push
+      
+      - name: No changes detected
+        if: steps.changes.outputs.has_changes == 'false'
+        run: echo "No price changes detected. Skipping commit."
+

@@ -1,26 +1,30 @@
 {
   "https://tcgcsv.com/tcgplayer/89/24519/ProductsAndPrices.csv": {
-    "hash": "ef5bc3ae74b0a5f9b5ade90d9a4f7c56",
-    "lastDownloaded": "2025-12-09T16:25:36.225Z"
+    "hash": "dafabcf39f7863d2e5eb98e95c9e603c",
+    "lastDownloaded": "2025-12-10T16:26:21.463Z"
   },
   "https://tcgcsv.com/tcgplayer/89/24344/ProductsAndPrices.csv": {
-    "hash": "7e72e708d1d93d2a054c98b9d0f4c630",
-    "lastDownloaded": "2025-12-09T16:25:36.504Z"
+    "hash": "2e6e58dfb6749c64c1a97683b0267c2b",
+    "lastDownloaded": "2025-12-10T16:26:22.294Z"
   },
   "https://tcgcsv.com/tcgplayer/89/24439/ProductsAndPrices.csv": {
-    "hash": "af0b102ffec7e40097c771c9c8837a33",
-    "lastDownloaded": "2025-12-09T16:25:36.717Z"
+    "hash": "5fa28e3d251e1d70eca0f1ec0189e2db",
+    "lastDownloaded": "2025-12-10T16:26:22.586Z"
   },
   "https://tcgcsv.com/tcgplayer/89/24528/ProductsAndPrices.csv": {
-    "hash": "c0a28f527ad757719b2c80b183a8b801",
-    "lastDownloaded": "2025-12-09T16:25:36.909Z"
+    "hash": "8a9c96eeedd4ed55aa4d76447b5e1b7f",
+    "lastDownloaded": "2025-12-10T16:26:22.879Z"
   },
   "https://tcgcsv.com/tcgplayer/89/24343/ProductsAndPrices.csv": {
-    "hash": "984217b3c75d8f1c7536fd53223f282d",
-    "lastDownloaded": "2025-12-09T16:25:37.243Z"
+    "hash": "a4e14f6839e71bb6455693aca9dc8d22",
+    "lastDownloaded": "2025-12-10T16:26:23.234Z"
   },
   "https://tcgcsv.com/tcgplayer/89/24502/ProductsAndPrices.csv": {
     "hash": "d41d8cd98f00b204e9800998ecf8427e",
-    "lastDownloaded": "2025-12-09T16:25:37.450Z"
+    "lastDownloaded": "2025-12-10T16:26:23.520Z"
+  },
+  "https://tcgcsv.com/tcgplayer/89/24552/ProductsAndPrices.csv": {
+    "hash": "79f10a1dc408fa5b80d097c6e55fe988",
+    "lastDownloaded": "2025-12-10T16:26:21.896Z"
   }
 }

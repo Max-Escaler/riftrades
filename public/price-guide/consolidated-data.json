@@ -1,7 +1,7 @@
 {
   "metadata": {
     "game": "Riftbound",
-    "generatedAt": "2026-01-15T16:33:08.382Z",
+    "generatedAt": "2026-01-16T16:27:08.733Z",
     "totalFiles": 8,
     "totalRecords": 922,
     "sourceManifest": {
@@ -35,7 +35,7 @@
       "24552": "Riftbound Judge Promotional Cards",
       "24560": "Unleashed"
     },
-    "cardmarketMergedAt": "2026-01-15T16:33:10.084Z",
+    "cardmarketMergedAt": "2026-01-16T16:27:10.337Z",
     "cardmarketProductsUrl": "https://downloads.s3.cardmarket.com/productCatalog/productList/products_singles_22.json",
     "cardmarketPricesUrl": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_22.json",
     "cardmarketMatchCount": 528,
@@ -12052,7 +12052,7 @@
       "cardmarketTrend": 0.04,
       "cardmarketAvgFoil": 0.19,
       "cardmarketLowFoil": 0.02,
-      "cardmarketTrendFoil": 0.2
+      "cardmarketTrendFoil": 0.22
     },
     {
       "_id": 309,
@@ -12091,7 +12091,7 @@
       "cardmarketTrend": 0.04,
       "cardmarketAvgFoil": 0.19,
       "cardmarketLowFoil": 0.02,
-      "cardmarketTrendFoil": 0.2
+      "cardmarketTrendFoil": 0.22
     },
     {
       "_id": 310,
@@ -12127,7 +12127,7 @@
       "cardmarketName": "Chemtech Enforcer",
       "cardmarketAvg": 0.04,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.02,
+      "cardmarketTrend": 0.03,
       "cardmarketAvgFoil": 0.15,
       "cardmarketLowFoil": 0.02,
       "cardmarketTrendFoil": 0.16
@@ -12166,7 +12166,7 @@
       "cardmarketName": "Chemtech Enforcer",
       "cardmarketAvg": 0.04,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.02,
+      "cardmarketTrend": 0.03,
       "cardmarketAvgFoil": 0.15,
       "cardmarketLowFoil": 0.02,
       "cardmarketTrendFoil": 0.16
@@ -12205,10 +12205,10 @@
       "cardmarketName": "Cleave",
       "cardmarketAvg": 0.09,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.1,
+      "cardmarketTrend": 0.09,
       "cardmarketAvgFoil": 0.61,
       "cardmarketLowFoil": 0.1,
-      "cardmarketTrendFoil": 0.51
+      "cardmarketTrendFoil": 0.49
     },
     {
       "_id": 313,
@@ -12244,10 +12244,10 @@
       "cardmarketName": "Cleave",
       "cardmarketAvg": 0.09,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.1,
+      "cardmarketTrend": 0.09,
       "cardmarketAvgFoil": 0.61,
       "cardmarketLowFoil": 0.1,
-      "cardmarketTrendFoil": 0.51
+      "cardmarketTrendFoil": 0.49
     },
     {
       "_id": 314,
@@ -12286,7 +12286,7 @@
       "cardmarketTrend": 0.06,
       "cardmarketAvgFoil": 0.23,
       "cardmarketLowFoil": 0.02,
-      "cardmarketTrendFoil": 0.12
+      "cardmarketTrendFoil": 0.13
     },
     {
       "_id": 315,
@@ -12325,7 +12325,7 @@
       "cardmarketTrend": 0.06,
       "cardmarketAvgFoil": 0.23,
       "cardmarketLowFoil": 0.02,
-      "cardmarketTrendFoil": 0.12
+      "cardmarketTrendFoil": 0.13
     },
     {
       "_id": 316,
@@ -12361,10 +12361,10 @@
       "cardmarketName": "Flame Chompers",
       "cardmarketAvg": 0.05,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.03,
+      "cardmarketTrend": 0.05,
       "cardmarketAvgFoil": 0.28,
       "cardmarketLowFoil": 0.07,
-      "cardmarketTrendFoil": 0.24
+      "cardmarketTrendFoil": 0.21
     },
     {
       "_id": 317,
@@ -12400,10 +12400,10 @@
       "cardmarketName": "Flame Chompers",
       "cardmarketAvg": 0.05,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.03,
+      "cardmarketTrend": 0.05,
       "cardmarketAvgFoil": 0.28,
       "cardmarketLowFoil": 0.07,
-      "cardmarketTrendFoil": 0.24
+      "cardmarketTrendFoil": 0.21
     },
     {
       "_id": 318,
@@ -12438,11 +12438,11 @@
       "cardmarketId": 856120,
       "cardmarketName": "Fury Rune",
       "cardmarketAvg": 0,
-      "cardmarketLow": 7.99,
+      "cardmarketLow": 9.99,
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 9.58,
-      "cardmarketLowFoil": 7.99,
-      "cardmarketTrendFoil": 11.36
+      "cardmarketLowFoil": 9.99,
+      "cardmarketTrendFoil": 11.58
     },
     {
       "_id": 319,
@@ -12520,7 +12520,7 @@
       "cardmarketTrend": 0.05,
       "cardmarketAvgFoil": 0.28,
       "cardmarketLowFoil": 0.02,
-      "cardmarketTrendFoil": 0.35
+      "cardmarketTrendFoil": 0.34
     },
     {
       "_id": 321,
@@ -12559,7 +12559,7 @@
       "cardmarketTrend": 0.05,
       "cardmarketAvgFoil": 0.28,
       "cardmarketLowFoil": 0.02,
-      "cardmarketTrendFoil": 0.35
+      "cardmarketTrendFoil": 0.34
     },
     {
       "_id": 322,
@@ -12597,8 +12597,8 @@
       "cardmarketLow": 0.02,
       "cardmarketTrend": 0.12,
       "cardmarketAvgFoil": 1.1,
-      "cardmarketLowFoil": 0.18,
-      "cardmarketTrendFoil": 0.91
+      "cardmarketLowFoil": 0.09,
+      "cardmarketTrendFoil": 0.84
     },
     {
       "_id": 323,
@@ -12636,8 +12636,8 @@
       "cardmarketLow": 0.02,
       "cardmarketTrend": 0.12,
       "cardmarketAvgFoil": 1.1,
-      "cardmarketLowFoil": 0.18,
-      "cardmarketTrendFoil": 0.91
+      "cardmarketLowFoil": 0.09,
+      "cardmarketTrendFoil": 0.84
     },
     {
       "_id": 324,
@@ -12671,10 +12671,10 @@
       "extFlavorText": "<em>The last line of offense.</em>",
       "cardmarketId": 845890,
       "cardmarketName": "Legion Rearguard",
-      "cardmarketAvg": 0.06,
+      "cardmarketAvg": 0.05,
       "cardmarketLow": 0.02,
       "cardmarketTrend": 0.07,
-      "cardmarketAvgFoil": 0.39,
+      "cardmarketAvgFoil": 0.35,
       "cardmarketLowFoil": 0.1,
       "cardmarketTrendFoil": 0.27
     },
@@ -12710,10 +12710,10 @@
       "extFlavorText": "<em>The last line of offense.</em>",
       "cardmarketId": 845890,
       "cardmarketName": "Legion Rearguard",
-      "cardmarketAvg": 0.06,
+      "cardmarketAvg": 0.05,
       "cardmarketLow": 0.02,
       "cardmarketTrend": 0.07,
-      "cardmarketAvgFoil": 0.39,
+      "cardmarketAvgFoil": 0.35,
       "cardmarketLowFoil": 0.1,
       "cardmarketTrendFoil": 0.27
     },
@@ -12754,7 +12754,7 @@
       "cardmarketTrend": 0.05,
       "cardmarketAvgFoil": 0.25,
       "cardmarketLowFoil": 0.05,
-      "cardmarketTrendFoil": 0.24
+      "cardmarketTrendFoil": 0.25
     },
     {
       "_id": 327,
@@ -12793,7 +12793,7 @@
       "cardmarketTrend": 0.05,
       "cardmarketAvgFoil": 0.25,
       "cardmarketLowFoil": 0.05,
-      "cardmarketTrendFoil": 0.24
+      "cardmarketTrendFoil": 0.25
     },
     {
       "_id": 328,
@@ -12832,7 +12832,7 @@
       "cardmarketTrend": 0.14,
       "cardmarketAvgFoil": 1.75,
       "cardmarketLowFoil": 0.49,
-      "cardmarketTrendFoil": 1.89
+      "cardmarketTrendFoil": 1.79
     },
     {
       "_id": 329,
@@ -12871,7 +12871,7 @@
       "cardmarketTrend": 0.14,
       "cardmarketAvgFoil": 1.75,
       "cardmarketLowFoil": 0.49,
-      "cardmarketTrendFoil": 1.89
+      "cardmarketTrendFoil": 1.79
     },
     {
       "_id": 330,
@@ -12910,7 +12910,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 0.97,
       "cardmarketLowFoil": 0.4,
-      "cardmarketTrendFoil": 1.49
+      "cardmarketTrendFoil": 1.4
     },
     {
       "_id": 331,
@@ -12949,7 +12949,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 0.97,
       "cardmarketLowFoil": 0.4,
-      "cardmarketTrendFoil": 1.49
+      "cardmarketTrendFoil": 1.4
     },
     {
       "_id": 332,
@@ -12988,7 +12988,7 @@
       "cardmarketTrend": 0.07,
       "cardmarketAvgFoil": 0.32,
       "cardmarketLowFoil": 0.04,
-      "cardmarketTrendFoil": 0.36
+      "cardmarketTrendFoil": 0.34
     },
     {
       "_id": 333,
@@ -13027,7 +13027,7 @@
       "cardmarketTrend": 0.07,
       "cardmarketAvgFoil": 0.32,
       "cardmarketLowFoil": 0.04,
-      "cardmarketTrendFoil": 0.36
+      "cardmarketTrendFoil": 0.34
     },
     {
       "_id": 334,
@@ -13061,12 +13061,12 @@
       "extFlavorText": "<em>\"Foward! Always!\"</em>",
       "cardmarketId": 847128,
       "cardmarketName": "Captain Farron",
-      "cardmarketAvg": 0.1,
+      "cardmarketAvg": 0.09,
       "cardmarketLow": 0.02,
       "cardmarketTrend": 0.07,
-      "cardmarketAvgFoil": 0.42,
+      "cardmarketAvgFoil": 0.37,
       "cardmarketLowFoil": 0.1,
-      "cardmarketTrendFoil": 0.41
+      "cardmarketTrendFoil": 0.39
     },
     {
       "_id": 335,
@@ -13100,12 +13100,12 @@
       "extFlavorText": "<em>\"Foward! Always!\"</em>",
       "cardmarketId": 847128,
       "cardmarketName": "Captain Farron",
-      "cardmarketAvg": 0.1,
+      "cardmarketAvg": 0.09,
       "cardmarketLow": 0.02,
       "cardmarketTrend": 0.07,
-      "cardmarketAvgFoil": 0.42,
+      "cardmarketAvgFoil": 0.37,
       "cardmarketLowFoil": 0.1,
-      "cardmarketTrendFoil": 0.41
+      "cardmarketTrendFoil": 0.39
     },
     {
       "_id": 336,
@@ -13139,12 +13139,12 @@
       "extFlavorText": "",
       "cardmarketId": 847129,
       "cardmarketName": "Dangerous Duo",
-      "cardmarketAvg": 0.08,
+      "cardmarketAvg": 0.06,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.06,
-      "cardmarketAvgFoil": 0.25,
+      "cardmarketTrend": 0.05,
+      "cardmarketAvgFoil": 0.24,
       "cardmarketLowFoil": 0.03,
-      "cardmarketTrendFoil": 0.25
+      "cardmarketTrendFoil": 0.27
     },
     {
       "_id": 337,
@@ -13178,12 +13178,12 @@
       "extFlavorText": "",
       "cardmarketId": 847129,
       "cardmarketName": "Dangerous Duo",
-      "cardmarketAvg": 0.08,
+      "cardmarketAvg": 0.06,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.06,
-      "cardmarketAvgFoil": 0.25,
+      "cardmarketTrend": 0.05,
+      "cardmarketAvgFoil": 0.24,
       "cardmarketLowFoil": 0.03,
-      "cardmarketTrendFoil": 0.25
+      "cardmarketTrendFoil": 0.27
     },
     {
       "_id": 338,
@@ -13221,7 +13221,7 @@
       "cardmarketLow": 0.02,
       "cardmarketTrend": 0.15,
       "cardmarketAvgFoil": 0.67,
-      "cardmarketLowFoil": 0.05,
+      "cardmarketLowFoil": 0.1,
       "cardmarketTrendFoil": 0.71
     },
     {
@@ -13260,7 +13260,7 @@
       "cardmarketLow": 0.02,
       "cardmarketTrend": 0.15,
       "cardmarketAvgFoil": 0.67,
-      "cardmarketLowFoil": 0.05,
+      "cardmarketLowFoil": 0.1,
       "cardmarketTrendFoil": 0.71
     },
     {
@@ -13375,10 +13375,10 @@
       "cardmarketName": "Raging Soul",
       "cardmarketAvg": 0.07,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.06,
+      "cardmarketTrend": 0.05,
       "cardmarketAvgFoil": 0.34,
       "cardmarketLowFoil": 0.05,
-      "cardmarketTrendFoil": 0.49
+      "cardmarketTrendFoil": 0.51
     },
     {
       "_id": 343,
@@ -13414,10 +13414,10 @@
       "cardmarketName": "Raging Soul",
       "cardmarketAvg": 0.07,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.06,
+      "cardmarketTrend": 0.05,
       "cardmarketAvgFoil": 0.34,
       "cardmarketLowFoil": 0.05,
-      "cardmarketTrendFoil": 0.49
+      "cardmarketTrendFoil": 0.51
     },
     {
       "_id": 344,
@@ -13534,7 +13534,7 @@
       "cardmarketTrend": 0.17,
       "cardmarketAvgFoil": 0.88,
       "cardmarketLowFoil": 0.02,
-      "cardmarketTrendFoil": 0.75
+      "cardmarketTrendFoil": 0.8
     },
     {
       "_id": 347,
@@ -13573,7 +13573,7 @@
       "cardmarketTrend": 0.17,
       "cardmarketAvgFoil": 0.88,
       "cardmarketLowFoil": 0.02,
-      "cardmarketTrendFoil": 0.75
+      "cardmarketTrendFoil": 0.8
     },
     {
       "_id": 348,
@@ -13607,10 +13607,10 @@
       "extFlavorText": "<em>\"Turn the limiter off, the beam is totally stable.\" - Common Last Words</em>",
       "cardmarketId": 847137,
       "cardmarketName": "Thermo Beam",
-      "cardmarketAvg": 0.22,
+      "cardmarketAvg": 0.21,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.21,
-      "cardmarketAvgFoil": 1.51,
+      "cardmarketTrend": 0.2,
+      "cardmarketAvgFoil": 1.86,
       "cardmarketLowFoil": 0.21,
       "cardmarketTrendFoil": 1.92
     },
@@ -13646,10 +13646,10 @@
       "extFlavorText": "<em>\"Turn the limiter off, the beam is totally stable.\" - Common Last Words</em>",
       "cardmarketId": 847137,
       "cardmarketName": "Thermo Beam",
-      "cardmarketAvg": 0.22,
+      "cardmarketAvg": 0.21,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.21,
-      "cardmarketAvgFoil": 1.51,
+      "cardmarketTrend": 0.2,
+      "cardmarketAvgFoil": 1.86,
       "cardmarketLowFoil": 0.21,
       "cardmarketTrendFoil": 1.92
     },
@@ -13690,7 +13690,7 @@
       "cardmarketTrend": 0.1,
       "cardmarketAvgFoil": 0.5,
       "cardmarketLowFoil": 0.15,
-      "cardmarketTrendFoil": 0.54
+      "cardmarketTrendFoil": 0.52
     },
     {
       "_id": 351,
@@ -13729,7 +13729,7 @@
       "cardmarketTrend": 0.1,
       "cardmarketAvgFoil": 0.5,
       "cardmarketLowFoil": 0.15,
-      "cardmarketTrendFoil": 0.54
+      "cardmarketTrendFoil": 0.52
     },
     {
       "_id": 352,
@@ -13764,11 +13764,11 @@
       "cardmarketId": 856099,
       "cardmarketName": "Void Seeker",
       "cardmarketAvg": 0,
-      "cardmarketLow": 0.2,
+      "cardmarketLow": 0.79,
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 1.32,
-      "cardmarketLowFoil": 0.2,
-      "cardmarketTrendFoil": 1.45
+      "cardmarketLowFoil": 0.79,
+      "cardmarketTrendFoil": 1.4
     },
     {
       "_id": 353,
@@ -13803,11 +13803,11 @@
       "cardmarketId": 856099,
       "cardmarketName": "Void Seeker",
       "cardmarketAvg": 0,
-      "cardmarketLow": 0.2,
+      "cardmarketLow": 0.79,
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 1.32,
-      "cardmarketLowFoil": 0.2,
-      "cardmarketTrendFoil": 1.45
+      "cardmarketLowFoil": 0.79,
+      "cardmarketTrendFoil": 1.4
     },
     {
       "_id": 354,
@@ -13842,10 +13842,10 @@
       "cardmarketId": 847140,
       "cardmarketName": "Blind Fury",
       "cardmarketAvg": 0,
-      "cardmarketLow": 0.02,
+      "cardmarketLow": 0.03,
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 0.24,
-      "cardmarketLowFoil": 0.02,
+      "cardmarketLowFoil": 0.03,
       "cardmarketTrendFoil": 0.23
     },
     {
@@ -13885,7 +13885,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 1.49,
       "cardmarketLowFoil": 2.5,
-      "cardmarketTrendFoil": 3.71
+      "cardmarketTrendFoil": 4.05
     },
     {
       "_id": 356,
@@ -13924,7 +13924,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 17.46,
       "cardmarketLowFoil": 9.99,
-      "cardmarketTrendFoil": 18.56
+      "cardmarketTrendFoil": 18.92
     },
     {
       "_id": 357,
@@ -14002,7 +14002,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 2.22,
       "cardmarketLowFoil": 0.45,
-      "cardmarketTrendFoil": 2.09
+      "cardmarketTrendFoil": 2.08
     },
     {
       "_id": 359,
@@ -14037,10 +14037,10 @@
       "cardmarketId": 847145,
       "cardmarketName": "Falling Star",
       "cardmarketAvg": 0,
-      "cardmarketLow": 2.5,
+      "cardmarketLow": 2.49,
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 6.5,
-      "cardmarketLowFoil": 2.5,
+      "cardmarketLowFoil": 2.49,
       "cardmarketTrendFoil": 6.54
     },
     {
@@ -14076,11 +14076,11 @@
       "cardmarketId": 847147,
       "cardmarketName": "Jinx, Demolitionist",
       "cardmarketAvg": 0,
-      "cardmarketLow": 2.99,
+      "cardmarketLow": 2.5,
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 6.4,
-      "cardmarketLowFoil": 2.99,
-      "cardmarketTrendFoil": 5.85
+      "cardmarketLowFoil": 2.5,
+      "cardmarketTrendFoil": 5.87
     },
     {
       "_id": 361,
@@ -14197,7 +14197,7 @@
       "cardmarketTrend": 0.16,
       "cardmarketAvgFoil": 0.14,
       "cardmarketLowFoil": 0.02,
-      "cardmarketTrendFoil": 0.14
+      "cardmarketTrendFoil": 0.13
     },
     {
       "_id": 364,
@@ -14234,9 +14234,9 @@
       "cardmarketAvg": 0,
       "cardmarketLow": 0.1,
       "cardmarketTrend": 0,
-      "cardmarketAvgFoil": 0.43,
+      "cardmarketAvgFoil": 0.41,
       "cardmarketLowFoil": 0.1,
-      "cardmarketTrendFoil": 0.47
+      "cardmarketTrendFoil": 0.46
     },
     {
       "_id": 365,
@@ -14271,11 +14271,11 @@
       "cardmarketId": 861138,
       "cardmarketName": "Tryndamere, Barbarian",
       "cardmarketAvg": 0,
-      "cardmarketLow": 0.55,
+      "cardmarketLow": 0.5,
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 1.77,
-      "cardmarketLowFoil": 0.55,
-      "cardmarketTrendFoil": 0.77
+      "cardmarketLowFoil": 0.5,
+      "cardmarketTrendFoil": 0.81
     },
     {
       "_id": 366,
@@ -14314,7 +14314,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 1.51,
       "cardmarketLowFoil": 0.35,
-      "cardmarketTrendFoil": 1.45
+      "cardmarketTrendFoil": 1.39
     },
     {
       "_id": 367,
@@ -14392,7 +14392,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 8.6,
       "cardmarketLowFoil": 3,
-      "cardmarketTrendFoil": 9.8
+      "cardmarketTrendFoil": 10.56
     },
     {
       "_id": 369,
@@ -14431,7 +14431,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 6.91,
       "cardmarketLowFoil": 2.45,
-      "cardmarketTrendFoil": 6.32
+      "cardmarketTrendFoil": 6.53
     },
     {
       "_id": 370,
@@ -14470,7 +14470,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 75.45,
       "cardmarketLowFoil": 42.7,
-      "cardmarketTrendFoil": 98.07
+      "cardmarketTrendFoil": 98.38
     },
     {
       "_id": 371,
@@ -14548,7 +14548,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 17.89,
       "cardmarketLowFoil": 10,
-      "cardmarketTrendFoil": 16.72
+      "cardmarketTrendFoil": 16.94
     },
     {
       "_id": 373,
@@ -14587,7 +14587,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 6.17,
       "cardmarketLowFoil": 2,
-      "cardmarketTrendFoil": 6.5
+      "cardmarketTrendFoil": 6.68
     },
     {
       "_id": 374,
@@ -14665,7 +14665,7 @@
       "cardmarketTrend": 9.99,
       "cardmarketAvgFoil": 7.73,
       "cardmarketLowFoil": 8,
-      "cardmarketTrendFoil": 8.92
+      "cardmarketTrendFoil": 9.15
     },
     {
       "_id": 376,
@@ -14743,7 +14743,7 @@
       "cardmarketTrend": 0.1,
       "cardmarketAvgFoil": 1.66,
       "cardmarketLowFoil": 0.9,
-      "cardmarketTrendFoil": 1.62
+      "cardmarketTrendFoil": 1.55
     },
     {
       "_id": 378,
@@ -14782,7 +14782,7 @@
       "cardmarketTrend": 0.1,
       "cardmarketAvgFoil": 1.66,
       "cardmarketLowFoil": 0.9,
-      "cardmarketTrendFoil": 1.62
+      "cardmarketTrendFoil": 1.55
     },
     {
       "_id": 379,
@@ -14821,7 +14821,7 @@
       "cardmarketTrend": 0.07,
       "cardmarketAvgFoil": 0.31,
       "cardmarketLowFoil": 0.05,
-      "cardmarketTrendFoil": 0.27
+      "cardmarketTrendFoil": 0.26
     },
     {
       "_id": 380,
@@ -14860,7 +14860,7 @@
       "cardmarketTrend": 0.07,
       "cardmarketAvgFoil": 0.31,
       "cardmarketLowFoil": 0.05,
-      "cardmarketTrendFoil": 0.27
+      "cardmarketTrendFoil": 0.26
     },
     {
       "_id": 381,
@@ -14899,7 +14899,7 @@
       "cardmarketTrend": 0.29,
       "cardmarketAvgFoil": 2.59,
       "cardmarketLowFoil": 0.74,
-      "cardmarketTrendFoil": 2.19
+      "cardmarketTrendFoil": 2.17
     },
     {
       "_id": 382,
@@ -14938,7 +14938,7 @@
       "cardmarketTrend": 0.29,
       "cardmarketAvgFoil": 2.59,
       "cardmarketLowFoil": 0.74,
-      "cardmarketTrendFoil": 2.19
+      "cardmarketTrendFoil": 2.17
     },
     {
       "_id": 383,
@@ -14972,12 +14972,12 @@
       "extFlavorText": "<em>\"Is this supposed to be a challenge?\" -Fiora</em>",
       "cardmarketId": 847166,
       "cardmarketName": "En Garde",
-      "cardmarketAvg": 0.1,
+      "cardmarketAvg": 0.08,
       "cardmarketLow": 0.02,
       "cardmarketTrend": 0.07,
-      "cardmarketAvgFoil": 0.46,
+      "cardmarketAvgFoil": 0.47,
       "cardmarketLowFoil": 0.08,
-      "cardmarketTrendFoil": 0.41
+      "cardmarketTrendFoil": 0.43
     },
     {
       "_id": 384,
@@ -15011,12 +15011,12 @@
       "extFlavorText": "<em>\"Is this supposed to be a challenge?\" -Fiora</em>",
       "cardmarketId": 847166,
       "cardmarketName": "En Garde",
-      "cardmarketAvg": 0.1,
+      "cardmarketAvg": 0.08,
       "cardmarketLow": 0.02,
       "cardmarketTrend": 0.07,
-      "cardmarketAvgFoil": 0.46,
+      "cardmarketAvgFoil": 0.47,
       "cardmarketLowFoil": 0.08,
-      "cardmarketTrendFoil": 0.41
+      "cardmarketTrendFoil": 0.43
     },
     {
       "_id": 385,
@@ -15050,12 +15050,12 @@
       "extFlavorText": "<em>One does not wait for the perfect moment.</em>",
       "cardmarketId": 847167,
       "cardmarketName": "Find Your Center",
-      "cardmarketAvg": 0.15,
+      "cardmarketAvg": 0.13,
       "cardmarketLow": 0.02,
       "cardmarketTrend": 0.11,
-      "cardmarketAvgFoil": 1.36,
+      "cardmarketAvgFoil": 1.5,
       "cardmarketLowFoil": 0.24,
-      "cardmarketTrendFoil": 1.33
+      "cardmarketTrendFoil": 1.32
     },
     {
       "_id": 386,
@@ -15089,12 +15089,12 @@
       "extFlavorText": "<em>One does not wait for the perfect moment.</em>",
       "cardmarketId": 847167,
       "cardmarketName": "Find Your Center",
-      "cardmarketAvg": 0.15,
+      "cardmarketAvg": 0.13,
       "cardmarketLow": 0.02,
       "cardmarketTrend": 0.11,
-      "cardmarketAvgFoil": 1.36,
+      "cardmarketAvgFoil": 1.5,
       "cardmarketLowFoil": 0.24,
-      "cardmarketTrendFoil": 1.33
+      "cardmarketTrendFoil": 1.32
     },
     {
       "_id": 387,
@@ -15130,10 +15130,10 @@
       "cardmarketName": "Meditation",
       "cardmarketAvg": 0.06,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.05,
-      "cardmarketAvgFoil": 0.42,
+      "cardmarketTrend": 0.04,
+      "cardmarketAvgFoil": 0.38,
       "cardmarketLowFoil": 0.08,
-      "cardmarketTrendFoil": 0.33
+      "cardmarketTrendFoil": 0.35
     },
     {
       "_id": 388,
@@ -15169,10 +15169,10 @@
       "cardmarketName": "Meditation",
       "cardmarketAvg": 0.06,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.05,
-      "cardmarketAvgFoil": 0.42,
+      "cardmarketTrend": 0.04,
+      "cardmarketAvgFoil": 0.38,
       "cardmarketLowFoil": 0.08,
-      "cardmarketTrendFoil": 0.33
+      "cardmarketTrendFoil": 0.35
     },
     {
       "_id": 389,
@@ -15211,7 +15211,7 @@
       "cardmarketTrend": 0.04,
       "cardmarketAvgFoil": 0.19,
       "cardmarketLowFoil": 0.02,
-      "cardmarketTrendFoil": 0.15
+      "cardmarketTrendFoil": 0.16
     },
     {
       "_id": 390,
@@ -15250,7 +15250,7 @@
       "cardmarketTrend": 0.04,
       "cardmarketAvgFoil": 0.19,
       "cardmarketLowFoil": 0.02,
-      "cardmarketTrendFoil": 0.15
+      "cardmarketTrendFoil": 0.16
     },
     {
       "_id": 391,
@@ -15364,10 +15364,10 @@
       "cardmarketName": "Solari Shieldbearer",
       "cardmarketAvg": 0.06,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.07,
+      "cardmarketTrend": 0.08,
       "cardmarketAvgFoil": 0.33,
       "cardmarketLowFoil": 0.03,
-      "cardmarketTrendFoil": 0.28
+      "cardmarketTrendFoil": 0.3
     },
     {
       "_id": 394,
@@ -15403,10 +15403,10 @@
       "cardmarketName": "Solari Shieldbearer",
       "cardmarketAvg": 0.06,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.07,
+      "cardmarketTrend": 0.08,
       "cardmarketAvgFoil": 0.33,
       "cardmarketLowFoil": 0.03,
-      "cardmarketTrendFoil": 0.28
+      "cardmarketTrendFoil": 0.3
     },
     {
       "_id": 395,
@@ -15445,7 +15445,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 1.01,
       "cardmarketLowFoil": 0.49,
-      "cardmarketTrendFoil": 1.03
+      "cardmarketTrendFoil": 1
     },
     {
       "_id": 396,
@@ -15484,7 +15484,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 1.01,
       "cardmarketLowFoil": 0.49,
-      "cardmarketTrendFoil": 1.03
+      "cardmarketTrendFoil": 1
     },
     {
       "_id": 397,
@@ -15521,9 +15521,9 @@
       "cardmarketAvg": 0.04,
       "cardmarketLow": 0.02,
       "cardmarketTrend": 0.04,
-      "cardmarketAvgFoil": 0.26,
+      "cardmarketAvgFoil": 0.23,
       "cardmarketLowFoil": 0.05,
-      "cardmarketTrendFoil": 0.2
+      "cardmarketTrendFoil": 0.22
     },
     {
       "_id": 398,
@@ -15560,9 +15560,9 @@
       "cardmarketAvg": 0.04,
       "cardmarketLow": 0.02,
       "cardmarketTrend": 0.04,
-      "cardmarketAvgFoil": 0.26,
+      "cardmarketAvgFoil": 0.23,
       "cardmarketLowFoil": 0.05,
-      "cardmarketTrendFoil": 0.2
+      "cardmarketTrendFoil": 0.22
     },
     {
       "_id": 399,
@@ -15601,7 +15601,7 @@
       "cardmarketTrend": 0.08,
       "cardmarketAvgFoil": 0.33,
       "cardmarketLowFoil": 0.05,
-      "cardmarketTrendFoil": 0.36
+      "cardmarketTrendFoil": 0.35
     },
     {
       "_id": 400,
@@ -15640,7 +15640,7 @@
       "cardmarketTrend": 0.08,
       "cardmarketAvgFoil": 0.33,
       "cardmarketLowFoil": 0.05,
-      "cardmarketTrendFoil": 0.36
+      "cardmarketTrendFoil": 0.35
     },
     {
       "_id": 401,
@@ -15679,7 +15679,7 @@
       "cardmarketTrend": 2,
       "cardmarketAvgFoil": 0.6,
       "cardmarketLowFoil": 0.29,
-      "cardmarketTrendFoil": 0.71
+      "cardmarketTrendFoil": 0.66
     },
     {
       "_id": 402,
@@ -15718,7 +15718,7 @@
       "cardmarketTrend": 2,
       "cardmarketAvgFoil": 0.6,
       "cardmarketLowFoil": 0.29,
-      "cardmarketTrendFoil": 0.71
+      "cardmarketTrendFoil": 0.66
     },
     {
       "_id": 403,
@@ -15752,12 +15752,12 @@
       "extFlavorText": "<em>There's a scrap for that.</em>",
       "cardmarketId": 847176,
       "cardmarketName": "Adaptatron",
-      "cardmarketAvg": 0.27,
+      "cardmarketAvg": 0.24,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.23,
-      "cardmarketAvgFoil": 0.97,
+      "cardmarketTrend": 0.21,
+      "cardmarketAvgFoil": 0.96,
       "cardmarketLowFoil": 0.1,
-      "cardmarketTrendFoil": 0.94
+      "cardmarketTrendFoil": 1
     },
     {
       "_id": 404,
@@ -15791,12 +15791,12 @@
       "extFlavorText": "<em>There's a scrap for that.</em>",
       "cardmarketId": 847176,
       "cardmarketName": "Adaptatron",
-      "cardmarketAvg": 0.27,
+      "cardmarketAvg": 0.24,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.23,
-      "cardmarketAvgFoil": 0.97,
+      "cardmarketTrend": 0.21,
+      "cardmarketAvgFoil": 0.96,
       "cardmarketLowFoil": 0.1,
-      "cardmarketTrendFoil": 0.94
+      "cardmarketTrendFoil": 1
     },
     {
       "_id": 405,
@@ -15832,10 +15832,10 @@
       "cardmarketName": "Block",
       "cardmarketAvg": 0.2,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.18,
+      "cardmarketTrend": 0.17,
       "cardmarketAvgFoil": 0.9,
       "cardmarketLowFoil": 0.45,
-      "cardmarketTrendFoil": 0.96
+      "cardmarketTrendFoil": 0.97
     },
     {
       "_id": 406,
@@ -15871,10 +15871,10 @@
       "cardmarketName": "Block",
       "cardmarketAvg": 0.2,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.18,
+      "cardmarketTrend": 0.17,
       "cardmarketAvgFoil": 0.9,
       "cardmarketLowFoil": 0.45,
-      "cardmarketTrendFoil": 0.96
+      "cardmarketTrendFoil": 0.97
     },
     {
       "_id": 407,
@@ -15909,11 +15909,11 @@
       "cardmarketId": 856112,
       "cardmarketName": "Discipline",
       "cardmarketAvg": 0,
-      "cardmarketLow": 0.4,
+      "cardmarketLow": 0.39,
       "cardmarketTrend": 0,
-      "cardmarketAvgFoil": 1.14,
-      "cardmarketLowFoil": 0.4,
-      "cardmarketTrendFoil": 1.51
+      "cardmarketAvgFoil": 1.28,
+      "cardmarketLowFoil": 0.39,
+      "cardmarketTrendFoil": 1.39
     },
     {
       "_id": 408,
@@ -15948,11 +15948,11 @@
       "cardmarketId": 856112,
       "cardmarketName": "Discipline",
       "cardmarketAvg": 0,
-      "cardmarketLow": 0.4,
+      "cardmarketLow": 0.39,
       "cardmarketTrend": 0,
-      "cardmarketAvgFoil": 1.14,
-      "cardmarketLowFoil": 0.4,
-      "cardmarketTrendFoil": 1.51
+      "cardmarketAvgFoil": 1.28,
+      "cardmarketLowFoil": 0.39,
+      "cardmarketTrendFoil": 1.39
     },
     {
       "_id": 409,
@@ -16064,12 +16064,12 @@
       "extFlavorText": "<em>To know the future, you must first accept it.</em>",
       "cardmarketId": 847180,
       "cardmarketName": "Mask of Foresight",
-      "cardmarketAvg": 0.26,
+      "cardmarketAvg": 0.25,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.21,
-      "cardmarketAvgFoil": 1.05,
+      "cardmarketTrend": 0.2,
+      "cardmarketAvgFoil": 1.2,
       "cardmarketLowFoil": 0.3,
-      "cardmarketTrendFoil": 1.78
+      "cardmarketTrendFoil": 1.77
     },
     {
       "_id": 412,
@@ -16103,12 +16103,12 @@
       "extFlavorText": "<em>To know the future, you must first accept it.</em>",
       "cardmarketId": 847180,
       "cardmarketName": "Mask of Foresight",
-      "cardmarketAvg": 0.26,
+      "cardmarketAvg": 0.25,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.21,
-      "cardmarketAvgFoil": 1.05,
+      "cardmarketTrend": 0.2,
+      "cardmarketAvgFoil": 1.2,
       "cardmarketLowFoil": 0.3,
-      "cardmarketTrendFoil": 1.78
+      "cardmarketTrendFoil": 1.77
     },
     {
       "_id": 413,
@@ -16147,7 +16147,7 @@
       "cardmarketTrend": 0.12,
       "cardmarketAvgFoil": 0.53,
       "cardmarketLowFoil": 0.1,
-      "cardmarketTrendFoil": 0.49
+      "cardmarketTrendFoil": 0.51
     },
     {
       "_id": 414,
@@ -16186,7 +16186,7 @@
       "cardmarketTrend": 0.12,
       "cardmarketAvgFoil": 0.53,
       "cardmarketLowFoil": 0.1,
-      "cardmarketTrendFoil": 0.49
+      "cardmarketTrendFoil": 0.51
     },
     {
       "_id": 415,
@@ -16298,12 +16298,12 @@
       "extFlavorText": "",
       "cardmarketId": 847183,
       "cardmarketName": "Spirit's Refuge",
-      "cardmarketAvg": 0.2,
+      "cardmarketAvg": 0.17,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.12,
-      "cardmarketAvgFoil": 0.88,
+      "cardmarketTrend": 0.13,
+      "cardmarketAvgFoil": 0.84,
       "cardmarketLowFoil": 0.05,
-      "cardmarketTrendFoil": 0.85
+      "cardmarketTrendFoil": 0.82
     },
     {
       "_id": 418,
@@ -16337,12 +16337,12 @@
       "extFlavorText": "",
       "cardmarketId": 847183,
       "cardmarketName": "Spirit's Refuge",
-      "cardmarketAvg": 0.2,
+      "cardmarketAvg": 0.17,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.12,
-      "cardmarketAvgFoil": 0.88,
+      "cardmarketTrend": 0.13,
+      "cardmarketAvgFoil": 0.84,
       "cardmarketLowFoil": 0.05,
-      "cardmarketTrendFoil": 0.85
+      "cardmarketTrendFoil": 0.82
     },
     {
       "_id": 419,
@@ -16376,12 +16376,12 @@
       "extFlavorText": "<em>\"Face the wind!\" -Yasuo</em>",
       "cardmarketId": 847184,
       "cardmarketName": "Wind Wall",
-      "cardmarketAvg": 1.11,
+      "cardmarketAvg": 0.96,
       "cardmarketLow": 0.3,
-      "cardmarketTrend": 0.8,
-      "cardmarketAvgFoil": 2.9,
+      "cardmarketTrend": 0.79,
+      "cardmarketAvgFoil": 3,
       "cardmarketLowFoil": 1.98,
-      "cardmarketTrendFoil": 2.91
+      "cardmarketTrendFoil": 2.78
     },
     {
       "_id": 420,
@@ -16415,12 +16415,12 @@
       "extFlavorText": "<em>\"Face the wind!\" -Yasuo</em>",
       "cardmarketId": 847184,
       "cardmarketName": "Wind Wall",
-      "cardmarketAvg": 1.11,
+      "cardmarketAvg": 0.96,
       "cardmarketLow": 0.3,
-      "cardmarketTrend": 0.8,
-      "cardmarketAvgFoil": 2.9,
+      "cardmarketTrend": 0.79,
+      "cardmarketAvgFoil": 3,
       "cardmarketLowFoil": 1.98,
-      "cardmarketTrendFoil": 2.91
+      "cardmarketTrendFoil": 2.78
     },
     {
       "_id": 421,
@@ -16456,10 +16456,10 @@
       "cardmarketName": "Wizened Elder",
       "cardmarketAvg": 0.09,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.08,
+      "cardmarketTrend": 0.07,
       "cardmarketAvgFoil": 0.6,
       "cardmarketLowFoil": 0.03,
-      "cardmarketTrendFoil": 0.47
+      "cardmarketTrendFoil": 0.5
     },
     {
       "_id": 422,
@@ -16495,10 +16495,10 @@
       "cardmarketName": "Wizened Elder",
       "cardmarketAvg": 0.09,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.08,
+      "cardmarketTrend": 0.07,
       "cardmarketAvgFoil": 0.6,
       "cardmarketLowFoil": 0.03,
-      "cardmarketTrendFoil": 0.47
+      "cardmarketTrendFoil": 0.5
     },
     {
       "_id": 423,
@@ -16537,7 +16537,7 @@
       "cardmarketTrend": 124.92,
       "cardmarketAvgFoil": 49.86,
       "cardmarketLowFoil": 8.99,
-      "cardmarketTrendFoil": 51.05
+      "cardmarketTrendFoil": 55.43
     },
     {
       "_id": 424,
@@ -16615,7 +16615,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 8.84,
       "cardmarketLowFoil": 3.5,
-      "cardmarketTrendFoil": 2.45
+      "cardmarketTrendFoil": 2.43
     },
     {
       "_id": 426,
@@ -16693,7 +16693,7 @@
       "cardmarketTrend": 0.38,
       "cardmarketAvgFoil": 0.32,
       "cardmarketLowFoil": 0.05,
-      "cardmarketTrendFoil": 0.31
+      "cardmarketTrendFoil": 0.3
     },
     {
       "_id": 428,
@@ -16732,7 +16732,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 0.21,
       "cardmarketLowFoil": 0.02,
-      "cardmarketTrendFoil": 0.22
+      "cardmarketTrendFoil": 0.2
     },
     {
       "_id": 429,
@@ -16810,7 +16810,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 0.15,
       "cardmarketLowFoil": 0.02,
-      "cardmarketTrendFoil": 0.17
+      "cardmarketTrendFoil": 0.16
     },
     {
       "_id": 431,
@@ -16849,7 +16849,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 2.34,
       "cardmarketLowFoil": 0.49,
-      "cardmarketTrendFoil": 1.79
+      "cardmarketTrendFoil": 1.83
     },
     {
       "_id": 432,
@@ -16888,7 +16888,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 0.42,
       "cardmarketLowFoil": 0.09,
-      "cardmarketTrendFoil": 0.35
+      "cardmarketTrendFoil": 0.33
     },
     {
       "_id": 433,
@@ -16927,7 +16927,7 @@
       "cardmarketTrend": 6.5,
       "cardmarketAvgFoil": 6.77,
       "cardmarketLowFoil": 1.9,
-      "cardmarketTrendFoil": 6.65
+      "cardmarketTrendFoil": 6.74
     },
     {
       "_id": 434,
@@ -16966,7 +16966,7 @@
       "cardmarketTrend": 7.16,
       "cardmarketAvgFoil": 7.91,
       "cardmarketLowFoil": 5,
-      "cardmarketTrendFoil": 7.99
+      "cardmarketTrendFoil": 7.8
     },
     {
       "_id": 435,
@@ -17040,11 +17040,11 @@
       "cardmarketId": 847199,
       "cardmarketName": "Zhonya's Hourglass",
       "cardmarketAvg": 0,
-      "cardmarketLow": 2.95,
+      "cardmarketLow": 2.99,
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 9.58,
-      "cardmarketLowFoil": 2.95,
-      "cardmarketTrendFoil": 10.26
+      "cardmarketLowFoil": 2.99,
+      "cardmarketTrendFoil": 10.32
     },
     {
       "_id": 437,
@@ -17083,7 +17083,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 5.61,
       "cardmarketLowFoil": 3.49,
-      "cardmarketTrendFoil": 5.77
+      "cardmarketTrendFoil": 6.05
     },
     {
       "_id": 438,
@@ -17161,7 +17161,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 11.02,
       "cardmarketLowFoil": 5,
-      "cardmarketTrendFoil": 10.28
+      "cardmarketTrendFoil": 10.19
     },
     {
       "_id": 440,
@@ -17239,7 +17239,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 10.09,
       "cardmarketLowFoil": 5,
-      "cardmarketTrendFoil": 8.44
+      "cardmarketTrendFoil": 8.62
     },
     {
       "_id": 442,
@@ -17278,7 +17278,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 12.91,
       "cardmarketLowFoil": 8.38,
-      "cardmarketTrendFoil": 11.78
+      "cardmarketTrendFoil": 12
     },
     {
       "_id": 443,
@@ -17313,11 +17313,11 @@
       "cardmarketId": 847206,
       "cardmarketName": "Whiteflame Protector",
       "cardmarketAvg": 0,
-      "cardmarketLow": 18.99,
+      "cardmarketLow": 18.5,
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 35.59,
-      "cardmarketLowFoil": 18.99,
-      "cardmarketTrendFoil": 26.74
+      "cardmarketLowFoil": 18.5,
+      "cardmarketTrendFoil": 25.65
     },
     {
       "_id": 444,
@@ -17354,9 +17354,9 @@
       "cardmarketAvg": 0,
       "cardmarketLow": 0.3,
       "cardmarketTrend": 0,
-      "cardmarketAvgFoil": 0.79,
+      "cardmarketAvgFoil": 0.75,
       "cardmarketLowFoil": 0.3,
-      "cardmarketTrendFoil": 0.86
+      "cardmarketTrendFoil": 1
     },
     {
       "_id": 445,
@@ -17393,9 +17393,9 @@
       "cardmarketAvg": 0,
       "cardmarketLow": 0.3,
       "cardmarketTrend": 0,
-      "cardmarketAvgFoil": 0.79,
+      "cardmarketAvgFoil": 0.75,
       "cardmarketLowFoil": 0.3,
-      "cardmarketTrendFoil": 0.86
+      "cardmarketTrendFoil": 1
     },
     {
       "_id": 446,
@@ -17434,7 +17434,7 @@
       "cardmarketTrend": 0.03,
       "cardmarketAvgFoil": 0.2,
       "cardmarketLowFoil": 0.02,
-      "cardmarketTrendFoil": 0.18
+      "cardmarketTrendFoil": 0.22
     },
     {
       "_id": 447,
@@ -17473,7 +17473,7 @@
       "cardmarketTrend": 0.03,
       "cardmarketAvgFoil": 0.2,
       "cardmarketLowFoil": 0.02,
-      "cardmarketTrendFoil": 0.18
+      "cardmarketTrendFoil": 0.22
     },
     {
       "_id": 448,
@@ -17509,10 +17509,10 @@
       "cardmarketName": "Falling Comet",
       "cardmarketAvg": 0.08,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.09,
+      "cardmarketTrend": 0.08,
       "cardmarketAvgFoil": 0.38,
       "cardmarketLowFoil": 0.1,
-      "cardmarketTrendFoil": 0.44
+      "cardmarketTrendFoil": 0.4
     },
     {
       "_id": 449,
@@ -17548,10 +17548,10 @@
       "cardmarketName": "Falling Comet",
       "cardmarketAvg": 0.08,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.09,
+      "cardmarketTrend": 0.08,
       "cardmarketAvgFoil": 0.38,
       "cardmarketLowFoil": 0.1,
-      "cardmarketTrendFoil": 0.44
+      "cardmarketTrendFoil": 0.4
     },
     {
       "_id": 450,
@@ -17587,9 +17587,9 @@
       "cardmarketName": "Jeweled Colossus",
       "cardmarketAvg": 0.04,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.05,
+      "cardmarketTrend": 0.04,
       "cardmarketAvgFoil": 0.2,
-      "cardmarketLowFoil": 0.02,
+      "cardmarketLowFoil": 0.05,
       "cardmarketTrendFoil": 0.13
     },
     {
@@ -17626,9 +17626,9 @@
       "cardmarketName": "Jeweled Colossus",
       "cardmarketAvg": 0.04,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.05,
+      "cardmarketTrend": 0.04,
       "cardmarketAvgFoil": 0.2,
-      "cardmarketLowFoil": 0.02,
+      "cardmarketLowFoil": 0.05,
       "cardmarketTrendFoil": 0.13
     },
     {
@@ -17665,10 +17665,10 @@
       "cardmarketName": "Lecturing Yordle",
       "cardmarketAvg": 0.13,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.11,
+      "cardmarketTrend": 0.13,
       "cardmarketAvgFoil": 1.75,
       "cardmarketLowFoil": 0.05,
-      "cardmarketTrendFoil": 1.85
+      "cardmarketTrendFoil": 1.75
     },
     {
       "_id": 453,
@@ -17704,10 +17704,10 @@
       "cardmarketName": "Lecturing Yordle",
       "cardmarketAvg": 0.13,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.11,
+      "cardmarketTrend": 0.13,
       "cardmarketAvgFoil": 1.75,
       "cardmarketLowFoil": 0.05,
-      "cardmarketTrendFoil": 1.85
+      "cardmarketTrendFoil": 1.75
     },
     {
       "_id": 454,
@@ -17746,7 +17746,7 @@
       "cardmarketTrend": 0.07,
       "cardmarketAvgFoil": 0.36,
       "cardmarketLowFoil": 0.05,
-      "cardmarketTrendFoil": 0.42
+      "cardmarketTrendFoil": 0.4
     },
     {
       "_id": 455,
@@ -17785,7 +17785,7 @@
       "cardmarketTrend": 0.07,
       "cardmarketAvgFoil": 0.36,
       "cardmarketLowFoil": 0.05,
-      "cardmarketTrendFoil": 0.42
+      "cardmarketTrendFoil": 0.4
     },
     {
       "_id": 456,
@@ -17824,7 +17824,7 @@
       "cardmarketTrend": 11.49,
       "cardmarketAvgFoil": 9.91,
       "cardmarketLowFoil": 9,
-      "cardmarketTrendFoil": 11.86
+      "cardmarketTrendFoil": 12.2
     },
     {
       "_id": 457,
@@ -17863,7 +17863,7 @@
       "cardmarketTrend": 11.49,
       "cardmarketAvgFoil": 9.91,
       "cardmarketLowFoil": 9,
-      "cardmarketTrendFoil": 11.86
+      "cardmarketTrendFoil": 12.2
     },
     {
       "_id": 458,
@@ -17939,9 +17939,9 @@
       "cardmarketAvg": 0.04,
       "cardmarketLow": 0.02,
       "cardmarketTrend": 0.05,
-      "cardmarketAvgFoil": 0.16,
+      "cardmarketAvgFoil": 0.13,
       "cardmarketLowFoil": 0.02,
-      "cardmarketTrendFoil": 0.12
+      "cardmarketTrendFoil": 0.14
     },
     {
       "_id": 460,
@@ -17978,9 +17978,9 @@
       "cardmarketAvg": 0.04,
       "cardmarketLow": 0.02,
       "cardmarketTrend": 0.05,
-      "cardmarketAvgFoil": 0.16,
+      "cardmarketAvgFoil": 0.13,
       "cardmarketLowFoil": 0.02,
-      "cardmarketTrendFoil": 0.12
+      "cardmarketTrendFoil": 0.14
     },
     {
       "_id": 461,
@@ -18097,7 +18097,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 0.53,
       "cardmarketLowFoil": 0.1,
-      "cardmarketTrendFoil": 0.61
+      "cardmarketTrendFoil": 0.6
     },
     {
       "_id": 464,
@@ -18136,7 +18136,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 0.53,
       "cardmarketLowFoil": 0.1,
-      "cardmarketTrendFoil": 0.61
+      "cardmarketTrendFoil": 0.6
     },
     {
       "_id": 465,
@@ -18170,12 +18170,12 @@
       "extFlavorText": "<em>\"Well, well, well. What have we here?\"</em>",
       "cardmarketId": 847218,
       "cardmarketName": "Smoke Screen",
-      "cardmarketAvg": 0.11,
+      "cardmarketAvg": 0.09,
       "cardmarketLow": 0.02,
       "cardmarketTrend": 0.08,
-      "cardmarketAvgFoil": 1.45,
+      "cardmarketAvgFoil": 1.43,
       "cardmarketLowFoil": 0.45,
-      "cardmarketTrendFoil": 1.4
+      "cardmarketTrendFoil": 1.36
     },
     {
       "_id": 466,
@@ -18209,12 +18209,12 @@
       "extFlavorText": "<em>\"Well, well, well. What have we here?\"</em>",
       "cardmarketId": 847218,
       "cardmarketName": "Smoke Screen",
-      "cardmarketAvg": 0.11,
+      "cardmarketAvg": 0.09,
       "cardmarketLow": 0.02,
       "cardmarketTrend": 0.08,
-      "cardmarketAvgFoil": 1.45,
+      "cardmarketAvgFoil": 1.43,
       "cardmarketLowFoil": 0.45,
-      "cardmarketTrendFoil": 1.4
+      "cardmarketTrendFoil": 1.36
     },
     {
       "_id": 467,
@@ -18250,10 +18250,10 @@
       "cardmarketName": "Sprite Call",
       "cardmarketAvg": 0.07,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.06,
+      "cardmarketTrend": 0.05,
       "cardmarketAvgFoil": 0.31,
       "cardmarketLowFoil": 0.1,
-      "cardmarketTrendFoil": 0.31
+      "cardmarketTrendFoil": 0.32
     },
     {
       "_id": 468,
@@ -18289,10 +18289,10 @@
       "cardmarketName": "Sprite Call",
       "cardmarketAvg": 0.07,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.06,
+      "cardmarketTrend": 0.05,
       "cardmarketAvgFoil": 0.31,
       "cardmarketLowFoil": 0.1,
-      "cardmarketTrendFoil": 0.31
+      "cardmarketTrendFoil": 0.32
     },
     {
       "_id": 469,
@@ -18328,10 +18328,10 @@
       "cardmarketName": "Stupefy",
       "cardmarketAvg": 0.08,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.09,
+      "cardmarketTrend": 0.1,
       "cardmarketAvgFoil": 0.72,
       "cardmarketLowFoil": 0.1,
-      "cardmarketTrendFoil": 0.73
+      "cardmarketTrendFoil": 0.68
     },
     {
       "_id": 470,
@@ -18367,10 +18367,10 @@
       "cardmarketName": "Stupefy",
       "cardmarketAvg": 0.08,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.09,
+      "cardmarketTrend": 0.1,
       "cardmarketAvgFoil": 0.72,
       "cardmarketLowFoil": 0.1,
-      "cardmarketTrendFoil": 0.73
+      "cardmarketTrendFoil": 0.68
     },
     {
       "_id": 471,
@@ -18409,7 +18409,7 @@
       "cardmarketTrend": 0.09,
       "cardmarketAvgFoil": 1.22,
       "cardmarketLowFoil": 0.19,
-      "cardmarketTrendFoil": 1.28
+      "cardmarketTrendFoil": 1.32
     },
     {
       "_id": 472,
@@ -18448,7 +18448,7 @@
       "cardmarketTrend": 0.09,
       "cardmarketAvgFoil": 1.22,
       "cardmarketLowFoil": 0.19,
-      "cardmarketTrendFoil": 1.28
+      "cardmarketTrendFoil": 1.32
     },
     {
       "_id": 473,
@@ -18482,12 +18482,12 @@
       "extFlavorText": "",
       "cardmarketId": 847222,
       "cardmarketName": "Blastcone Fae",
-      "cardmarketAvg": 0.38,
+      "cardmarketAvg": 0.32,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.24,
-      "cardmarketAvgFoil": 1.6,
+      "cardmarketTrend": 0.29,
+      "cardmarketAvgFoil": 1.67,
       "cardmarketLowFoil": 0.3,
-      "cardmarketTrendFoil": 1.74
+      "cardmarketTrendFoil": 1.77
     },
     {
       "_id": 474,
@@ -18521,12 +18521,12 @@
       "extFlavorText": "",
       "cardmarketId": 847222,
       "cardmarketName": "Blastcone Fae",
-      "cardmarketAvg": 0.38,
+      "cardmarketAvg": 0.32,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.24,
-      "cardmarketAvgFoil": 1.6,
+      "cardmarketTrend": 0.29,
+      "cardmarketAvgFoil": 1.67,
       "cardmarketLowFoil": 0.3,
-      "cardmarketTrendFoil": 1.74
+      "cardmarketTrendFoil": 1.77
     },
     {
       "_id": 475,
@@ -18562,10 +18562,10 @@
       "cardmarketName": "Energy Conduit",
       "cardmarketAvg": 0.13,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.15,
+      "cardmarketTrend": 0.13,
       "cardmarketAvgFoil": 0.59,
       "cardmarketLowFoil": 0.15,
-      "cardmarketTrendFoil": 0.67
+      "cardmarketTrendFoil": 0.69
     },
     {
       "_id": 476,
@@ -18601,10 +18601,10 @@
       "cardmarketName": "Energy Conduit",
       "cardmarketAvg": 0.13,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.15,
+      "cardmarketTrend": 0.13,
       "cardmarketAvgFoil": 0.59,
       "cardmarketLowFoil": 0.15,
-      "cardmarketTrendFoil": 0.67
+      "cardmarketTrendFoil": 0.69
     },
     {
       "_id": 477,
@@ -18640,10 +18640,10 @@
       "cardmarketName": "Garbage Grabber",
       "cardmarketAvg": 0.11,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.1,
+      "cardmarketTrend": 0.11,
       "cardmarketAvgFoil": 0.46,
       "cardmarketLowFoil": 0.09,
-      "cardmarketTrendFoil": 0.52
+      "cardmarketTrendFoil": 0.56
     },
     {
       "_id": 478,
@@ -18679,10 +18679,10 @@
       "cardmarketName": "Garbage Grabber",
       "cardmarketAvg": 0.11,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.1,
+      "cardmarketTrend": 0.11,
       "cardmarketAvgFoil": 0.46,
       "cardmarketLowFoil": 0.09,
-      "cardmarketTrendFoil": 0.52
+      "cardmarketTrendFoil": 0.56
     },
     {
       "_id": 479,
@@ -18718,10 +18718,10 @@
       "cardmarketName": "Gemcraft Seer",
       "cardmarketAvg": 0.12,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.14,
+      "cardmarketTrend": 0.13,
       "cardmarketAvgFoil": 0.38,
       "cardmarketLowFoil": 0.05,
-      "cardmarketTrendFoil": 0.43
+      "cardmarketTrendFoil": 0.45
     },
     {
       "_id": 480,
@@ -18757,10 +18757,10 @@
       "cardmarketName": "Gemcraft Seer",
       "cardmarketAvg": 0.12,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.14,
+      "cardmarketTrend": 0.13,
       "cardmarketAvgFoil": 0.38,
       "cardmarketLowFoil": 0.05,
-      "cardmarketTrendFoil": 0.43
+      "cardmarketTrendFoil": 0.45
     },
     {
       "_id": 481,
@@ -18796,10 +18796,10 @@
       "cardmarketName": "Mushroom Pouch",
       "cardmarketAvg": 0.08,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.07,
+      "cardmarketTrend": 0.08,
       "cardmarketAvgFoil": 0.45,
       "cardmarketLowFoil": 0.1,
-      "cardmarketTrendFoil": 0.42
+      "cardmarketTrendFoil": 0.41
     },
     {
       "_id": 482,
@@ -18835,10 +18835,10 @@
       "cardmarketName": "Mushroom Pouch",
       "cardmarketAvg": 0.08,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.07,
+      "cardmarketTrend": 0.08,
       "cardmarketAvgFoil": 0.45,
       "cardmarketLowFoil": 0.1,
-      "cardmarketTrendFoil": 0.42
+      "cardmarketTrendFoil": 0.41
     },
     {
       "_id": 483,
@@ -18874,10 +18874,10 @@
       "cardmarketName": "Portal Rescue",
       "cardmarketAvg": 0.11,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.1,
+      "cardmarketTrend": 0.09,
       "cardmarketAvgFoil": 0.6,
       "cardmarketLowFoil": 0.05,
-      "cardmarketTrendFoil": 0.57
+      "cardmarketTrendFoil": 0.59
     },
     {
       "_id": 484,
@@ -18913,10 +18913,10 @@
       "cardmarketName": "Portal Rescue",
       "cardmarketAvg": 0.11,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.1,
+      "cardmarketTrend": 0.09,
       "cardmarketAvgFoil": 0.6,
       "cardmarketLowFoil": 0.05,
-      "cardmarketTrendFoil": 0.57
+      "cardmarketTrendFoil": 0.59
     },
     {
       "_id": 485,
@@ -18955,7 +18955,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 1.69,
       "cardmarketLowFoil": 0.98,
-      "cardmarketTrendFoil": 1.97
+      "cardmarketTrendFoil": 1.91
     },
     {
       "_id": 486,
@@ -18994,7 +18994,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 1.69,
       "cardmarketLowFoil": 0.98,
-      "cardmarketTrendFoil": 1.97
+      "cardmarketTrendFoil": 1.91
     },
     {
       "_id": 487,
@@ -19030,10 +19030,10 @@
       "cardmarketName": "Retreat",
       "cardmarketAvg": 2.4,
       "cardmarketLow": 1.1,
-      "cardmarketTrend": 2.23,
+      "cardmarketTrend": 2.16,
       "cardmarketAvgFoil": 5.73,
       "cardmarketLowFoil": 3,
-      "cardmarketTrendFoil": 5.78
+      "cardmarketTrendFoil": 5.73
     },
     {
       "_id": 488,
@@ -19069,10 +19069,10 @@
       "cardmarketName": "Retreat",
       "cardmarketAvg": 2.4,
       "cardmarketLow": 1.1,
-      "cardmarketTrend": 2.23,
+      "cardmarketTrend": 2.16,
       "cardmarketAvgFoil": 5.73,
       "cardmarketLowFoil": 3,
-      "cardmarketTrendFoil": 5.78
+      "cardmarketTrendFoil": 5.73
     },
     {
       "_id": 489,
@@ -19108,10 +19108,10 @@
       "cardmarketName": "Singularity",
       "cardmarketAvg": 1.03,
       "cardmarketLow": 0.25,
-      "cardmarketTrend": 0.92,
+      "cardmarketTrend": 0.93,
       "cardmarketAvgFoil": 4.07,
-      "cardmarketLowFoil": 2.5,
-      "cardmarketTrendFoil": 4.37
+      "cardmarketLowFoil": 0.4,
+      "cardmarketTrendFoil": 4.45
     },
     {
       "_id": 490,
@@ -19147,10 +19147,10 @@
       "cardmarketName": "Singularity",
       "cardmarketAvg": 1.03,
       "cardmarketLow": 0.25,
-      "cardmarketTrend": 0.92,
+      "cardmarketTrend": 0.93,
       "cardmarketAvgFoil": 4.07,
-      "cardmarketLowFoil": 2.5,
-      "cardmarketTrendFoil": 4.37
+      "cardmarketLowFoil": 0.4,
+      "cardmarketTrendFoil": 4.45
     },
     {
       "_id": 491,
@@ -19186,10 +19186,10 @@
       "cardmarketName": "Sprite Mother",
       "cardmarketAvg": 2.15,
       "cardmarketLow": 0.25,
-      "cardmarketTrend": 1.78,
+      "cardmarketTrend": 1.76,
       "cardmarketAvgFoil": 4.22,
-      "cardmarketLowFoil": 1.5,
-      "cardmarketTrendFoil": 3.94
+      "cardmarketLowFoil": 0.5,
+      "cardmarketTrendFoil": 3.68
     },
     {
       "_id": 492,
@@ -19225,10 +19225,10 @@
       "cardmarketName": "Sprite Mother",
       "cardmarketAvg": 2.15,
       "cardmarketLow": 0.25,
-      "cardmarketTrend": 1.78,
+      "cardmarketTrend": 1.76,
       "cardmarketAvgFoil": 4.22,
-      "cardmarketLowFoil": 1.5,
-      "cardmarketTrendFoil": 3.94
+      "cardmarketLowFoil": 0.5,
+      "cardmarketTrendFoil": 3.68
     },
     {
       "_id": 493,
@@ -19263,10 +19263,10 @@
       "cardmarketId": 847232,
       "cardmarketName": "Ava Achiever",
       "cardmarketAvg": 0,
-      "cardmarketLow": 0.05,
+      "cardmarketLow": 0.04,
       "cardmarketTrend": 0.8,
       "cardmarketAvgFoil": 0.29,
-      "cardmarketLowFoil": 0.05,
+      "cardmarketLowFoil": 0.04,
       "cardmarketTrendFoil": 0.26
     },
     {
@@ -19306,7 +19306,7 @@
       "cardmarketTrend": 0.3,
       "cardmarketAvgFoil": 0.22,
       "cardmarketLowFoil": 0.02,
-      "cardmarketTrendFoil": 0.2
+      "cardmarketTrendFoil": 0.19
     },
     {
       "_id": 495,
@@ -19345,7 +19345,7 @@
       "cardmarketTrend": 4.95,
       "cardmarketAvgFoil": 4.57,
       "cardmarketLowFoil": 0.7,
-      "cardmarketTrendFoil": 4.08
+      "cardmarketTrendFoil": 4.05
     },
     {
       "_id": 496,
@@ -19384,7 +19384,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 0.85,
       "cardmarketLowFoil": 0.2,
-      "cardmarketTrendFoil": 0.8
+      "cardmarketTrendFoil": 0.77
     },
     {
       "_id": 497,
@@ -19462,7 +19462,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 5.17,
       "cardmarketLowFoil": 2.65,
-      "cardmarketTrendFoil": 5.02
+      "cardmarketTrendFoil": 5.09
     },
     {
       "_id": 499,
@@ -19540,7 +19540,7 @@
       "cardmarketTrend": 0.5,
       "cardmarketAvgFoil": 0.39,
       "cardmarketLowFoil": 0.05,
-      "cardmarketTrendFoil": 0.38
+      "cardmarketTrendFoil": 0.37
     },
     {
       "_id": 501,
@@ -19575,11 +19575,11 @@
       "cardmarketId": 847255,
       "cardmarketName": "Progress Day",
       "cardmarketAvg": 0,
-      "cardmarketLow": 0.1,
+      "cardmarketLow": 0.09,
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 0.4,
-      "cardmarketLowFoil": 0.1,
-      "cardmarketTrendFoil": 0.49
+      "cardmarketLowFoil": 0.09,
+      "cardmarketTrendFoil": 0.47
     },
     {
       "_id": 502,
@@ -19614,11 +19614,11 @@
       "cardmarketId": 847256,
       "cardmarketName": "Promising Future",
       "cardmarketAvg": 0,
-      "cardmarketLow": 0.04,
+      "cardmarketLow": 0.03,
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 0.27,
-      "cardmarketLowFoil": 0.04,
-      "cardmarketTrendFoil": 0.26
+      "cardmarketLowFoil": 0.03,
+      "cardmarketTrendFoil": 0.24
     },
     {
       "_id": 503,
@@ -19653,11 +19653,11 @@
       "cardmarketId": 847257,
       "cardmarketName": "Thousand-Tailed Watcher",
       "cardmarketAvg": 0,
-      "cardmarketLow": 7.9,
+      "cardmarketLow": 7.5,
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 27.13,
-      "cardmarketLowFoil": 7.9,
-      "cardmarketTrendFoil": 25.43
+      "cardmarketLowFoil": 7.5,
+      "cardmarketTrendFoil": 25.26
     },
     {
       "_id": 504,
@@ -19696,7 +19696,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 4.1,
       "cardmarketLowFoil": 1.89,
-      "cardmarketTrendFoil": 5.52
+      "cardmarketTrendFoil": 5.55
     },
     {
       "_id": 505,
@@ -19735,7 +19735,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 0.24,
       "cardmarketLowFoil": 0.02,
-      "cardmarketTrendFoil": 0.19
+      "cardmarketTrendFoil": 0.18
     },
     {
       "_id": 506,
@@ -19774,7 +19774,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 16.34,
       "cardmarketLowFoil": 7,
-      "cardmarketTrendFoil": 15.25
+      "cardmarketTrendFoil": 15.53
     },
     {
       "_id": 507,
@@ -19813,7 +19813,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 13.6,
       "cardmarketLowFoil": 8,
-      "cardmarketTrendFoil": 12.08
+      "cardmarketTrendFoil": 12.16
     },
     {
       "_id": 508,
@@ -19852,7 +19852,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 8.5,
       "cardmarketLowFoil": 4.95,
-      "cardmarketTrendFoil": 8.32
+      "cardmarketTrendFoil": 8.35
     },
     {
       "_id": 509,
@@ -19926,11 +19926,11 @@
       "cardmarketId": 847271,
       "cardmarketName": "Time Warp",
       "cardmarketAvg": 0,
-      "cardmarketLow": 22.5,
+      "cardmarketLow": 22.49,
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 55.05,
-      "cardmarketLowFoil": 22.5,
-      "cardmarketTrendFoil": 53.27
+      "cardmarketLowFoil": 22.49,
+      "cardmarketTrendFoil": 53
     },
     {
       "_id": 511,
@@ -19969,7 +19969,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 9.8,
       "cardmarketLowFoil": 4.99,
-      "cardmarketTrendFoil": 9.54
+      "cardmarketTrendFoil": 9.59
     },
     {
       "_id": 512,
@@ -20005,10 +20005,10 @@
       "cardmarketName": "Arena Bar",
       "cardmarketAvg": 0.06,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.05,
+      "cardmarketTrend": 0.06,
       "cardmarketAvgFoil": 0.29,
       "cardmarketLowFoil": 0.02,
-      "cardmarketTrendFoil": 0.34
+      "cardmarketTrendFoil": 0.33
     },
     {
       "_id": 513,
@@ -20044,10 +20044,10 @@
       "cardmarketName": "Arena Bar",
       "cardmarketAvg": 0.06,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.05,
+      "cardmarketTrend": 0.06,
       "cardmarketAvgFoil": 0.29,
       "cardmarketLowFoil": 0.02,
-      "cardmarketTrendFoil": 0.34
+      "cardmarketTrendFoil": 0.33
     },
     {
       "_id": 514,
@@ -20086,7 +20086,7 @@
       "cardmarketTrend": 0.04,
       "cardmarketAvgFoil": 0.2,
       "cardmarketLowFoil": 0.03,
-      "cardmarketTrendFoil": 0.28
+      "cardmarketTrendFoil": 0.27
     },
     {
       "_id": 515,
@@ -20125,7 +20125,7 @@
       "cardmarketTrend": 0.04,
       "cardmarketAvgFoil": 0.2,
       "cardmarketLowFoil": 0.03,
-      "cardmarketTrendFoil": 0.28
+      "cardmarketTrendFoil": 0.27
     },
     {
       "_id": 516,
@@ -20160,11 +20160,11 @@
       "cardmarketId": 856117,
       "cardmarketName": "Body Rune",
       "cardmarketAvg": 8.99,
-      "cardmarketLow": 4.99,
+      "cardmarketLow": 6,
       "cardmarketTrend": 8.99,
       "cardmarketAvgFoil": 6.95,
-      "cardmarketLowFoil": 4.99,
-      "cardmarketTrendFoil": 8.04
+      "cardmarketLowFoil": 6,
+      "cardmarketTrendFoil": 8.35
     },
     {
       "_id": 517,
@@ -20240,9 +20240,9 @@
       "cardmarketAvg": 0.05,
       "cardmarketLow": 0.02,
       "cardmarketTrend": 0.05,
-      "cardmarketAvgFoil": 0.23,
+      "cardmarketAvgFoil": 0.24,
       "cardmarketLowFoil": 0.04,
-      "cardmarketTrendFoil": 0.26
+      "cardmarketTrendFoil": 0.28
     },
     {
       "_id": 519,
@@ -20279,9 +20279,9 @@
       "cardmarketAvg": 0.05,
       "cardmarketLow": 0.02,
       "cardmarketTrend": 0.05,
-      "cardmarketAvgFoil": 0.23,
+      "cardmarketAvgFoil": 0.24,
       "cardmarketLowFoil": 0.04,
-      "cardmarketTrendFoil": 0.26
+      "cardmarketTrendFoil": 0.28
     },
     {
       "_id": 520,
@@ -20318,7 +20318,7 @@
       "cardmarketAvg": 0,
       "cardmarketLow": 0.29,
       "cardmarketTrend": 0,
-      "cardmarketAvgFoil": 0.68,
+      "cardmarketAvgFoil": 0.7,
       "cardmarketLowFoil": 0.29,
       "cardmarketTrendFoil": 0.85
     },
@@ -20357,7 +20357,7 @@
       "cardmarketAvg": 0,
       "cardmarketLow": 0.29,
       "cardmarketTrend": 0,
-      "cardmarketAvgFoil": 0.68,
+      "cardmarketAvgFoil": 0.7,
       "cardmarketLowFoil": 0.29,
       "cardmarketTrendFoil": 0.85
     },
@@ -20398,7 +20398,7 @@
       "cardmarketTrend": 0.06,
       "cardmarketAvgFoil": 0.28,
       "cardmarketLowFoil": 0.02,
-      "cardmarketTrendFoil": 0.21
+      "cardmarketTrendFoil": 0.26
     },
     {
       "_id": 523,
@@ -20437,7 +20437,7 @@
       "cardmarketTrend": 0.06,
       "cardmarketAvgFoil": 0.28,
       "cardmarketLowFoil": 0.02,
-      "cardmarketTrendFoil": 0.21
+      "cardmarketTrendFoil": 0.26
     },
     {
       "_id": 524,
@@ -20476,7 +20476,7 @@
       "cardmarketTrend": 0.04,
       "cardmarketAvgFoil": 0.2,
       "cardmarketLowFoil": 0.02,
-      "cardmarketTrendFoil": 0.26
+      "cardmarketTrendFoil": 0.27
     },
     {
       "_id": 525,
@@ -20515,7 +20515,7 @@
       "cardmarketTrend": 0.04,
       "cardmarketAvgFoil": 0.2,
       "cardmarketLowFoil": 0.02,
-      "cardmarketTrendFoil": 0.26
+      "cardmarketTrendFoil": 0.27
     },
     {
       "_id": 526,
@@ -20554,7 +20554,7 @@
       "cardmarketTrend": 0.04,
       "cardmarketAvgFoil": 0.26,
       "cardmarketLowFoil": 0.05,
-      "cardmarketTrendFoil": 0.21
+      "cardmarketTrendFoil": 0.27
     },
     {
       "_id": 527,
@@ -20593,7 +20593,7 @@
       "cardmarketTrend": 0.04,
       "cardmarketAvgFoil": 0.26,
       "cardmarketLowFoil": 0.05,
-      "cardmarketTrendFoil": 0.21
+      "cardmarketTrendFoil": 0.27
     },
     {
       "_id": 528,
@@ -20627,12 +20627,12 @@
       "extFlavorText": "<em>\"It's a boarding party! Try to have some fun with it.\"</em>",
       "cardmarketId": 847289,
       "cardmarketName": "First Mate",
-      "cardmarketAvg": 0.07,
+      "cardmarketAvg": 0.06,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.05,
-      "cardmarketAvgFoil": 0.65,
+      "cardmarketTrend": 0.06,
+      "cardmarketAvgFoil": 0.63,
       "cardmarketLowFoil": 0.1,
-      "cardmarketTrendFoil": 0.55
+      "cardmarketTrendFoil": 0.57
     },
     {
       "_id": 529,
@@ -20666,12 +20666,12 @@
       "extFlavorText": "<em>\"It's a boarding party! Try to have some fun with it.\"</em>",
       "cardmarketId": 847289,
       "cardmarketName": "First Mate",
-      "cardmarketAvg": 0.07,
+      "cardmarketAvg": 0.06,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.05,
-      "cardmarketAvgFoil": 0.65,
+      "cardmarketTrend": 0.06,
+      "cardmarketAvgFoil": 0.63,
       "cardmarketLowFoil": 0.1,
-      "cardmarketTrendFoil": 0.55
+      "cardmarketTrendFoil": 0.57
     },
     {
       "_id": 530,
@@ -20705,12 +20705,12 @@
       "extFlavorText": "<em>\"Violence solves everything.\" -Katarina</em>",
       "cardmarketId": 847290,
       "cardmarketName": "Flurry of Blades",
-      "cardmarketAvg": 0.06,
+      "cardmarketAvg": 0.05,
       "cardmarketLow": 0.02,
       "cardmarketTrend": 0.06,
-      "cardmarketAvgFoil": 0.2,
+      "cardmarketAvgFoil": 0.18,
       "cardmarketLowFoil": 0.05,
-      "cardmarketTrendFoil": 0.16
+      "cardmarketTrendFoil": 0.15
     },
     {
       "_id": 531,
@@ -20744,12 +20744,12 @@
       "extFlavorText": "<em>\"Violence solves everything.\" -Katarina</em>",
       "cardmarketId": 847290,
       "cardmarketName": "Flurry of Blades",
-      "cardmarketAvg": 0.06,
+      "cardmarketAvg": 0.05,
       "cardmarketLow": 0.02,
       "cardmarketTrend": 0.06,
-      "cardmarketAvgFoil": 0.2,
+      "cardmarketAvgFoil": 0.18,
       "cardmarketLowFoil": 0.05,
-      "cardmarketTrendFoil": 0.16
+      "cardmarketTrendFoil": 0.15
     },
     {
       "_id": 532,
@@ -20783,12 +20783,12 @@
       "extFlavorText": "<em>The sound of the trumpets is the first blow struck in battle.</em>",
       "cardmarketId": 847291,
       "cardmarketName": "Mobilize",
-      "cardmarketAvg": 0.07,
+      "cardmarketAvg": 0.06,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.05,
-      "cardmarketAvgFoil": 0.61,
+      "cardmarketTrend": 0.04,
+      "cardmarketAvgFoil": 0.62,
       "cardmarketLowFoil": 0.1,
-      "cardmarketTrendFoil": 0.54
+      "cardmarketTrendFoil": 0.5
     },
     {
       "_id": 533,
@@ -20822,12 +20822,12 @@
       "extFlavorText": "<em>The sound of the trumpets is the first blow struck in battle.</em>",
       "cardmarketId": 847291,
       "cardmarketName": "Mobilize",
-      "cardmarketAvg": 0.07,
+      "cardmarketAvg": 0.06,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.05,
-      "cardmarketAvgFoil": 0.61,
+      "cardmarketTrend": 0.04,
+      "cardmarketAvgFoil": 0.62,
       "cardmarketLowFoil": 0.1,
-      "cardmarketTrendFoil": 0.54
+      "cardmarketTrendFoil": 0.5
     },
     {
       "_id": 534,
@@ -20864,9 +20864,9 @@
       "cardmarketAvg": 0,
       "cardmarketLow": 0.05,
       "cardmarketTrend": 0,
-      "cardmarketAvgFoil": 0.27,
+      "cardmarketAvgFoil": 0.29,
       "cardmarketLowFoil": 0.05,
-      "cardmarketTrendFoil": 0.35
+      "cardmarketTrendFoil": 0.36
     },
     {
       "_id": 535,
@@ -20903,9 +20903,9 @@
       "cardmarketAvg": 0,
       "cardmarketLow": 0.05,
       "cardmarketTrend": 0,
-      "cardmarketAvgFoil": 0.27,
+      "cardmarketAvgFoil": 0.29,
       "cardmarketLowFoil": 0.05,
-      "cardmarketTrendFoil": 0.35
+      "cardmarketTrendFoil": 0.36
     },
     {
       "_id": 536,
@@ -20944,7 +20944,7 @@
       "cardmarketTrend": 0.05,
       "cardmarketAvgFoil": 0.75,
       "cardmarketLowFoil": 0.1,
-      "cardmarketTrendFoil": 0.76
+      "cardmarketTrendFoil": 0.86
     },
     {
       "_id": 537,
@@ -20983,7 +20983,7 @@
       "cardmarketTrend": 0.05,
       "cardmarketAvgFoil": 0.75,
       "cardmarketLowFoil": 0.1,
-      "cardmarketTrendFoil": 0.76
+      "cardmarketTrendFoil": 0.86
     },
     {
       "_id": 538,
@@ -21095,11 +21095,11 @@
       "extFlavorText": "<em>Ages of strife, crystallized into eternity.</em>",
       "cardmarketId": 847295,
       "cardmarketName": "Catalyst of Aeons",
-      "cardmarketAvg": 0.59,
+      "cardmarketAvg": 0.51,
       "cardmarketLow": 0.05,
       "cardmarketTrend": 0.45,
-      "cardmarketAvgFoil": 3.75,
-      "cardmarketLowFoil": 0.99,
+      "cardmarketAvgFoil": 3.8,
+      "cardmarketLowFoil": 1.99,
       "cardmarketTrendFoil": 3.22
     },
     {
@@ -21134,11 +21134,11 @@
       "extFlavorText": "<em>Ages of strife, crystallized into eternity.</em>",
       "cardmarketId": 847295,
       "cardmarketName": "Catalyst of Aeons",
-      "cardmarketAvg": 0.59,
+      "cardmarketAvg": 0.51,
       "cardmarketLow": 0.05,
       "cardmarketTrend": 0.45,
-      "cardmarketAvgFoil": 3.75,
-      "cardmarketLowFoil": 0.99,
+      "cardmarketAvgFoil": 3.8,
+      "cardmarketLowFoil": 1.99,
       "cardmarketTrendFoil": 3.22
     },
     {
@@ -21178,7 +21178,7 @@
       "cardmarketTrend": 0.1,
       "cardmarketAvgFoil": 0.44,
       "cardmarketLowFoil": 0.15,
-      "cardmarketTrendFoil": 0.35
+      "cardmarketTrendFoil": 0.37
     },
     {
       "_id": 543,
@@ -21217,7 +21217,7 @@
       "cardmarketTrend": 0.1,
       "cardmarketAvgFoil": 0.44,
       "cardmarketLowFoil": 0.15,
-      "cardmarketTrendFoil": 0.35
+      "cardmarketTrendFoil": 0.37
     },
     {
       "_id": 544,
@@ -21253,10 +21253,10 @@
       "cardmarketName": "Herald of Scales",
       "cardmarketAvg": 0.16,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.13,
+      "cardmarketTrend": 0.12,
       "cardmarketAvgFoil": 0.59,
       "cardmarketLowFoil": 0.25,
-      "cardmarketTrendFoil": 0.78
+      "cardmarketTrendFoil": 0.77
     },
     {
       "_id": 545,
@@ -21292,10 +21292,10 @@
       "cardmarketName": "Herald of Scales",
       "cardmarketAvg": 0.16,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.13,
+      "cardmarketTrend": 0.12,
       "cardmarketAvgFoil": 0.59,
       "cardmarketLowFoil": 0.25,
-      "cardmarketTrendFoil": 0.78
+      "cardmarketTrendFoil": 0.77
     },
     {
       "_id": 546,
@@ -21331,10 +21331,10 @@
       "cardmarketName": "Kinkou Monk",
       "cardmarketAvg": 0.25,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.21,
+      "cardmarketTrend": 0.23,
       "cardmarketAvgFoil": 1.36,
       "cardmarketLowFoil": 0.5,
-      "cardmarketTrendFoil": 1.59
+      "cardmarketTrendFoil": 1.51
     },
     {
       "_id": 547,
@@ -21370,10 +21370,10 @@
       "cardmarketName": "Kinkou Monk",
       "cardmarketAvg": 0.25,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.21,
+      "cardmarketTrend": 0.23,
       "cardmarketAvgFoil": 1.36,
       "cardmarketLowFoil": 0.5,
-      "cardmarketTrendFoil": 1.59
+      "cardmarketTrendFoil": 1.51
     },
     {
       "_id": 548,
@@ -21412,7 +21412,7 @@
       "cardmarketTrend": 0.08,
       "cardmarketAvgFoil": 0.76,
       "cardmarketLowFoil": 0.19,
-      "cardmarketTrendFoil": 0.7
+      "cardmarketTrendFoil": 0.71
     },
     {
       "_id": 549,
@@ -21451,7 +21451,7 @@
       "cardmarketTrend": 0.08,
       "cardmarketAvgFoil": 0.76,
       "cardmarketLowFoil": 0.19,
-      "cardmarketTrendFoil": 0.7
+      "cardmarketTrendFoil": 0.71
     },
     {
       "_id": 550,
@@ -21489,8 +21489,8 @@
       "cardmarketLow": 0.02,
       "cardmarketTrend": 0.09,
       "cardmarketAvgFoil": 0.47,
-      "cardmarketLowFoil": 0.03,
-      "cardmarketTrendFoil": 0.54
+      "cardmarketLowFoil": 0.1,
+      "cardmarketTrendFoil": 0.57
     },
     {
       "_id": 551,
@@ -21528,8 +21528,8 @@
       "cardmarketLow": 0.02,
       "cardmarketTrend": 0.09,
       "cardmarketAvgFoil": 0.47,
-      "cardmarketLowFoil": 0.03,
-      "cardmarketTrendFoil": 0.54
+      "cardmarketLowFoil": 0.1,
+      "cardmarketTrendFoil": 0.57
     },
     {
       "_id": 552,
@@ -21568,7 +21568,7 @@
       "cardmarketTrend": 0.1,
       "cardmarketAvgFoil": 0.51,
       "cardmarketLowFoil": 0.09,
-      "cardmarketTrendFoil": 0.58
+      "cardmarketTrendFoil": 0.59
     },
     {
       "_id": 553,
@@ -21607,7 +21607,7 @@
       "cardmarketTrend": 0.1,
       "cardmarketAvgFoil": 0.51,
       "cardmarketLowFoil": 0.09,
-      "cardmarketTrendFoil": 0.58
+      "cardmarketTrendFoil": 0.59
     },
     {
       "_id": 554,
@@ -21646,7 +21646,7 @@
       "cardmarketTrend": 0.53,
       "cardmarketAvgFoil": 2.21,
       "cardmarketLowFoil": 1.1,
-      "cardmarketTrendFoil": 1.92
+      "cardmarketTrendFoil": 2.09
     },
     {
       "_id": 555,
@@ -21685,7 +21685,7 @@
       "cardmarketTrend": 0.53,
       "cardmarketAvgFoil": 2.21,
       "cardmarketLowFoil": 1.1,
-      "cardmarketTrendFoil": 1.92
+      "cardmarketTrendFoil": 2.09
     },
     {
       "_id": 556,
@@ -21721,7 +21721,7 @@
       "cardmarketName": "Wallop",
       "cardmarketAvg": 0.15,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.12,
+      "cardmarketTrend": 0.11,
       "cardmarketAvgFoil": 0.7,
       "cardmarketLowFoil": 0.12,
       "cardmarketTrendFoil": 0.72
@@ -21760,7 +21760,7 @@
       "cardmarketName": "Wallop",
       "cardmarketAvg": 0.15,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.12,
+      "cardmarketTrend": 0.11,
       "cardmarketAvgFoil": 0.7,
       "cardmarketLowFoil": 0.12,
       "cardmarketTrendFoil": 0.72
@@ -21799,10 +21799,10 @@
       "cardmarketName": "Wildclaw Shaman",
       "cardmarketAvg": 0.08,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.05,
+      "cardmarketTrend": 0.04,
       "cardmarketAvgFoil": 0.4,
       "cardmarketLowFoil": 0.04,
-      "cardmarketTrendFoil": 0.46
+      "cardmarketTrendFoil": 0.47
     },
     {
       "_id": 559,
@@ -21838,10 +21838,10 @@
       "cardmarketName": "Wildclaw Shaman",
       "cardmarketAvg": 0.08,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.05,
+      "cardmarketTrend": 0.04,
       "cardmarketAvgFoil": 0.4,
       "cardmarketLowFoil": 0.04,
-      "cardmarketTrendFoil": 0.46
+      "cardmarketTrendFoil": 0.47
     },
     {
       "_id": 560,
@@ -21880,7 +21880,7 @@
       "cardmarketTrend": 0.69,
       "cardmarketAvgFoil": 0.65,
       "cardmarketLowFoil": 0.25,
-      "cardmarketTrendFoil": 0.57
+      "cardmarketTrendFoil": 0.53
     },
     {
       "_id": 561,
@@ -21919,7 +21919,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 0.9,
       "cardmarketLowFoil": 0.1,
-      "cardmarketTrendFoil": 0.74
+      "cardmarketTrendFoil": 0.73
     },
     {
       "_id": 562,
@@ -21958,7 +21958,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 0.29,
       "cardmarketLowFoil": 0.04,
-      "cardmarketTrendFoil": 0.27
+      "cardmarketTrendFoil": 0.28
     },
     {
       "_id": 563,
@@ -21997,7 +21997,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 5.22,
       "cardmarketLowFoil": 4,
-      "cardmarketTrendFoil": 5.12
+      "cardmarketTrendFoil": 5.39
     },
     {
       "_id": 564,
@@ -22075,7 +22075,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 0.12,
       "cardmarketLowFoil": 0.02,
-      "cardmarketTrendFoil": 0.11
+      "cardmarketTrendFoil": 0.1
     },
     {
       "_id": 566,
@@ -22153,7 +22153,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 1.56,
       "cardmarketLowFoil": 0.4,
-      "cardmarketTrendFoil": 1.48
+      "cardmarketTrendFoil": 1.51
     },
     {
       "_id": 568,
@@ -22188,11 +22188,11 @@
       "cardmarketId": 847318,
       "cardmarketName": "Qiyana, Victorious",
       "cardmarketAvg": 0,
-      "cardmarketLow": 1.99,
+      "cardmarketLow": 1.95,
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 5.52,
-      "cardmarketLowFoil": 1.99,
-      "cardmarketTrendFoil": 5.6
+      "cardmarketLowFoil": 1.95,
+      "cardmarketTrendFoil": 5.59
     },
     {
       "_id": 569,
@@ -22231,7 +22231,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 3.75,
       "cardmarketLowFoil": 0.9,
-      "cardmarketTrendFoil": 4.05
+      "cardmarketTrendFoil": 4.09
     },
     {
       "_id": 570,
@@ -22270,7 +22270,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 0.33,
       "cardmarketLowFoil": 0.05,
-      "cardmarketTrendFoil": 0.32
+      "cardmarketTrendFoil": 0.3
     },
     {
       "_id": 571,
@@ -22422,11 +22422,11 @@
       "cardmarketId": 847324,
       "cardmarketName": "Dazzling Aurora",
       "cardmarketAvg": 0,
-      "cardmarketLow": 18.43,
+      "cardmarketLow": 17.5,
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 37.96,
-      "cardmarketLowFoil": 18.43,
-      "cardmarketTrendFoil": 29.78
+      "cardmarketLowFoil": 17.5,
+      "cardmarketTrendFoil": 29.66
     },
     {
       "_id": 575,
@@ -22461,11 +22461,11 @@
       "cardmarketId": 847325,
       "cardmarketName": "Deadbloom Predator",
       "cardmarketAvg": 0,
-      "cardmarketLow": 28,
+      "cardmarketLow": 30,
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 61.72,
-      "cardmarketLowFoil": 28,
-      "cardmarketTrendFoil": 49.5
+      "cardmarketLowFoil": 30,
+      "cardmarketTrendFoil": 47.24
     },
     {
       "_id": 576,
@@ -22504,7 +22504,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 14.26,
       "cardmarketLowFoil": 6,
-      "cardmarketTrendFoil": 13.81
+      "cardmarketTrendFoil": 14.05
     },
     {
       "_id": 577,
@@ -22582,7 +22582,7 @@
       "cardmarketTrend": 11.75,
       "cardmarketAvgFoil": 9.36,
       "cardmarketLowFoil": 6,
-      "cardmarketTrendFoil": 8.21
+      "cardmarketTrendFoil": 8.31
     },
     {
       "_id": 579,
@@ -22621,7 +22621,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 19.64,
       "cardmarketLowFoil": 7,
-      "cardmarketTrendFoil": 20.66
+      "cardmarketTrendFoil": 20.49
     },
     {
       "_id": 580,
@@ -22699,7 +22699,7 @@
       "cardmarketTrend": 0.05,
       "cardmarketAvgFoil": 0.23,
       "cardmarketLowFoil": 0.02,
-      "cardmarketTrendFoil": 0.23
+      "cardmarketTrendFoil": 0.22
     },
     {
       "_id": 582,
@@ -22738,7 +22738,7 @@
       "cardmarketTrend": 0.05,
       "cardmarketAvgFoil": 0.23,
       "cardmarketLowFoil": 0.02,
-      "cardmarketTrendFoil": 0.23
+      "cardmarketTrendFoil": 0.22
     },
     {
       "_id": 583,
@@ -22777,7 +22777,7 @@
       "cardmarketTrend": 12.99,
       "cardmarketAvgFoil": 9.63,
       "cardmarketLowFoil": 11,
-      "cardmarketTrendFoil": 13.35
+      "cardmarketTrendFoil": 13.81
     },
     {
       "_id": 584,
@@ -22816,7 +22816,7 @@
       "cardmarketTrend": 12.99,
       "cardmarketAvgFoil": 9.63,
       "cardmarketLowFoil": 11,
-      "cardmarketTrendFoil": 13.35
+      "cardmarketTrendFoil": 13.81
     },
     {
       "_id": 585,
@@ -22894,7 +22894,7 @@
       "cardmarketTrend": 0.09,
       "cardmarketAvgFoil": 0.44,
       "cardmarketLowFoil": 0.05,
-      "cardmarketTrendFoil": 0.49
+      "cardmarketTrendFoil": 0.48
     },
     {
       "_id": 587,
@@ -22933,7 +22933,7 @@
       "cardmarketTrend": 0.09,
       "cardmarketAvgFoil": 0.44,
       "cardmarketLowFoil": 0.05,
-      "cardmarketTrendFoil": 0.49
+      "cardmarketTrendFoil": 0.48
     },
     {
       "_id": 588,
@@ -22972,7 +22972,7 @@
       "cardmarketTrend": 0.09,
       "cardmarketAvgFoil": 0.6,
       "cardmarketLowFoil": 0.05,
-      "cardmarketTrendFoil": 0.73
+      "cardmarketTrendFoil": 0.74
     },
     {
       "_id": 589,
@@ -23011,7 +23011,7 @@
       "cardmarketTrend": 0.09,
       "cardmarketAvgFoil": 0.6,
       "cardmarketLowFoil": 0.05,
-      "cardmarketTrendFoil": 0.73
+      "cardmarketTrendFoil": 0.74
     },
     {
       "_id": 590,
@@ -23045,12 +23045,12 @@
       "extFlavorText": "",
       "cardmarketId": 847336,
       "cardmarketName": "Gust",
-      "cardmarketAvg": 0.08,
+      "cardmarketAvg": 0.07,
       "cardmarketLow": 0.02,
       "cardmarketTrend": 0.08,
-      "cardmarketAvgFoil": 0.47,
+      "cardmarketAvgFoil": 0.48,
       "cardmarketLowFoil": 0.05,
-      "cardmarketTrendFoil": 0.51
+      "cardmarketTrendFoil": 0.49
     },
     {
       "_id": 591,
@@ -23084,12 +23084,12 @@
       "extFlavorText": "",
       "cardmarketId": 847336,
       "cardmarketName": "Gust",
-      "cardmarketAvg": 0.08,
+      "cardmarketAvg": 0.07,
       "cardmarketLow": 0.02,
       "cardmarketTrend": 0.08,
-      "cardmarketAvgFoil": 0.47,
+      "cardmarketAvgFoil": 0.48,
       "cardmarketLowFoil": 0.05,
-      "cardmarketTrendFoil": 0.51
+      "cardmarketTrendFoil": 0.49
     },
     {
       "_id": 592,
@@ -23128,7 +23128,7 @@
       "cardmarketTrend": 0.04,
       "cardmarketAvgFoil": 0.24,
       "cardmarketLowFoil": 0.02,
-      "cardmarketTrendFoil": 0.31
+      "cardmarketTrendFoil": 0.3
     },
     {
       "_id": 593,
@@ -23167,7 +23167,7 @@
       "cardmarketTrend": 0.04,
       "cardmarketAvgFoil": 0.24,
       "cardmarketLowFoil": 0.02,
-      "cardmarketTrendFoil": 0.31
+      "cardmarketTrendFoil": 0.3
     },
     {
       "_id": 594,
@@ -23206,7 +23206,7 @@
       "cardmarketTrend": 1,
       "cardmarketAvgFoil": 0.44,
       "cardmarketLowFoil": 0.1,
-      "cardmarketTrendFoil": 0.43
+      "cardmarketTrendFoil": 0.42
     },
     {
       "_id": 595,
@@ -23245,7 +23245,7 @@
       "cardmarketTrend": 1,
       "cardmarketAvgFoil": 0.44,
       "cardmarketLowFoil": 0.1,
-      "cardmarketTrendFoil": 0.43
+      "cardmarketTrendFoil": 0.42
     },
     {
       "_id": 596,
@@ -23281,10 +23281,10 @@
       "cardmarketName": "Rebuke",
       "cardmarketAvg": 0.13,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.14,
+      "cardmarketTrend": 0.13,
       "cardmarketAvgFoil": 1.19,
       "cardmarketLowFoil": 0.25,
-      "cardmarketTrendFoil": 2.34
+      "cardmarketTrendFoil": 2.59
     },
     {
       "_id": 597,
@@ -23320,10 +23320,10 @@
       "cardmarketName": "Rebuke",
       "cardmarketAvg": 0.13,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.14,
+      "cardmarketTrend": 0.13,
       "cardmarketAvgFoil": 1.19,
       "cardmarketLowFoil": 0.25,
-      "cardmarketTrendFoil": 2.34
+      "cardmarketTrendFoil": 2.59
     },
     {
       "_id": 598,
@@ -23359,10 +23359,10 @@
       "cardmarketName": "Ride the Wind",
       "cardmarketAvg": 0.29,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.25,
+      "cardmarketTrend": 0.24,
       "cardmarketAvgFoil": 2.05,
       "cardmarketLowFoil": 0.2,
-      "cardmarketTrendFoil": 3.28
+      "cardmarketTrendFoil": 3.37
     },
     {
       "_id": 599,
@@ -23398,10 +23398,10 @@
       "cardmarketName": "Ride the Wind",
       "cardmarketAvg": 0.29,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.25,
+      "cardmarketTrend": 0.24,
       "cardmarketAvgFoil": 2.05,
       "cardmarketLowFoil": 0.2,
-      "cardmarketTrendFoil": 3.28
+      "cardmarketTrendFoil": 3.37
     },
     {
       "_id": 600,
@@ -23440,7 +23440,7 @@
       "cardmarketTrend": 0.06,
       "cardmarketAvgFoil": 0.19,
       "cardmarketLowFoil": 0.04,
-      "cardmarketTrendFoil": 0.19
+      "cardmarketTrendFoil": 0.2
     },
     {
       "_id": 601,
@@ -23479,7 +23479,7 @@
       "cardmarketTrend": 0.06,
       "cardmarketAvgFoil": 0.19,
       "cardmarketLowFoil": 0.04,
-      "cardmarketTrendFoil": 0.19
+      "cardmarketTrendFoil": 0.2
     },
     {
       "_id": 602,
@@ -23518,7 +23518,7 @@
       "cardmarketTrend": 0.05,
       "cardmarketAvgFoil": 0.19,
       "cardmarketLowFoil": 0.03,
-      "cardmarketTrendFoil": 0.19
+      "cardmarketTrendFoil": 0.24
     },
     {
       "_id": 603,
@@ -23557,7 +23557,7 @@
       "cardmarketTrend": 0.05,
       "cardmarketAvgFoil": 0.19,
       "cardmarketLowFoil": 0.03,
-      "cardmarketTrendFoil": 0.19
+      "cardmarketTrendFoil": 0.24
     },
     {
       "_id": 604,
@@ -23591,12 +23591,12 @@
       "extFlavorText": "<em>\"I like to think of her as a pre-boarding party.\" -Miss Fortune</em>",
       "cardmarketId": 847343,
       "cardmarketName": "Sneaky Deckhand",
-      "cardmarketAvg": 0.09,
+      "cardmarketAvg": 0.08,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.08,
-      "cardmarketAvgFoil": 0.53,
+      "cardmarketTrend": 0.09,
+      "cardmarketAvgFoil": 0.65,
       "cardmarketLowFoil": 0.1,
-      "cardmarketTrendFoil": 0.86
+      "cardmarketTrendFoil": 0.96
     },
     {
       "_id": 605,
@@ -23630,12 +23630,12 @@
       "extFlavorText": "<em>\"I like to think of her as a pre-boarding party.\" -Miss Fortune</em>",
       "cardmarketId": 847343,
       "cardmarketName": "Sneaky Deckhand",
-      "cardmarketAvg": 0.09,
+      "cardmarketAvg": 0.08,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.08,
-      "cardmarketAvgFoil": 0.53,
+      "cardmarketTrend": 0.09,
+      "cardmarketAvgFoil": 0.65,
       "cardmarketLowFoil": 0.1,
-      "cardmarketTrendFoil": 0.86
+      "cardmarketTrendFoil": 0.96
     },
     {
       "_id": 606,
@@ -23672,7 +23672,7 @@
       "cardmarketAvg": 0,
       "cardmarketLow": 0.08,
       "cardmarketTrend": 0,
-      "cardmarketAvgFoil": 0.27,
+      "cardmarketAvgFoil": 0.28,
       "cardmarketLowFoil": 0.08,
       "cardmarketTrendFoil": 0.34
     },
@@ -23711,7 +23711,7 @@
       "cardmarketAvg": 0,
       "cardmarketLow": 0.08,
       "cardmarketTrend": 0,
-      "cardmarketAvgFoil": 0.27,
+      "cardmarketAvgFoil": 0.28,
       "cardmarketLowFoil": 0.08,
       "cardmarketTrendFoil": 0.34
     },
@@ -23749,7 +23749,7 @@
       "cardmarketName": "Undercover Agent",
       "cardmarketAvg": 0.04,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.04,
+      "cardmarketTrend": 0.03,
       "cardmarketAvgFoil": 0.18,
       "cardmarketLowFoil": 0.05,
       "cardmarketTrendFoil": 0.16
@@ -23788,7 +23788,7 @@
       "cardmarketName": "Undercover Agent",
       "cardmarketAvg": 0.04,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.04,
+      "cardmarketTrend": 0.03,
       "cardmarketAvgFoil": 0.18,
       "cardmarketLowFoil": 0.05,
       "cardmarketTrendFoil": 0.16
@@ -23825,12 +23825,12 @@
       "extFlavorText": "<em>\"Never liked that sword anyway.\"</em>",
       "cardmarketId": 847346,
       "cardmarketName": "Acceptable Losses",
-      "cardmarketAvg": 0.37,
+      "cardmarketAvg": 0.31,
       "cardmarketLow": 0.02,
       "cardmarketTrend": 0.29,
-      "cardmarketAvgFoil": 1.2,
+      "cardmarketAvgFoil": 1.18,
       "cardmarketLowFoil": 0.2,
-      "cardmarketTrendFoil": 1.27
+      "cardmarketTrendFoil": 1.37
     },
     {
       "_id": 611,
@@ -23864,12 +23864,12 @@
       "extFlavorText": "<em>\"Never liked that sword anyway.\"</em>",
       "cardmarketId": 847346,
       "cardmarketName": "Acceptable Losses",
-      "cardmarketAvg": 0.37,
+      "cardmarketAvg": 0.31,
       "cardmarketLow": 0.02,
       "cardmarketTrend": 0.29,
-      "cardmarketAvgFoil": 1.2,
+      "cardmarketAvgFoil": 1.18,
       "cardmarketLowFoil": 0.2,
-      "cardmarketTrendFoil": 1.27
+      "cardmarketTrendFoil": 1.37
     },
     {
       "_id": 612,
@@ -23905,10 +23905,10 @@
       "cardmarketName": "Fading Memories",
       "cardmarketAvg": 0.16,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.14,
+      "cardmarketTrend": 0.13,
       "cardmarketAvgFoil": 1.22,
       "cardmarketLowFoil": 0.25,
-      "cardmarketTrendFoil": 1.52
+      "cardmarketTrendFoil": 1.61
     },
     {
       "_id": 613,
@@ -23944,10 +23944,10 @@
       "cardmarketName": "Fading Memories",
       "cardmarketAvg": 0.16,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.14,
+      "cardmarketTrend": 0.13,
       "cardmarketAvgFoil": 1.22,
       "cardmarketLowFoil": 0.25,
-      "cardmarketTrendFoil": 1.52
+      "cardmarketTrendFoil": 1.61
     },
     {
       "_id": 614,
@@ -23983,10 +23983,10 @@
       "cardmarketName": "Pack of Wonders",
       "cardmarketAvg": 0.14,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.12,
+      "cardmarketTrend": 0.11,
       "cardmarketAvgFoil": 0.69,
       "cardmarketLowFoil": 0.2,
-      "cardmarketTrendFoil": 0.61
+      "cardmarketTrendFoil": 0.64
     },
     {
       "_id": 615,
@@ -24022,10 +24022,10 @@
       "cardmarketName": "Pack of Wonders",
       "cardmarketAvg": 0.14,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.12,
+      "cardmarketTrend": 0.11,
       "cardmarketAvgFoil": 0.69,
       "cardmarketLowFoil": 0.2,
-      "cardmarketTrendFoil": 0.61
+      "cardmarketTrendFoil": 0.64
     },
     {
       "_id": 616,
@@ -24063,8 +24063,8 @@
       "cardmarketLow": 0.02,
       "cardmarketTrend": 0.21,
       "cardmarketAvgFoil": 1.78,
-      "cardmarketLowFoil": 2,
-      "cardmarketTrendFoil": 3.79
+      "cardmarketLowFoil": 3,
+      "cardmarketTrendFoil": 3.76
     },
     {
       "_id": 617,
@@ -24102,8 +24102,8 @@
       "cardmarketLow": 0.02,
       "cardmarketTrend": 0.21,
       "cardmarketAvgFoil": 1.78,
-      "cardmarketLowFoil": 2,
-      "cardmarketTrendFoil": 3.79
+      "cardmarketLowFoil": 3,
+      "cardmarketTrendFoil": 3.76
     },
     {
       "_id": 618,
@@ -24142,7 +24142,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 5.12,
       "cardmarketLowFoil": 3.99,
-      "cardmarketTrendFoil": 5.42
+      "cardmarketTrendFoil": 5.33
     },
     {
       "_id": 619,
@@ -24181,7 +24181,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 5.12,
       "cardmarketLowFoil": 3.99,
-      "cardmarketTrendFoil": 5.42
+      "cardmarketTrendFoil": 5.33
     },
     {
       "_id": 620,
@@ -24217,10 +24217,10 @@
       "cardmarketName": "The Syren",
       "cardmarketAvg": 0.13,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.14,
+      "cardmarketTrend": 0.13,
       "cardmarketAvgFoil": 0.51,
       "cardmarketLowFoil": 0.02,
-      "cardmarketTrendFoil": 0.57
+      "cardmarketTrendFoil": 0.52
     },
     {
       "_id": 621,
@@ -24256,10 +24256,10 @@
       "cardmarketName": "The Syren",
       "cardmarketAvg": 0.13,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.14,
+      "cardmarketTrend": 0.13,
       "cardmarketAvgFoil": 0.51,
       "cardmarketLowFoil": 0.02,
-      "cardmarketTrendFoil": 0.57
+      "cardmarketTrendFoil": 0.52
     },
     {
       "_id": 622,
@@ -24295,10 +24295,10 @@
       "cardmarketName": "Traveling Merchant",
       "cardmarketAvg": 0.11,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.11,
+      "cardmarketTrend": 0.1,
       "cardmarketAvgFoil": 0.88,
-      "cardmarketLowFoil": 0.3,
-      "cardmarketTrendFoil": 1.03
+      "cardmarketLowFoil": 0.33,
+      "cardmarketTrendFoil": 0.98
     },
     {
       "_id": 623,
@@ -24334,10 +24334,10 @@
       "cardmarketName": "Traveling Merchant",
       "cardmarketAvg": 0.11,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.11,
+      "cardmarketTrend": 0.1,
       "cardmarketAvgFoil": 0.88,
-      "cardmarketLowFoil": 0.3,
-      "cardmarketTrendFoil": 1.03
+      "cardmarketLowFoil": 0.33,
+      "cardmarketTrendFoil": 0.98
     },
     {
       "_id": 624,
@@ -24371,12 +24371,12 @@
       "extFlavorText": "<em>\"We're gonna be rich!\" -Common Last Words</em>",
       "cardmarketId": 847353,
       "cardmarketName": "Treasure Trove",
-      "cardmarketAvg": 0.15,
+      "cardmarketAvg": 0.14,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.13,
-      "cardmarketAvgFoil": 0.74,
+      "cardmarketTrend": 0.14,
+      "cardmarketAvgFoil": 0.72,
       "cardmarketLowFoil": 0.25,
-      "cardmarketTrendFoil": 0.66
+      "cardmarketTrendFoil": 0.7
     },
     {
       "_id": 625,
@@ -24410,12 +24410,12 @@
       "extFlavorText": "<em>\"We're gonna be rich!\" -Common Last Words</em>",
       "cardmarketId": 847353,
       "cardmarketName": "Treasure Trove",
-      "cardmarketAvg": 0.15,
+      "cardmarketAvg": 0.14,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.13,
-      "cardmarketAvgFoil": 0.74,
+      "cardmarketTrend": 0.14,
+      "cardmarketAvgFoil": 0.72,
       "cardmarketLowFoil": 0.25,
-      "cardmarketTrendFoil": 0.66
+      "cardmarketTrendFoil": 0.7
     },
     {
       "_id": 626,
@@ -24451,10 +24451,10 @@
       "cardmarketName": "Whirlwind",
       "cardmarketAvg": 0.1,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.1,
+      "cardmarketTrend": 0.09,
       "cardmarketAvgFoil": 0.41,
-      "cardmarketLowFoil": 0.03,
-      "cardmarketTrendFoil": 0.37
+      "cardmarketLowFoil": 0.06,
+      "cardmarketTrendFoil": 0.38
     },
     {
       "_id": 627,
@@ -24490,10 +24490,10 @@
       "cardmarketName": "Whirlwind",
       "cardmarketAvg": 0.1,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.1,
+      "cardmarketTrend": 0.09,
       "cardmarketAvgFoil": 0.41,
-      "cardmarketLowFoil": 0.03,
-      "cardmarketTrendFoil": 0.37
+      "cardmarketLowFoil": 0.06,
+      "cardmarketTrendFoil": 0.38
     },
     {
       "_id": 628,
@@ -24529,10 +24529,10 @@
       "cardmarketName": "Zaunite Bouncer",
       "cardmarketAvg": 0.11,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.11,
+      "cardmarketTrend": 0.12,
       "cardmarketAvgFoil": 0.51,
-      "cardmarketLowFoil": 0.15,
-      "cardmarketTrendFoil": 0.57
+      "cardmarketLowFoil": 0.05,
+      "cardmarketTrendFoil": 0.55
     },
     {
       "_id": 629,
@@ -24568,10 +24568,10 @@
       "cardmarketName": "Zaunite Bouncer",
       "cardmarketAvg": 0.11,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.11,
+      "cardmarketTrend": 0.12,
       "cardmarketAvgFoil": 0.51,
-      "cardmarketLowFoil": 0.15,
-      "cardmarketTrendFoil": 0.57
+      "cardmarketLowFoil": 0.05,
+      "cardmarketTrendFoil": 0.55
     },
     {
       "_id": 630,
@@ -24610,7 +24610,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 1.7,
       "cardmarketLowFoil": 0.3,
-      "cardmarketTrendFoil": 1.18
+      "cardmarketTrendFoil": 1.17
     },
     {
       "_id": 631,
@@ -24649,7 +24649,7 @@
       "cardmarketTrend": 1,
       "cardmarketAvgFoil": 0.37,
       "cardmarketLowFoil": 0.1,
-      "cardmarketTrendFoil": 0.38
+      "cardmarketTrendFoil": 0.36
     },
     {
       "_id": 632,
@@ -24766,7 +24766,7 @@
       "cardmarketTrend": 6,
       "cardmarketAvgFoil": 5.55,
       "cardmarketLowFoil": 1,
-      "cardmarketTrendFoil": 6.43
+      "cardmarketTrendFoil": 6.32
     },
     {
       "_id": 635,
@@ -24801,11 +24801,11 @@
       "cardmarketId": 862196,
       "cardmarketName": "Miss Fortune, Buccaneer",
       "cardmarketAvg": 0,
-      "cardmarketLow": 24.99,
+      "cardmarketLow": 29.99,
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 47.54,
-      "cardmarketLowFoil": 24.99,
-      "cardmarketTrendFoil": 199
+      "cardmarketLowFoil": 29.99,
+      "cardmarketTrendFoil": 167.9
     },
     {
       "_id": 636,
@@ -24879,11 +24879,11 @@
       "cardmarketId": 847362,
       "cardmarketName": "Nocturne, Horrifying",
       "cardmarketAvg": 0,
-      "cardmarketLow": 0.98,
+      "cardmarketLow": 0.97,
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 4.18,
-      "cardmarketLowFoil": 0.98,
-      "cardmarketTrendFoil": 3.94
+      "cardmarketLowFoil": 0.97,
+      "cardmarketTrendFoil": 4.07
     },
     {
       "_id": 638,
@@ -24922,7 +24922,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 1.23,
       "cardmarketLowFoil": 2,
-      "cardmarketTrendFoil": 2.31
+      "cardmarketTrendFoil": 3.19
     },
     {
       "_id": 639,
@@ -24961,7 +24961,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 0.5,
       "cardmarketLowFoil": 0.1,
-      "cardmarketTrendFoil": 0.52
+      "cardmarketTrendFoil": 0.51
     },
     {
       "_id": 640,
@@ -25000,7 +25000,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 296.84,
       "cardmarketLowFoil": 299,
-      "cardmarketTrendFoil": 509.96
+      "cardmarketTrendFoil": 532.3
     },
     {
       "_id": 641,
@@ -25117,7 +25117,7 @@
       "cardmarketTrend": 0.5,
       "cardmarketAvgFoil": 0.56,
       "cardmarketLowFoil": 0.06,
-      "cardmarketTrendFoil": 0.66
+      "cardmarketTrendFoil": 0.62
     },
     {
       "_id": 644,
@@ -25156,7 +25156,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 0.38,
       "cardmarketLowFoil": 0.02,
-      "cardmarketTrendFoil": 0.34
+      "cardmarketTrendFoil": 0.33
     },
     {
       "_id": 645,
@@ -25195,7 +25195,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 23.12,
       "cardmarketLowFoil": 9,
-      "cardmarketTrendFoil": 23.31
+      "cardmarketTrendFoil": 23.21
     },
     {
       "_id": 646,
@@ -25308,11 +25308,11 @@
       "cardmarketId": 847373,
       "cardmarketName": "Possession",
       "cardmarketAvg": 0,
-      "cardmarketLow": 2.5,
+      "cardmarketLow": 2,
       "cardmarketTrend": 0,
-      "cardmarketAvgFoil": 7.51,
-      "cardmarketLowFoil": 2.5,
-      "cardmarketTrendFoil": 8.15
+      "cardmarketAvgFoil": 7.42,
+      "cardmarketLowFoil": 2,
+      "cardmarketTrendFoil": 7.82
     },
     {
       "_id": 649,
@@ -25347,11 +25347,11 @@
       "cardmarketId": 847374,
       "cardmarketName": "Seal of Discord",
       "cardmarketAvg": 0,
-      "cardmarketLow": 26.99,
+      "cardmarketLow": 29.99,
       "cardmarketTrend": 18.5,
       "cardmarketAvgFoil": 14,
-      "cardmarketLowFoil": 26.99,
-      "cardmarketTrendFoil": 18.9
+      "cardmarketLowFoil": 29.99,
+      "cardmarketTrendFoil": 23.09
     },
     {
       "_id": 650,
@@ -25390,7 +25390,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 7.23,
       "cardmarketLowFoil": 3,
-      "cardmarketTrendFoil": 6.51
+      "cardmarketTrendFoil": 6.58
     },
     {
       "_id": 651,
@@ -25468,7 +25468,7 @@
       "cardmarketTrend": 0.08,
       "cardmarketAvgFoil": 0.33,
       "cardmarketLowFoil": 0.03,
-      "cardmarketTrendFoil": 0.36
+      "cardmarketTrendFoil": 0.35
     },
     {
       "_id": 653,
@@ -25507,7 +25507,7 @@
       "cardmarketTrend": 0.08,
       "cardmarketAvgFoil": 0.33,
       "cardmarketLowFoil": 0.03,
-      "cardmarketTrendFoil": 0.36
+      "cardmarketTrendFoil": 0.35
     },
     {
       "_id": 654,
@@ -25546,7 +25546,7 @@
       "cardmarketTrend": 0.09,
       "cardmarketAvgFoil": 0.54,
       "cardmarketLowFoil": 0.03,
-      "cardmarketTrendFoil": 0.57
+      "cardmarketTrendFoil": 0.6
     },
     {
       "_id": 655,
@@ -25585,7 +25585,7 @@
       "cardmarketTrend": 0.09,
       "cardmarketAvgFoil": 0.54,
       "cardmarketLowFoil": 0.03,
-      "cardmarketTrendFoil": 0.57
+      "cardmarketTrendFoil": 0.6
     },
     {
       "_id": 656,
@@ -25624,7 +25624,7 @@
       "cardmarketTrend": 0.06,
       "cardmarketAvgFoil": 0.28,
       "cardmarketLowFoil": 0.02,
-      "cardmarketTrendFoil": 0.24
+      "cardmarketTrendFoil": 0.22
     },
     {
       "_id": 657,
@@ -25663,7 +25663,7 @@
       "cardmarketTrend": 0.06,
       "cardmarketAvgFoil": 0.28,
       "cardmarketLowFoil": 0.02,
-      "cardmarketTrendFoil": 0.24
+      "cardmarketTrendFoil": 0.22
     },
     {
       "_id": 658,
@@ -25697,12 +25697,12 @@
       "extFlavorText": "<em>What good is having a plank if nobody ever walks it?</em>",
       "cardmarketId": 847380,
       "cardmarketName": "Cull the Weak",
-      "cardmarketAvg": 0.07,
+      "cardmarketAvg": 0.08,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.1,
-      "cardmarketAvgFoil": 0.54,
-      "cardmarketLowFoil": 0.04,
-      "cardmarketTrendFoil": 0.57
+      "cardmarketTrend": 0.11,
+      "cardmarketAvgFoil": 0.59,
+      "cardmarketLowFoil": 0.1,
+      "cardmarketTrendFoil": 0.54
     },
     {
       "_id": 659,
@@ -25736,12 +25736,12 @@
       "extFlavorText": "<em>What good is having a plank if nobody ever walks it?</em>",
       "cardmarketId": 847380,
       "cardmarketName": "Cull the Weak",
-      "cardmarketAvg": 0.07,
+      "cardmarketAvg": 0.08,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.1,
-      "cardmarketAvgFoil": 0.54,
-      "cardmarketLowFoil": 0.04,
-      "cardmarketTrendFoil": 0.57
+      "cardmarketTrend": 0.11,
+      "cardmarketAvgFoil": 0.59,
+      "cardmarketLowFoil": 0.1,
+      "cardmarketTrendFoil": 0.54
     },
     {
       "_id": 660,
@@ -25780,7 +25780,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 0.52,
       "cardmarketLowFoil": 0.19,
-      "cardmarketTrendFoil": 0.51
+      "cardmarketTrendFoil": 0.52
     },
     {
       "_id": 661,
@@ -25819,7 +25819,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 0.52,
       "cardmarketLowFoil": 0.19,
-      "cardmarketTrendFoil": 0.51
+      "cardmarketTrendFoil": 0.52
     },
     {
       "_id": 662,
@@ -25858,7 +25858,7 @@
       "cardmarketTrend": 0.09,
       "cardmarketAvgFoil": 0.38,
       "cardmarketLowFoil": 0.03,
-      "cardmarketTrendFoil": 0.46
+      "cardmarketTrendFoil": 0.47
     },
     {
       "_id": 663,
@@ -25897,7 +25897,7 @@
       "cardmarketTrend": 0.09,
       "cardmarketAvgFoil": 0.38,
       "cardmarketLowFoil": 0.03,
-      "cardmarketTrendFoil": 0.46
+      "cardmarketTrendFoil": 0.47
     },
     {
       "_id": 664,
@@ -25933,10 +25933,10 @@
       "cardmarketName": "Forge of the Future",
       "cardmarketAvg": 0.04,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.06,
+      "cardmarketTrend": 0.05,
       "cardmarketAvgFoil": 0.14,
       "cardmarketLowFoil": 0.02,
-      "cardmarketTrendFoil": 0.14
+      "cardmarketTrendFoil": 0.15
     },
     {
       "_id": 665,
@@ -25972,10 +25972,10 @@
       "cardmarketName": "Forge of the Future",
       "cardmarketAvg": 0.04,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.06,
+      "cardmarketTrend": 0.05,
       "cardmarketAvgFoil": 0.14,
       "cardmarketLowFoil": 0.02,
-      "cardmarketTrendFoil": 0.14
+      "cardmarketTrendFoil": 0.15
     },
     {
       "_id": 666,
@@ -26014,7 +26014,7 @@
       "cardmarketTrend": 0.12,
       "cardmarketAvgFoil": 1.29,
       "cardmarketLowFoil": 0.05,
-      "cardmarketTrendFoil": 1.3
+      "cardmarketTrendFoil": 1.25
     },
     {
       "_id": 667,
@@ -26053,7 +26053,7 @@
       "cardmarketTrend": 0.12,
       "cardmarketAvgFoil": 1.29,
       "cardmarketLowFoil": 0.05,
-      "cardmarketTrendFoil": 1.3
+      "cardmarketTrendFoil": 1.25
     },
     {
       "_id": 668,
@@ -26092,7 +26092,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 6.94,
       "cardmarketLowFoil": 5,
-      "cardmarketTrendFoil": 7.22
+      "cardmarketTrendFoil": 7.3
     },
     {
       "_id": 669,
@@ -26131,7 +26131,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 6.94,
       "cardmarketLowFoil": 5,
-      "cardmarketTrendFoil": 7.22
+      "cardmarketTrendFoil": 7.3
     },
     {
       "_id": 670,
@@ -26285,9 +26285,9 @@
       "cardmarketAvg": 0.06,
       "cardmarketLow": 0.02,
       "cardmarketTrend": 0.05,
-      "cardmarketAvgFoil": 0.58,
+      "cardmarketAvgFoil": 0.54,
       "cardmarketLowFoil": 0.1,
-      "cardmarketTrendFoil": 0.42
+      "cardmarketTrendFoil": 0.45
     },
     {
       "_id": 674,
@@ -26324,9 +26324,9 @@
       "cardmarketAvg": 0.06,
       "cardmarketLow": 0.02,
       "cardmarketTrend": 0.05,
-      "cardmarketAvgFoil": 0.58,
+      "cardmarketAvgFoil": 0.54,
       "cardmarketLowFoil": 0.1,
-      "cardmarketTrendFoil": 0.42
+      "cardmarketTrendFoil": 0.45
     },
     {
       "_id": 675,
@@ -26365,7 +26365,7 @@
       "cardmarketTrend": 0.05,
       "cardmarketAvgFoil": 0.37,
       "cardmarketLowFoil": 0.03,
-      "cardmarketTrendFoil": 0.32
+      "cardmarketTrendFoil": 0.3
     },
     {
       "_id": 676,
@@ -26404,7 +26404,7 @@
       "cardmarketTrend": 0.05,
       "cardmarketAvgFoil": 0.37,
       "cardmarketLowFoil": 0.03,
-      "cardmarketTrendFoil": 0.32
+      "cardmarketTrendFoil": 0.3
     },
     {
       "_id": 677,
@@ -26441,9 +26441,9 @@
       "cardmarketAvg": 0,
       "cardmarketLow": 0.3,
       "cardmarketTrend": 0,
-      "cardmarketAvgFoil": 0.71,
+      "cardmarketAvgFoil": 0.67,
       "cardmarketLowFoil": 0.3,
-      "cardmarketTrendFoil": 0.6
+      "cardmarketTrendFoil": 0.61
     },
     {
       "_id": 678,
@@ -26480,9 +26480,9 @@
       "cardmarketAvg": 0,
       "cardmarketLow": 0.3,
       "cardmarketTrend": 0,
-      "cardmarketAvgFoil": 0.71,
+      "cardmarketAvgFoil": 0.67,
       "cardmarketLowFoil": 0.3,
-      "cardmarketTrendFoil": 0.6
+      "cardmarketTrendFoil": 0.61
     },
     {
       "_id": 679,
@@ -26521,7 +26521,7 @@
       "cardmarketTrend": 0.05,
       "cardmarketAvgFoil": 0.19,
       "cardmarketLowFoil": 0.03,
-      "cardmarketTrendFoil": 0.21
+      "cardmarketTrendFoil": 0.22
     },
     {
       "_id": 680,
@@ -26560,7 +26560,7 @@
       "cardmarketTrend": 0.05,
       "cardmarketAvgFoil": 0.19,
       "cardmarketLowFoil": 0.03,
-      "cardmarketTrendFoil": 0.21
+      "cardmarketTrendFoil": 0.22
     },
     {
       "_id": 681,
@@ -26597,9 +26597,9 @@
       "cardmarketAvg": 0.12,
       "cardmarketLow": 0.02,
       "cardmarketTrend": 0.14,
-      "cardmarketAvgFoil": 0.41,
+      "cardmarketAvgFoil": 0.42,
       "cardmarketLowFoil": 0.09,
-      "cardmarketTrendFoil": 0.46
+      "cardmarketTrendFoil": 0.45
     },
     {
       "_id": 682,
@@ -26636,9 +26636,9 @@
       "cardmarketAvg": 0.12,
       "cardmarketLow": 0.02,
       "cardmarketTrend": 0.14,
-      "cardmarketAvgFoil": 0.41,
+      "cardmarketAvgFoil": 0.42,
       "cardmarketLowFoil": 0.09,
-      "cardmarketTrendFoil": 0.46
+      "cardmarketTrendFoil": 0.45
     },
     {
       "_id": 683,
@@ -26674,10 +26674,10 @@
       "cardmarketName": "Imperial Decree",
       "cardmarketAvg": 0.51,
       "cardmarketLow": 0.1,
-      "cardmarketTrend": 0.62,
+      "cardmarketTrend": 0.61,
       "cardmarketAvgFoil": 1.63,
       "cardmarketLowFoil": 0.99,
-      "cardmarketTrendFoil": 1.99
+      "cardmarketTrendFoil": 2.05
     },
     {
       "_id": 684,
@@ -26713,10 +26713,10 @@
       "cardmarketName": "Imperial Decree",
       "cardmarketAvg": 0.51,
       "cardmarketLow": 0.1,
-      "cardmarketTrend": 0.62,
+      "cardmarketTrend": 0.61,
       "cardmarketAvgFoil": 1.63,
       "cardmarketLowFoil": 0.99,
-      "cardmarketTrendFoil": 1.99
+      "cardmarketTrendFoil": 2.05
     },
     {
       "_id": 685,
@@ -26752,10 +26752,10 @@
       "cardmarketName": "Noxian Drummer",
       "cardmarketAvg": 0.11,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.09,
-      "cardmarketAvgFoil": 0.66,
+      "cardmarketTrend": 0.08,
+      "cardmarketAvgFoil": 0.61,
       "cardmarketLowFoil": 0.25,
-      "cardmarketTrendFoil": 0.57
+      "cardmarketTrendFoil": 0.58
     },
     {
       "_id": 686,
@@ -26791,10 +26791,10 @@
       "cardmarketName": "Noxian Drummer",
       "cardmarketAvg": 0.11,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.09,
-      "cardmarketAvgFoil": 0.66,
+      "cardmarketTrend": 0.08,
+      "cardmarketAvgFoil": 0.61,
       "cardmarketLowFoil": 0.25,
-      "cardmarketTrendFoil": 0.57
+      "cardmarketTrendFoil": 0.58
     },
     {
       "_id": 687,
@@ -26906,12 +26906,12 @@
       "extFlavorText": "<em>One person's treasure is another one's trash.</em>",
       "cardmarketId": 847398,
       "cardmarketName": "Salvage",
-      "cardmarketAvg": 1.01,
+      "cardmarketAvg": 0.96,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 1,
-      "cardmarketAvgFoil": 2.46,
+      "cardmarketTrend": 0.99,
+      "cardmarketAvgFoil": 2.52,
       "cardmarketLowFoil": 0.5,
-      "cardmarketTrendFoil": 2.89
+      "cardmarketTrendFoil": 2.96
     },
     {
       "_id": 690,
@@ -26945,12 +26945,12 @@
       "extFlavorText": "<em>One person's treasure is another one's trash.</em>",
       "cardmarketId": 847398,
       "cardmarketName": "Salvage",
-      "cardmarketAvg": 1.01,
+      "cardmarketAvg": 0.96,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 1,
-      "cardmarketAvgFoil": 2.46,
+      "cardmarketTrend": 0.99,
+      "cardmarketAvgFoil": 2.52,
       "cardmarketLowFoil": 0.5,
-      "cardmarketTrendFoil": 2.89
+      "cardmarketTrendFoil": 2.96
     },
     {
       "_id": 691,
@@ -26989,7 +26989,7 @@
       "cardmarketTrend": 0.13,
       "cardmarketAvgFoil": 0.69,
       "cardmarketLowFoil": 0.1,
-      "cardmarketTrendFoil": 0.53
+      "cardmarketTrendFoil": 0.55
     },
     {
       "_id": 692,
@@ -27028,7 +27028,7 @@
       "cardmarketTrend": 0.13,
       "cardmarketAvgFoil": 0.69,
       "cardmarketLowFoil": 0.1,
-      "cardmarketTrendFoil": 0.53
+      "cardmarketTrendFoil": 0.55
     },
     {
       "_id": 693,
@@ -27064,10 +27064,10 @@
       "cardmarketName": "Spectral Matron",
       "cardmarketAvg": 0.24,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.24,
+      "cardmarketTrend": 0.23,
       "cardmarketAvgFoil": 1.22,
-      "cardmarketLowFoil": 0.3,
-      "cardmarketTrendFoil": 1.08
+      "cardmarketLowFoil": 0.2,
+      "cardmarketTrendFoil": 1.11
     },
     {
       "_id": 694,
@@ -27103,10 +27103,10 @@
       "cardmarketName": "Spectral Matron",
       "cardmarketAvg": 0.24,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.24,
+      "cardmarketTrend": 0.23,
       "cardmarketAvgFoil": 1.22,
-      "cardmarketLowFoil": 0.3,
-      "cardmarketTrendFoil": 1.08
+      "cardmarketLowFoil": 0.2,
+      "cardmarketTrendFoil": 1.11
     },
     {
       "_id": 695,
@@ -27145,7 +27145,7 @@
       "cardmarketTrend": 0.09,
       "cardmarketAvgFoil": 0.46,
       "cardmarketLowFoil": 0.15,
-      "cardmarketTrendFoil": 0.55
+      "cardmarketTrendFoil": 0.52
     },
     {
       "_id": 696,
@@ -27184,7 +27184,7 @@
       "cardmarketTrend": 0.09,
       "cardmarketAvgFoil": 0.46,
       "cardmarketLowFoil": 0.15,
-      "cardmarketTrendFoil": 0.55
+      "cardmarketTrendFoil": 0.52
     },
     {
       "_id": 697,
@@ -27220,10 +27220,10 @@
       "cardmarketName": "Vanguard Helm",
       "cardmarketAvg": 0.1,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.07,
+      "cardmarketTrend": 0.08,
       "cardmarketAvgFoil": 0.4,
       "cardmarketLowFoil": 0.02,
-      "cardmarketTrendFoil": 0.45
+      "cardmarketTrendFoil": 0.41
     },
     {
       "_id": 698,
@@ -27259,10 +27259,10 @@
       "cardmarketName": "Vanguard Helm",
       "cardmarketAvg": 0.1,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.07,
+      "cardmarketTrend": 0.08,
       "cardmarketAvgFoil": 0.4,
       "cardmarketLowFoil": 0.02,
-      "cardmarketTrendFoil": 0.45
+      "cardmarketTrendFoil": 0.41
     },
     {
       "_id": 699,
@@ -27296,12 +27296,12 @@
       "extFlavorText": "<em>A brief moment of turmoil -- then peace.</em>",
       "cardmarketId": 856100,
       "cardmarketName": "Vengeance",
-      "cardmarketAvg": 0,
+      "cardmarketAvg": 2,
       "cardmarketLow": 0.25,
       "cardmarketTrend": 2,
-      "cardmarketAvgFoil": 0.67,
+      "cardmarketAvgFoil": 0.61,
       "cardmarketLowFoil": 0.25,
-      "cardmarketTrendFoil": 0.69
+      "cardmarketTrendFoil": 0.67
     },
     {
       "_id": 700,
@@ -27335,12 +27335,12 @@
       "extFlavorText": "<em>A brief moment of turmoil -- then peace.</em>",
       "cardmarketId": 856100,
       "cardmarketName": "Vengeance",
-      "cardmarketAvg": 0,
+      "cardmarketAvg": 2,
       "cardmarketLow": 0.25,
       "cardmarketTrend": 2,
-      "cardmarketAvgFoil": 0.67,
+      "cardmarketAvgFoil": 0.61,
       "cardmarketLowFoil": 0.25,
-      "cardmarketTrendFoil": 0.69
+      "cardmarketTrendFoil": 0.67
     },
     {
       "_id": 701,
@@ -27379,7 +27379,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 0.12,
       "cardmarketLowFoil": 0.02,
-      "cardmarketTrendFoil": 0.13
+      "cardmarketTrendFoil": 0.12
     },
     {
       "_id": 702,
@@ -27418,7 +27418,7 @@
       "cardmarketTrend": 0.49,
       "cardmarketAvgFoil": 0.59,
       "cardmarketLowFoil": 0.1,
-      "cardmarketTrendFoil": 0.61
+      "cardmarketTrendFoil": 0.58
     },
     {
       "_id": 703,
@@ -27457,7 +27457,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 3.18,
       "cardmarketLowFoil": 0.5,
-      "cardmarketTrendFoil": 3.13
+      "cardmarketTrendFoil": 3.16
     },
     {
       "_id": 704,
@@ -27535,7 +27535,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 1.03,
       "cardmarketLowFoil": 0.17,
-      "cardmarketTrendFoil": 0.91
+      "cardmarketTrendFoil": 0.89
     },
     {
       "_id": 706,
@@ -27574,7 +27574,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 0.66,
       "cardmarketLowFoil": 0.09,
-      "cardmarketTrendFoil": 0.45
+      "cardmarketTrendFoil": 0.43
     },
     {
       "_id": 707,
@@ -27613,7 +27613,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 0.66,
       "cardmarketLowFoil": 0.19,
-      "cardmarketTrendFoil": 0.55
+      "cardmarketTrendFoil": 0.54
     },
     {
       "_id": 708,
@@ -27652,7 +27652,7 @@
       "cardmarketTrend": 2,
       "cardmarketAvgFoil": 0.25,
       "cardmarketLowFoil": 0.02,
-      "cardmarketTrendFoil": 0.27
+      "cardmarketTrendFoil": 0.25
     },
     {
       "_id": 709,
@@ -27691,7 +27691,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 9.29,
       "cardmarketLowFoil": 4,
-      "cardmarketTrendFoil": 8.91
+      "cardmarketTrendFoil": 9
     },
     {
       "_id": 710,
@@ -27769,7 +27769,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 2.5,
       "cardmarketLowFoil": 0.45,
-      "cardmarketTrendFoil": 2.11
+      "cardmarketTrendFoil": 2
     },
     {
       "_id": 712,
@@ -27808,7 +27808,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 5.02,
       "cardmarketLowFoil": 2.5,
-      "cardmarketTrendFoil": 5.19
+      "cardmarketTrendFoil": 5.24
     },
     {
       "_id": 713,
@@ -27886,7 +27886,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 2.02,
       "cardmarketLowFoil": 0.4,
-      "cardmarketTrendFoil": 1.79
+      "cardmarketTrendFoil": 1.78
     },
     {
       "_id": 715,
@@ -27925,7 +27925,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 20.54,
       "cardmarketLowFoil": 8,
-      "cardmarketTrendFoil": 17.02
+      "cardmarketTrendFoil": 16.64
     },
     {
       "_id": 716,
@@ -27964,7 +27964,7 @@
       "cardmarketTrend": 6.7,
       "cardmarketAvgFoil": 6.77,
       "cardmarketLowFoil": 4.45,
-      "cardmarketTrendFoil": 6.38
+      "cardmarketTrendFoil": 6.95
     },
     {
       "_id": 717,
@@ -28042,7 +28042,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 10.34,
       "cardmarketLowFoil": 2.9,
-      "cardmarketTrendFoil": 9.27
+      "cardmarketTrendFoil": 9.38
     },
     {
       "_id": 719,
@@ -28081,7 +28081,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 25.1,
       "cardmarketLowFoil": 13.99,
-      "cardmarketTrendFoil": 23.54
+      "cardmarketTrendFoil": 23.25
     },
     {
       "_id": 720,
@@ -28198,7 +28198,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 15.8,
       "cardmarketLowFoil": 6,
-      "cardmarketTrendFoil": 30.82
+      "cardmarketTrendFoil": 32.76
     },
     {
       "_id": 723,
@@ -28233,11 +28233,11 @@
       "cardmarketId": 847448,
       "cardmarketName": "Icathian Rain",
       "cardmarketAvg": 0,
-      "cardmarketLow": 12.55,
+      "cardmarketLow": 14,
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 26.99,
-      "cardmarketLowFoil": 12.55,
-      "cardmarketTrendFoil": 25.89
+      "cardmarketLowFoil": 14,
+      "cardmarketTrendFoil": 25.82
     },
     {
       "_id": 724,
@@ -28276,7 +28276,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 7.6,
       "cardmarketLowFoil": 6,
-      "cardmarketTrendFoil": 24.5
+      "cardmarketTrendFoil": 26.31
     },
     {
       "_id": 725,
@@ -28315,7 +28315,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 4.47,
       "cardmarketLowFoil": 1.99,
-      "cardmarketTrendFoil": 3.84
+      "cardmarketTrendFoil": 4.02
     },
     {
       "_id": 726,
@@ -28354,7 +28354,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 17.14,
       "cardmarketLowFoil": 6.9,
-      "cardmarketTrendFoil": 27.03
+      "cardmarketTrendFoil": 26.49
     },
     {
       "_id": 727,
@@ -28393,7 +28393,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 11.77,
       "cardmarketLowFoil": 4,
-      "cardmarketTrendFoil": 11.96
+      "cardmarketTrendFoil": 12.07
     },
     {
       "_id": 728,
@@ -28432,7 +28432,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 7.7,
       "cardmarketLowFoil": 3,
-      "cardmarketTrendFoil": 16.61
+      "cardmarketTrendFoil": 17.53
     },
     {
       "_id": 729,
@@ -28471,7 +28471,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 2.8,
       "cardmarketLowFoil": 1,
-      "cardmarketTrendFoil": 2.73
+      "cardmarketTrendFoil": 2.82
     },
     {
       "_id": 730,
@@ -28510,7 +28510,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 32.59,
       "cardmarketLowFoil": 24.5,
-      "cardmarketTrendFoil": 47.51
+      "cardmarketTrendFoil": 47.55
     },
     {
       "_id": 731,
@@ -28549,7 +28549,7 @@
       "cardmarketTrend": 14.8,
       "cardmarketAvgFoil": 9.54,
       "cardmarketLowFoil": 6,
-      "cardmarketTrendFoil": 9.02
+      "cardmarketTrendFoil": 9.22
     },
     {
       "_id": 732,
@@ -28588,7 +28588,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 8.08,
       "cardmarketLowFoil": 3.99,
-      "cardmarketTrendFoil": 21.85
+      "cardmarketTrendFoil": 23.03
     },
     {
       "_id": 733,
@@ -28627,7 +28627,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 6.03,
       "cardmarketLowFoil": 2.97,
-      "cardmarketTrendFoil": 5.31
+      "cardmarketTrendFoil": 5.63
     },
     {
       "_id": 734,
@@ -28666,7 +28666,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 11.83,
       "cardmarketLowFoil": 3.99,
-      "cardmarketTrendFoil": 30.19
+      "cardmarketTrendFoil": 30.1
     },
     {
       "_id": 735,
@@ -28705,7 +28705,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 5.58,
       "cardmarketLowFoil": 2,
-      "cardmarketTrendFoil": 5.44
+      "cardmarketTrendFoil": 5.55
     },
     {
       "_id": 736,
@@ -28740,11 +28740,11 @@
       "cardmarketId": 855683,
       "cardmarketName": "Leona, Radiant Dawn",
       "cardmarketAvg": 0,
-      "cardmarketLow": 5,
+      "cardmarketLow": 20,
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 9.61,
-      "cardmarketLowFoil": 5,
-      "cardmarketTrendFoil": 14.55
+      "cardmarketLowFoil": 20,
+      "cardmarketTrendFoil": 16.3
     },
     {
       "_id": 737,
@@ -28783,7 +28783,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 16.44,
       "cardmarketLowFoil": 3.95,
-      "cardmarketTrendFoil": 13.86
+      "cardmarketTrendFoil": 13.92
     },
     {
       "_id": 738,
@@ -28861,7 +28861,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 10.14,
       "cardmarketLowFoil": 2.99,
-      "cardmarketTrendFoil": 9.08
+      "cardmarketTrendFoil": 8.96
     },
     {
       "_id": 740,
@@ -28900,7 +28900,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 9.61,
       "cardmarketLowFoil": 4.99,
-      "cardmarketTrendFoil": 21.27
+      "cardmarketTrendFoil": 22.73
     },
     {
       "_id": 741,
@@ -28939,7 +28939,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 8.47,
       "cardmarketLowFoil": 2.99,
-      "cardmarketTrendFoil": 6.84
+      "cardmarketTrendFoil": 6.93
     },
     {
       "_id": 742,
@@ -28978,7 +28978,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 11.93,
       "cardmarketLowFoil": 4.99,
-      "cardmarketTrendFoil": 21.5
+      "cardmarketTrendFoil": 22.81
     },
     {
       "_id": 743,
@@ -29017,7 +29017,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 13.15,
       "cardmarketLowFoil": 2.89,
-      "cardmarketTrendFoil": 13.38
+      "cardmarketTrendFoil": 13.27
     },
     {
       "_id": 744,
@@ -29056,7 +29056,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 9.45,
       "cardmarketLowFoil": 3.79,
-      "cardmarketTrendFoil": 20.94
+      "cardmarketTrendFoil": 21.82
     },
     {
       "_id": 745,
@@ -29095,7 +29095,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 31.88,
       "cardmarketLowFoil": 15,
-      "cardmarketTrendFoil": 27.41
+      "cardmarketTrendFoil": 27.06
     },
     {
       "_id": 746,
@@ -29127,14 +29127,14 @@
       "extTag": "",
       "extDomain": "None",
       "extFlavorText": "",
-      "cardmarketId": 847475,
+      "cardmarketId": 866421,
       "cardmarketName": "Altar to Unity",
-      "cardmarketAvg": 0.08,
-      "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.12,
-      "cardmarketAvgFoil": 13.02,
-      "cardmarketLowFoil": 0.05,
-      "cardmarketTrendFoil": 0.02
+      "cardmarketAvg": 0,
+      "cardmarketLow": 0,
+      "cardmarketTrend": 0,
+      "cardmarketAvgFoil": 0,
+      "cardmarketLowFoil": 0,
+      "cardmarketTrendFoil": 0
     },
     {
       "_id": 747,
@@ -29166,14 +29166,14 @@
       "extTag": "",
       "extDomain": "None",
       "extFlavorText": "",
-      "cardmarketId": 847475,
+      "cardmarketId": 866421,
       "cardmarketName": "Altar to Unity",
-      "cardmarketAvg": 0.08,
-      "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.12,
-      "cardmarketAvgFoil": 13.02,
-      "cardmarketLowFoil": 0.05,
-      "cardmarketTrendFoil": 0.02
+      "cardmarketAvg": 0,
+      "cardmarketLow": 0,
+      "cardmarketTrend": 0,
+      "cardmarketAvgFoil": 0,
+      "cardmarketLowFoil": 0,
+      "cardmarketTrendFoil": 0
     },
     {
       "_id": 748,
@@ -29287,10 +29287,10 @@
       "cardmarketName": "Back-Alley Bar",
       "cardmarketAvg": 0.12,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.13,
+      "cardmarketTrend": 0.12,
       "cardmarketAvgFoil": 0.75,
       "cardmarketLowFoil": 0.1,
-      "cardmarketTrendFoil": 0.86
+      "cardmarketTrendFoil": 0.85
     },
     {
       "_id": 751,
@@ -29326,10 +29326,10 @@
       "cardmarketName": "Back-Alley Bar",
       "cardmarketAvg": 0.12,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.13,
+      "cardmarketTrend": 0.12,
       "cardmarketAvgFoil": 0.75,
       "cardmarketLowFoil": 0.1,
-      "cardmarketTrendFoil": 0.86
+      "cardmarketTrendFoil": 0.85
     },
     {
       "_id": 752,
@@ -29446,7 +29446,7 @@
       "cardmarketTrend": 0.14,
       "cardmarketAvgFoil": 0.9,
       "cardmarketLowFoil": 0.05,
-      "cardmarketTrendFoil": 1.03
+      "cardmarketTrendFoil": 1
     },
     {
       "_id": 755,
@@ -29485,7 +29485,7 @@
       "cardmarketTrend": 0.14,
       "cardmarketAvgFoil": 0.9,
       "cardmarketLowFoil": 0.05,
-      "cardmarketTrendFoil": 1.03
+      "cardmarketTrendFoil": 1
     },
     {
       "_id": 756,
@@ -29524,7 +29524,7 @@
       "cardmarketTrend": 0.13,
       "cardmarketAvgFoil": 1.99,
       "cardmarketLowFoil": 0.1,
-      "cardmarketTrendFoil": 2.08
+      "cardmarketTrendFoil": 2.28
     },
     {
       "_id": 757,
@@ -29563,7 +29563,7 @@
       "cardmarketTrend": 0.13,
       "cardmarketAvgFoil": 1.99,
       "cardmarketLowFoil": 0.1,
-      "cardmarketTrendFoil": 2.08
+      "cardmarketTrendFoil": 2.28
     },
     {
       "_id": 758,
@@ -29602,7 +29602,7 @@
       "cardmarketTrend": 0.09,
       "cardmarketAvgFoil": 0.75,
       "cardmarketLowFoil": 0.02,
-      "cardmarketTrendFoil": 0.86
+      "cardmarketTrendFoil": 0.96
     },
     {
       "_id": 759,
@@ -29641,7 +29641,7 @@
       "cardmarketTrend": 0.09,
       "cardmarketAvgFoil": 0.75,
       "cardmarketLowFoil": 0.02,
-      "cardmarketTrendFoil": 0.86
+      "cardmarketTrendFoil": 0.96
     },
     {
       "_id": 760,
@@ -29677,10 +29677,10 @@
       "cardmarketName": "Monastery of Hirana",
       "cardmarketAvg": 0.09,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.06,
+      "cardmarketTrend": 0.05,
       "cardmarketAvgFoil": 1.09,
       "cardmarketLowFoil": 0.1,
-      "cardmarketTrendFoil": 1.07
+      "cardmarketTrendFoil": 1.05
     },
     {
       "_id": 761,
@@ -29716,10 +29716,10 @@
       "cardmarketName": "Monastery of Hirana",
       "cardmarketAvg": 0.09,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.06,
+      "cardmarketTrend": 0.05,
       "cardmarketAvgFoil": 1.09,
       "cardmarketLowFoil": 0.1,
-      "cardmarketTrendFoil": 1.07
+      "cardmarketTrendFoil": 1.05
     },
     {
       "_id": 762,
@@ -29755,10 +29755,10 @@
       "cardmarketName": "Navori Fighting Pit",
       "cardmarketAvg": 0.11,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.12,
+      "cardmarketTrend": 0.11,
       "cardmarketAvgFoil": 0.83,
       "cardmarketLowFoil": 0.1,
-      "cardmarketTrendFoil": 0.88
+      "cardmarketTrendFoil": 0.92
     },
     {
       "_id": 763,
@@ -29794,10 +29794,10 @@
       "cardmarketName": "Navori Fighting Pit",
       "cardmarketAvg": 0.11,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.12,
+      "cardmarketTrend": 0.11,
       "cardmarketAvgFoil": 0.83,
       "cardmarketLowFoil": 0.1,
-      "cardmarketTrendFoil": 0.88
+      "cardmarketTrendFoil": 0.92
     },
     {
       "_id": 764,
@@ -29831,12 +29831,12 @@
       "extFlavorText": "",
       "cardmarketId": 847484,
       "cardmarketName": "Obelisk of Power",
-      "cardmarketAvg": 0.21,
+      "cardmarketAvg": 0.19,
       "cardmarketLow": 0.02,
       "cardmarketTrend": 0.19,
-      "cardmarketAvgFoil": 1.73,
-      "cardmarketLowFoil": 0.69,
-      "cardmarketTrendFoil": 2.14
+      "cardmarketAvgFoil": 1.9,
+      "cardmarketLowFoil": 0.7,
+      "cardmarketTrendFoil": 2.12
     },
     {
       "_id": 765,
@@ -29870,12 +29870,12 @@
       "extFlavorText": "",
       "cardmarketId": 847484,
       "cardmarketName": "Obelisk of Power",
-      "cardmarketAvg": 0.21,
+      "cardmarketAvg": 0.19,
       "cardmarketLow": 0.02,
       "cardmarketTrend": 0.19,
-      "cardmarketAvgFoil": 1.73,
-      "cardmarketLowFoil": 0.69,
-      "cardmarketTrendFoil": 2.14
+      "cardmarketAvgFoil": 1.9,
+      "cardmarketLowFoil": 0.7,
+      "cardmarketTrendFoil": 2.12
     },
     {
       "_id": 766,
@@ -29911,10 +29911,10 @@
       "cardmarketName": "Reaver's Row",
       "cardmarketAvg": 0.12,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.15,
+      "cardmarketTrend": 0.14,
       "cardmarketAvgFoil": 0.99,
       "cardmarketLowFoil": 0.1,
-      "cardmarketTrendFoil": 0.98
+      "cardmarketTrendFoil": 1.01
     },
     {
       "_id": 767,
@@ -29950,10 +29950,10 @@
       "cardmarketName": "Reaver's Row",
       "cardmarketAvg": 0.12,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.15,
+      "cardmarketTrend": 0.14,
       "cardmarketAvgFoil": 0.99,
       "cardmarketLowFoil": 0.1,
-      "cardmarketTrendFoil": 0.98
+      "cardmarketTrendFoil": 1.01
     },
     {
       "_id": 768,
@@ -29992,7 +29992,7 @@
       "cardmarketTrend": 0.09,
       "cardmarketAvgFoil": 0.57,
       "cardmarketLowFoil": 0.1,
-      "cardmarketTrendFoil": 0.68
+      "cardmarketTrendFoil": 0.69
     },
     {
       "_id": 769,
@@ -30031,7 +30031,7 @@
       "cardmarketTrend": 0.09,
       "cardmarketAvgFoil": 0.57,
       "cardmarketLowFoil": 0.1,
-      "cardmarketTrendFoil": 0.68
+      "cardmarketTrendFoil": 0.69
     },
     {
       "_id": 770,
@@ -30067,10 +30067,10 @@
       "cardmarketName": "Sigil of the Storm",
       "cardmarketAvg": 0.11,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.16,
+      "cardmarketTrend": 0.15,
       "cardmarketAvgFoil": 1.07,
       "cardmarketLowFoil": 0.45,
-      "cardmarketTrendFoil": 1.14
+      "cardmarketTrendFoil": 1.12
     },
     {
       "_id": 771,
@@ -30106,10 +30106,10 @@
       "cardmarketName": "Sigil of the Storm",
       "cardmarketAvg": 0.11,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.16,
+      "cardmarketTrend": 0.15,
       "cardmarketAvgFoil": 1.07,
       "cardmarketLowFoil": 0.45,
-      "cardmarketTrendFoil": 1.14
+      "cardmarketTrendFoil": 1.12
     },
     {
       "_id": 772,
@@ -30145,10 +30145,10 @@
       "cardmarketName": "Startipped Peak",
       "cardmarketAvg": 0.13,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.18,
+      "cardmarketTrend": 0.17,
       "cardmarketAvgFoil": 1.05,
       "cardmarketLowFoil": 0.1,
-      "cardmarketTrendFoil": 1.07
+      "cardmarketTrendFoil": 1.01
     },
     {
       "_id": 773,
@@ -30184,10 +30184,10 @@
       "cardmarketName": "Startipped Peak",
       "cardmarketAvg": 0.13,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.18,
+      "cardmarketTrend": 0.17,
       "cardmarketAvgFoil": 1.05,
       "cardmarketLowFoil": 0.1,
-      "cardmarketTrendFoil": 1.07
+      "cardmarketTrendFoil": 1.01
     },
     {
       "_id": 774,
@@ -30221,12 +30221,12 @@
       "extFlavorText": "",
       "cardmarketId": 847489,
       "cardmarketName": "Targon's Peak",
-      "cardmarketAvg": 0.13,
+      "cardmarketAvg": 0.12,
       "cardmarketLow": 0.02,
       "cardmarketTrend": 0.11,
-      "cardmarketAvgFoil": 1.23,
+      "cardmarketAvgFoil": 1.28,
       "cardmarketLowFoil": 0.1,
-      "cardmarketTrendFoil": 1.33
+      "cardmarketTrendFoil": 1.34
     },
     {
       "_id": 775,
@@ -30260,12 +30260,12 @@
       "extFlavorText": "",
       "cardmarketId": 847489,
       "cardmarketName": "Targon's Peak",
-      "cardmarketAvg": 0.13,
+      "cardmarketAvg": 0.12,
       "cardmarketLow": 0.02,
       "cardmarketTrend": 0.11,
-      "cardmarketAvgFoil": 1.23,
+      "cardmarketAvgFoil": 1.28,
       "cardmarketLowFoil": 0.1,
-      "cardmarketTrendFoil": 1.33
+      "cardmarketTrendFoil": 1.34
     },
     {
       "_id": 776,
@@ -30301,10 +30301,10 @@
       "cardmarketName": "The Arena's Greatest",
       "cardmarketAvg": 0.21,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.18,
+      "cardmarketTrend": 0.17,
       "cardmarketAvgFoil": 1.74,
       "cardmarketLowFoil": 0.1,
-      "cardmarketTrendFoil": 1.73
+      "cardmarketTrendFoil": 1.75
     },
     {
       "_id": 777,
@@ -30340,10 +30340,10 @@
       "cardmarketName": "The Arena's Greatest",
       "cardmarketAvg": 0.21,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.18,
+      "cardmarketTrend": 0.17,
       "cardmarketAvgFoil": 1.74,
       "cardmarketLowFoil": 0.1,
-      "cardmarketTrendFoil": 1.73
+      "cardmarketTrendFoil": 1.75
     },
     {
       "_id": 778,
@@ -30377,12 +30377,12 @@
       "extFlavorText": "",
       "cardmarketId": 847491,
       "cardmarketName": "The Candlelit Sanctum",
-      "cardmarketAvg": 0.17,
+      "cardmarketAvg": 0.16,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.16,
-      "cardmarketAvgFoil": 1.23,
+      "cardmarketTrend": 0.15,
+      "cardmarketAvgFoil": 1.32,
       "cardmarketLowFoil": 0.1,
-      "cardmarketTrendFoil": 1.32
+      "cardmarketTrendFoil": 1.33
     },
     {
       "_id": 779,
@@ -30416,12 +30416,12 @@
       "extFlavorText": "",
       "cardmarketId": 847491,
       "cardmarketName": "The Candlelit Sanctum",
-      "cardmarketAvg": 0.17,
+      "cardmarketAvg": 0.16,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.16,
-      "cardmarketAvgFoil": 1.23,
+      "cardmarketTrend": 0.15,
+      "cardmarketAvgFoil": 1.32,
       "cardmarketLowFoil": 0.1,
-      "cardmarketTrendFoil": 1.32
+      "cardmarketTrendFoil": 1.33
     },
     {
       "_id": 780,
@@ -30460,7 +30460,7 @@
       "cardmarketTrend": 0.28,
       "cardmarketAvgFoil": 2.9,
       "cardmarketLowFoil": 0.1,
-      "cardmarketTrendFoil": 3.14
+      "cardmarketTrendFoil": 3.11
     },
     {
       "_id": 781,
@@ -30499,7 +30499,7 @@
       "cardmarketTrend": 0.28,
       "cardmarketAvgFoil": 2.9,
       "cardmarketLowFoil": 0.1,
-      "cardmarketTrendFoil": 3.14
+      "cardmarketTrendFoil": 3.11
     },
     {
       "_id": 782,
@@ -30613,7 +30613,7 @@
       "cardmarketName": "Trifarian War Camp",
       "cardmarketAvg": 0.12,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.14,
+      "cardmarketTrend": 0.13,
       "cardmarketAvgFoil": 1.19,
       "cardmarketLowFoil": 0.1,
       "cardmarketTrendFoil": 1.28
@@ -30652,7 +30652,7 @@
       "cardmarketName": "Trifarian War Camp",
       "cardmarketAvg": 0.12,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.14,
+      "cardmarketTrend": 0.13,
       "cardmarketAvgFoil": 1.19,
       "cardmarketLowFoil": 0.1,
       "cardmarketTrendFoil": 1.28
@@ -30694,7 +30694,7 @@
       "cardmarketTrend": 0.14,
       "cardmarketAvgFoil": 0.93,
       "cardmarketLowFoil": 0.1,
-      "cardmarketTrendFoil": 1.27
+      "cardmarketTrendFoil": 1.32
     },
     {
       "_id": 787,
@@ -30733,7 +30733,7 @@
       "cardmarketTrend": 0.14,
       "cardmarketAvgFoil": 0.93,
       "cardmarketLowFoil": 0.1,
-      "cardmarketTrendFoil": 1.27
+      "cardmarketTrendFoil": 1.32
     },
     {
       "_id": 788,
@@ -30769,10 +30769,10 @@
       "cardmarketName": "Void Gate",
       "cardmarketAvg": 0.11,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.14,
-      "cardmarketAvgFoil": 0.96,
+      "cardmarketTrend": 0.13,
+      "cardmarketAvgFoil": 0.98,
       "cardmarketLowFoil": 0.1,
-      "cardmarketTrendFoil": 1
+      "cardmarketTrendFoil": 1.05
     },
     {
       "_id": 789,
@@ -30808,10 +30808,10 @@
       "cardmarketName": "Void Gate",
       "cardmarketAvg": 0.11,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.14,
-      "cardmarketAvgFoil": 0.96,
+      "cardmarketTrend": 0.13,
+      "cardmarketAvgFoil": 0.98,
       "cardmarketLowFoil": 0.1,
-      "cardmarketTrendFoil": 1
+      "cardmarketTrendFoil": 1.05
     },
     {
       "_id": 790,
@@ -30847,10 +30847,10 @@
       "cardmarketName": "Windswept Hillock",
       "cardmarketAvg": 0.16,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.13,
+      "cardmarketTrend": 0.12,
       "cardmarketAvgFoil": 1.19,
       "cardmarketLowFoil": 0.1,
-      "cardmarketTrendFoil": 1.45
+      "cardmarketTrendFoil": 1.39
     },
     {
       "_id": 791,
@@ -30886,10 +30886,10 @@
       "cardmarketName": "Windswept Hillock",
       "cardmarketAvg": 0.16,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.13,
+      "cardmarketTrend": 0.12,
       "cardmarketAvgFoil": 1.19,
       "cardmarketLowFoil": 0.1,
-      "cardmarketTrendFoil": 1.45
+      "cardmarketTrendFoil": 1.39
     },
     {
       "_id": 792,
@@ -30925,10 +30925,10 @@
       "cardmarketName": "Zaun Warrens",
       "cardmarketAvg": 0.14,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.16,
+      "cardmarketTrend": 0.15,
       "cardmarketAvgFoil": 1.42,
       "cardmarketLowFoil": 0.1,
-      "cardmarketTrendFoil": 1.44
+      "cardmarketTrendFoil": 1.49
     },
     {
       "_id": 793,
@@ -30964,10 +30964,10 @@
       "cardmarketName": "Zaun Warrens",
       "cardmarketAvg": 0.14,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.16,
+      "cardmarketTrend": 0.15,
       "cardmarketAvgFoil": 1.42,
       "cardmarketLowFoil": 0.1,
-      "cardmarketTrendFoil": 1.44
+      "cardmarketTrendFoil": 1.49
     },
     {
       "_id": 794,
@@ -31942,7 +31942,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 295.83,
       "cardmarketLowFoil": 14.9,
-      "cardmarketTrendFoil": 254.85
+      "cardmarketTrendFoil": 223.91
     },
     {
       "_id": 819,
@@ -32251,7 +32251,7 @@
       "cardmarketName": "Annie, Fiery",
       "cardmarketAvg": 1.97,
       "cardmarketLow": 0.69,
-      "cardmarketTrend": 1.56,
+      "cardmarketTrend": 1.45,
       "cardmarketAvgFoil": 0,
       "cardmarketLowFoil": 0,
       "cardmarketTrendFoil": 0
@@ -32289,8 +32289,8 @@
       "cardmarketId": 847524,
       "cardmarketName": "Firestorm",
       "cardmarketAvg": 0.47,
-      "cardmarketLow": 0.3,
-      "cardmarketTrend": 0.44,
+      "cardmarketLow": 0.29,
+      "cardmarketTrend": 0.5,
       "cardmarketAvgFoil": 0,
       "cardmarketLowFoil": 0,
       "cardmarketTrendFoil": 0
@@ -32329,7 +32329,7 @@
       "cardmarketName": "Incinerate",
       "cardmarketAvg": 1.04,
       "cardmarketLow": 0.49,
-      "cardmarketTrend": 0.87,
+      "cardmarketTrend": 0.89,
       "cardmarketAvgFoil": 0,
       "cardmarketLowFoil": 0,
       "cardmarketTrendFoil": 0
@@ -32367,8 +32367,8 @@
       "cardmarketId": 847526,
       "cardmarketName": "Master Yi, Meditative",
       "cardmarketAvg": 1.2,
-      "cardmarketLow": 0.56,
-      "cardmarketTrend": 1.11,
+      "cardmarketLow": 0.4,
+      "cardmarketTrend": 1.12,
       "cardmarketAvgFoil": 0,
       "cardmarketLowFoil": 0,
       "cardmarketTrendFoil": 0
@@ -32407,7 +32407,7 @@
       "cardmarketName": "Zephyr Sage",
       "cardmarketAvg": 0.28,
       "cardmarketLow": 0.03,
-      "cardmarketTrend": 0.16,
+      "cardmarketTrend": 0.19,
       "cardmarketAvgFoil": 0,
       "cardmarketLowFoil": 0,
       "cardmarketTrendFoil": 0
@@ -32445,8 +32445,8 @@
       "cardmarketId": 847528,
       "cardmarketName": "Lux, Illuminated",
       "cardmarketAvg": 1.44,
-      "cardmarketLow": 0.49,
-      "cardmarketTrend": 1.26,
+      "cardmarketLow": 0.4,
+      "cardmarketTrend": 1.2,
       "cardmarketAvgFoil": 0,
       "cardmarketLowFoil": 0,
       "cardmarketTrendFoil": 0
@@ -32485,7 +32485,7 @@
       "cardmarketName": "Garen, Rugged",
       "cardmarketAvg": 1.16,
       "cardmarketLow": 0.39,
-      "cardmarketTrend": 0.94,
+      "cardmarketTrend": 0.92,
       "cardmarketAvgFoil": 0,
       "cardmarketLowFoil": 0,
       "cardmarketTrendFoil": 0
@@ -32524,7 +32524,7 @@
       "cardmarketName": "Gentlemen's Duel",
       "cardmarketAvg": 0.25,
       "cardmarketLow": 0.02,
-      "cardmarketTrend": 0.22,
+      "cardmarketTrend": 0.29,
       "cardmarketAvgFoil": 0,
       "cardmarketLowFoil": 0,
       "cardmarketTrendFoil": 0
@@ -32563,7 +32563,7 @@
       "cardmarketName": "Master Yi, Honed",
       "cardmarketAvg": 3.64,
       "cardmarketLow": 1.99,
-      "cardmarketTrend": 3.01,
+      "cardmarketTrend": 2.99,
       "cardmarketAvgFoil": 0,
       "cardmarketLowFoil": 0,
       "cardmarketTrendFoil": 0
@@ -32602,7 +32602,7 @@
       "cardmarketName": "Annie, Stubborn",
       "cardmarketAvg": 4.91,
       "cardmarketLow": 2.49,
-      "cardmarketTrend": 3.78,
+      "cardmarketTrend": 3.68,
       "cardmarketAvgFoil": 0,
       "cardmarketLowFoil": 0,
       "cardmarketTrendFoil": 0
@@ -32640,8 +32640,8 @@
       "cardmarketId": 847533,
       "cardmarketName": "Flash",
       "cardmarketAvg": 25.78,
-      "cardmarketLow": 17,
-      "cardmarketTrend": 24.5,
+      "cardmarketLow": 15,
+      "cardmarketTrend": 24.01,
       "cardmarketAvgFoil": 0,
       "cardmarketLowFoil": 0,
       "cardmarketTrendFoil": 0
@@ -32680,7 +32680,7 @@
       "cardmarketName": "Blast of Power",
       "cardmarketAvg": 2.3,
       "cardmarketLow": 2.99,
-      "cardmarketTrend": 6.04,
+      "cardmarketTrend": 5.72,
       "cardmarketAvgFoil": 0,
       "cardmarketLowFoil": 0,
       "cardmarketTrendFoil": 0
@@ -32718,8 +32718,8 @@
       "cardmarketId": 847535,
       "cardmarketName": "Garen, Commander",
       "cardmarketAvg": 1.39,
-      "cardmarketLow": 0.5,
-      "cardmarketTrend": 1.29,
+      "cardmarketLow": 0.4,
+      "cardmarketTrend": 1.22,
       "cardmarketAvgFoil": 0,
       "cardmarketLowFoil": 0,
       "cardmarketTrendFoil": 0
@@ -32757,8 +32757,8 @@
       "cardmarketId": 847536,
       "cardmarketName": "Lux, Crownguard",
       "cardmarketAvg": 3.53,
-      "cardmarketLow": 2.49,
-      "cardmarketTrend": 3.31,
+      "cardmarketLow": 2.4,
+      "cardmarketTrend": 3.25,
       "cardmarketAvgFoil": 0,
       "cardmarketLowFoil": 0,
       "cardmarketTrendFoil": 0
@@ -32797,7 +32797,7 @@
       "cardmarketName": "Recruit the Vanguard",
       "cardmarketAvg": 1.91,
       "cardmarketLow": 1,
-      "cardmarketTrend": 2.53,
+      "cardmarketTrend": 2.5,
       "cardmarketAvgFoil": 0,
       "cardmarketLowFoil": 0,
       "cardmarketTrendFoil": 0
@@ -32836,7 +32836,7 @@
       "cardmarketName": "Vanguard Attendant",
       "cardmarketAvg": 0.21,
       "cardmarketLow": 0.04,
-      "cardmarketTrend": 0.28,
+      "cardmarketTrend": 0.29,
       "cardmarketAvgFoil": 0,
       "cardmarketLowFoil": 0.3,
       "cardmarketTrendFoil": 0
@@ -32914,7 +32914,7 @@
       "cardmarketName": "Tibbers",
       "cardmarketAvg": 1.27,
       "cardmarketLow": 0.39,
-      "cardmarketTrend": 1.03,
+      "cardmarketTrend": 0.97,
       "cardmarketAvgFoil": 0,
       "cardmarketLowFoil": 0,
       "cardmarketTrendFoil": 0
@@ -32992,7 +32992,7 @@
       "cardmarketName": "Highlander",
       "cardmarketAvg": 0.94,
       "cardmarketLow": 0.39,
-      "cardmarketTrend": 0.72,
+      "cardmarketTrend": 0.71,
       "cardmarketAvgFoil": 0,
       "cardmarketLowFoil": 0,
       "cardmarketTrendFoil": 0
@@ -33070,7 +33070,7 @@
       "cardmarketName": "Final Spark",
       "cardmarketAvg": 2.04,
       "cardmarketLow": 1.19,
-      "cardmarketTrend": 1.83,
+      "cardmarketTrend": 1.81,
       "cardmarketAvgFoil": 0,
       "cardmarketLowFoil": 0,
       "cardmarketTrendFoil": 0
@@ -33148,7 +33148,7 @@
       "cardmarketName": "Decisive Strike",
       "cardmarketAvg": 0.88,
       "cardmarketLow": 0.25,
-      "cardmarketTrend": 0.82,
+      "cardmarketTrend": 0.86,
       "cardmarketAvgFoil": 0,
       "cardmarketLowFoil": 0,
       "cardmarketTrendFoil": 0
@@ -33463,7 +33463,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 5.61,
       "cardmarketLowFoil": 3.49,
-      "cardmarketTrendFoil": 5.77
+      "cardmarketTrendFoil": 6.05
     },
     {
       "_id": 858,
@@ -33502,7 +33502,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 9.45,
       "cardmarketLowFoil": 3.79,
-      "cardmarketTrendFoil": 20.94
+      "cardmarketTrendFoil": 21.82
     },
     {
       "_id": 859,
@@ -33580,7 +33580,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 11.93,
       "cardmarketLowFoil": 4.99,
-      "cardmarketTrendFoil": 21.5
+      "cardmarketTrendFoil": 22.81
     },
     {
       "_id": 861,
@@ -33619,7 +33619,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 9.61,
       "cardmarketLowFoil": 4.99,
-      "cardmarketTrendFoil": 21.27
+      "cardmarketTrendFoil": 22.73
     },
     {
       "_id": 862,
@@ -33654,11 +33654,11 @@
       "cardmarketId": 855683,
       "cardmarketName": "Leona, Radiant Dawn",
       "cardmarketAvg": 0,
-      "cardmarketLow": 5,
+      "cardmarketLow": 20,
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 9.61,
-      "cardmarketLowFoil": 5,
-      "cardmarketTrendFoil": 14.55
+      "cardmarketLowFoil": 20,
+      "cardmarketTrendFoil": 16.3
     },
     {
       "_id": 863,
@@ -33697,7 +33697,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 11.83,
       "cardmarketLowFoil": 3.99,
-      "cardmarketTrendFoil": 30.19
+      "cardmarketTrendFoil": 30.1
     },
     {
       "_id": 864,
@@ -33736,7 +33736,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 32.59,
       "cardmarketLowFoil": 24.5,
-      "cardmarketTrendFoil": 47.51
+      "cardmarketTrendFoil": 47.55
     },
     {
       "_id": 865,
@@ -33775,7 +33775,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 8.08,
       "cardmarketLowFoil": 3.99,
-      "cardmarketTrendFoil": 21.85
+      "cardmarketTrendFoil": 23.03
     },
     {
       "_id": 866,
@@ -33814,7 +33814,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 17.14,
       "cardmarketLowFoil": 6.9,
-      "cardmarketTrendFoil": 27.03
+      "cardmarketTrendFoil": 26.49
     },
     {
       "_id": 867,
@@ -33853,7 +33853,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 7.7,
       "cardmarketLowFoil": 3,
-      "cardmarketTrendFoil": 16.61
+      "cardmarketTrendFoil": 17.53
     },
     {
       "_id": 868,
@@ -33892,7 +33892,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 15.8,
       "cardmarketLowFoil": 6,
-      "cardmarketTrendFoil": 30.82
+      "cardmarketTrendFoil": 32.76
     },
     {
       "_id": 869,
@@ -33931,7 +33931,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 7.6,
       "cardmarketLowFoil": 6,
-      "cardmarketTrendFoil": 24.5
+      "cardmarketTrendFoil": 26.31
     },
     {
       "_id": 870,
@@ -34009,7 +34009,7 @@
       "cardmarketTrend": 11.49,
       "cardmarketAvgFoil": 9.91,
       "cardmarketLowFoil": 9,
-      "cardmarketTrendFoil": 11.86
+      "cardmarketTrendFoil": 12.2
     },
     {
       "_id": 872,
@@ -34044,11 +34044,11 @@
       "cardmarketId": 856120,
       "cardmarketName": "Fury Rune",
       "cardmarketAvg": 0,
-      "cardmarketLow": 7.99,
+      "cardmarketLow": 9.99,
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 9.58,
-      "cardmarketLowFoil": 7.99,
-      "cardmarketTrendFoil": 11.36
+      "cardmarketLowFoil": 9.99,
+      "cardmarketTrendFoil": 11.58
     },
     {
       "_id": 873,
@@ -34087,7 +34087,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 6.94,
       "cardmarketLowFoil": 5,
-      "cardmarketTrendFoil": 7.22
+      "cardmarketTrendFoil": 7.3
     },
     {
       "_id": 874,
@@ -34126,7 +34126,7 @@
       "cardmarketTrend": 9.99,
       "cardmarketAvgFoil": 7.73,
       "cardmarketLowFoil": 8,
-      "cardmarketTrendFoil": 8.92
+      "cardmarketTrendFoil": 9.15
     },
     {
       "_id": 875,
@@ -34161,11 +34161,11 @@
       "cardmarketId": 856117,
       "cardmarketName": "Body Rune",
       "cardmarketAvg": 8.99,
-      "cardmarketLow": 4.99,
+      "cardmarketLow": 6,
       "cardmarketTrend": 8.99,
       "cardmarketAvgFoil": 6.95,
-      "cardmarketLowFoil": 4.99,
-      "cardmarketTrendFoil": 8.04
+      "cardmarketLowFoil": 6,
+      "cardmarketTrendFoil": 8.35
     },
     {
       "_id": 876,
@@ -34204,7 +34204,7 @@
       "cardmarketTrend": 12.99,
       "cardmarketAvgFoil": 9.63,
       "cardmarketLowFoil": 11,
-      "cardmarketTrendFoil": 13.35
+      "cardmarketTrendFoil": 13.81
     },
     {
       "_id": 877,
@@ -34243,7 +34243,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 5.12,
       "cardmarketLowFoil": 3.99,
-      "cardmarketTrendFoil": 5.42
+      "cardmarketTrendFoil": 5.33
     },
     {
       "_id": 878,
@@ -34282,7 +34282,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 1.01,
       "cardmarketLowFoil": 0.49,
-      "cardmarketTrendFoil": 1.03
+      "cardmarketTrendFoil": 1
     },
     {
       "_id": 879,
@@ -34321,7 +34321,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 0.97,
       "cardmarketLowFoil": 0.4,
-      "cardmarketTrendFoil": 1.49
+      "cardmarketTrendFoil": 1.4
     },
     {
       "_id": 880,
@@ -34355,12 +34355,12 @@
       "subTypeName": "Foil",
       "cardmarketId": 856100,
       "cardmarketName": "Vengeance",
-      "cardmarketAvg": 0,
+      "cardmarketAvg": 2,
       "cardmarketLow": 0.25,
       "cardmarketTrend": 2,
-      "cardmarketAvgFoil": 0.67,
+      "cardmarketAvgFoil": 0.61,
       "cardmarketLowFoil": 0.25,
-      "cardmarketTrendFoil": 0.69
+      "cardmarketTrendFoil": 0.67
     },
     {
       "_id": 881,
@@ -34397,7 +34397,7 @@
       "cardmarketAvg": 0,
       "cardmarketLow": 0.29,
       "cardmarketTrend": 0,
-      "cardmarketAvgFoil": 0.68,
+      "cardmarketAvgFoil": 0.7,
       "cardmarketLowFoil": 0.29,
       "cardmarketTrendFoil": 0.85
     },
@@ -34436,9 +34436,9 @@
       "cardmarketAvg": 0,
       "cardmarketLow": 0.3,
       "cardmarketTrend": 0,
-      "cardmarketAvgFoil": 0.79,
+      "cardmarketAvgFoil": 0.75,
       "cardmarketLowFoil": 0.3,
-      "cardmarketTrendFoil": 0.86
+      "cardmarketTrendFoil": 1
     },
     {
       "_id": 883,
@@ -34475,9 +34475,9 @@
       "cardmarketAvg": 0,
       "cardmarketLow": 0.3,
       "cardmarketTrend": 0,
-      "cardmarketAvgFoil": 0.71,
+      "cardmarketAvgFoil": 0.67,
       "cardmarketLowFoil": 0.3,
-      "cardmarketTrendFoil": 0.6
+      "cardmarketTrendFoil": 0.61
     },
     {
       "_id": 884,
@@ -34514,9 +34514,9 @@
       "cardmarketAvg": 0,
       "cardmarketLow": 0.05,
       "cardmarketTrend": 0,
-      "cardmarketAvgFoil": 0.27,
+      "cardmarketAvgFoil": 0.29,
       "cardmarketLowFoil": 0.05,
-      "cardmarketTrendFoil": 0.35
+      "cardmarketTrendFoil": 0.36
     },
     {
       "_id": 885,
@@ -34633,7 +34633,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 0.53,
       "cardmarketLowFoil": 0.1,
-      "cardmarketTrendFoil": 0.61
+      "cardmarketTrendFoil": 0.6
     },
     {
       "_id": 888,
@@ -34672,7 +34672,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 0.52,
       "cardmarketLowFoil": 0.19,
-      "cardmarketTrendFoil": 0.51
+      "cardmarketTrendFoil": 0.52
     },
     {
       "_id": 889,
@@ -34709,7 +34709,7 @@
       "cardmarketAvg": 0,
       "cardmarketLow": 0.08,
       "cardmarketTrend": 0,
-      "cardmarketAvgFoil": 0.27,
+      "cardmarketAvgFoil": 0.28,
       "cardmarketLowFoil": 0.08,
       "cardmarketTrendFoil": 0.34
     },
@@ -34750,7 +34750,7 @@
       "cardmarketTrend": 2,
       "cardmarketAvgFoil": 0.6,
       "cardmarketLowFoil": 0.29,
-      "cardmarketTrendFoil": 0.71
+      "cardmarketTrendFoil": 0.66
     },
     {
       "_id": 891,
@@ -34789,7 +34789,7 @@
       "cardmarketTrend": 1,
       "cardmarketAvgFoil": 0.44,
       "cardmarketLowFoil": 0.1,
-      "cardmarketTrendFoil": 0.43
+      "cardmarketTrendFoil": 0.42
     },
     {
       "_id": 892,
@@ -34824,11 +34824,11 @@
       "cardmarketId": 856112,
       "cardmarketName": "Discipline",
       "cardmarketAvg": 0,
-      "cardmarketLow": 0.4,
+      "cardmarketLow": 0.39,
       "cardmarketTrend": 0,
-      "cardmarketAvgFoil": 1.14,
-      "cardmarketLowFoil": 0.4,
-      "cardmarketTrendFoil": 1.51
+      "cardmarketAvgFoil": 1.28,
+      "cardmarketLowFoil": 0.39,
+      "cardmarketTrendFoil": 1.39
     },
     {
       "_id": 893,
@@ -34863,11 +34863,11 @@
       "cardmarketId": 856099,
       "cardmarketName": "Void Seeker",
       "cardmarketAvg": 0,
-      "cardmarketLow": 0.2,
+      "cardmarketLow": 0.79,
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 1.32,
-      "cardmarketLowFoil": 0.2,
-      "cardmarketTrendFoil": 1.45
+      "cardmarketLowFoil": 0.79,
+      "cardmarketTrendFoil": 1.4
     },
     {
       "_id": 894,
@@ -34906,7 +34906,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 1.69,
       "cardmarketLowFoil": 0.98,
-      "cardmarketTrendFoil": 1.97
+      "cardmarketTrendFoil": 1.91
     },
     {
       "_id": 895,
@@ -34941,11 +34941,11 @@
       "cardmarketId": 862196,
       "cardmarketName": "Miss Fortune, Buccaneer",
       "cardmarketAvg": 0,
-      "cardmarketLow": 24.99,
+      "cardmarketLow": 29.99,
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 47.54,
-      "cardmarketLowFoil": 24.99,
-      "cardmarketTrendFoil": 199
+      "cardmarketLowFoil": 29.99,
+      "cardmarketTrendFoil": 167.9
     },
     {
       "_id": 896,
@@ -34980,11 +34980,11 @@
       "cardmarketId": 861138,
       "cardmarketName": "Tryndamere, Barbarian",
       "cardmarketAvg": 0,
-      "cardmarketLow": 0.55,
+      "cardmarketLow": 0.5,
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 1.77,
-      "cardmarketLowFoil": 0.55,
-      "cardmarketTrendFoil": 0.77
+      "cardmarketLowFoil": 0.5,
+      "cardmarketTrendFoil": 0.81
     },
     {
       "_id": 897,
@@ -35023,7 +35023,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 8.84,
       "cardmarketLowFoil": 3.5,
-      "cardmarketTrendFoil": 2.45
+      "cardmarketTrendFoil": 2.43
     },
     {
       "_id": 898,
@@ -35803,7 +35803,7 @@
       "cardmarketTrend": 0,
       "cardmarketAvgFoil": 296.84,
       "cardmarketLowFoil": 299,
-      "cardmarketTrendFoil": 509.96
+      "cardmarketTrendFoil": 532.3
     },
     {
       "_id": 918,

@@ -1,13 +1,13 @@
 productId,name,cleanName,imageUrl,categoryId,groupId,url,modifiedOn,imageCount,lowPrice,midPrice,highPrice,marketPrice,directLowPrice,subTypeName,extRarity,extNumber,extEnergyCost,extPowerCost,extMight,extCardType,extTag,extDomain,extFlavorText
 678149,Unleashed - Booster Pack,Unleashed Booster Pack,https://tcgplayer-cdn.tcgplayer.com/product/678149_200w.jpg,89,24560,https://cpt.tcgcsv.com/_gr7,2026-03-12T18:26:57.11,1,19.11,19.11,19.11,19.81,,Normal,,,,,,,,,
-678150,Unleashed - Booster Display,Unleashed Booster Display,https://tcgplayer-cdn.tcgplayer.com/product/678150_200w.jpg,89,24560,https://cpt.tcgcsv.com/0hr7,2026-02-10T21:41:50.433,1,255.99,262.2,299.89,264.51,,Normal,,,,,,,,,
-678152,Unleashed - Booster Display Case,Unleashed Booster Display Case,https://tcgplayer-cdn.tcgplayer.com/product/678152_200w.jpg,89,24560,https://cpt.tcgcsv.com/3hr7,2026-02-10T22:02:24.167,1,1639.99,1654.43,1679.99,1671.03,,Normal,,,,,,,,,
+678150,Unleashed - Booster Display,Unleashed Booster Display,https://tcgplayer-cdn.tcgplayer.com/product/678150_200w.jpg,89,24560,https://cpt.tcgcsv.com/0hr7,2026-02-10T21:41:50.433,1,255.99,262.2,299.89,264.11,,Normal,,,,,,,,,
+678152,Unleashed - Booster Display Case,Unleashed Booster Display Case,https://tcgplayer-cdn.tcgplayer.com/product/678152_200w.jpg,89,24560,https://cpt.tcgcsv.com/3hr7,2026-02-10T22:02:24.167,1,1639.99,1654.11,1679.99,1666.77,,Normal,,,,,,,,,
 678153,Unleashed - Champion Deck (Vex) Display,Unleashed Champion Deck Vex Display,https://tcgplayer-cdn.tcgplayer.com/product/678153_200w.jpg,89,24560,https://cpt.tcgcsv.com/5hr7,2026-02-10T21:46:54.243,1,198.99,198.99,198.99,,,Normal,,,,,,,,,
 678154,Unleashed - Champion Deck (Vi) Display,Unleashed Champion Deck Vi Display,https://tcgplayer-cdn.tcgplayer.com/product/678154_200w.jpg,89,24560,https://cpt.tcgcsv.com/6hr7,2026-02-10T22:03:39.547,1,199.0,199.0,199.0,,,Normal,,,,,,,,,
 678155,Unleashed - Champion Deck (Vex),Unleashed Champion Deck Vex,https://tcgplayer-cdn.tcgplayer.com/product/678155_200w.jpg,89,24560,https://cpt.tcgcsv.com/7hr7,2026-02-10T21:49:51.773,1,48.83,48.94,50.0,49.46,,Normal,,,,,,,,,
-678157,Unleashed - Champion Deck (Vi),Unleashed Champion Deck Vi,https://tcgplayer-cdn.tcgplayer.com/product/678157_200w.jpg,89,24560,https://cpt.tcgcsv.com/9hr7,2026-02-24T15:18:57.73,1,48.17,48.36,50.0,49.12,,Normal,,,,,,,,,
+678157,Unleashed - Champion Deck (Vi),Unleashed Champion Deck Vi,https://tcgplayer-cdn.tcgplayer.com/product/678157_200w.jpg,89,24560,https://cpt.tcgcsv.com/9hr7,2026-02-24T15:18:57.73,1,48.17,48.36,50.0,49.08,,Normal,,,,,,,,,
 678159,Unleashed - Pre-Rift Event Kit,Unleashed Pre Rift Event Kit,https://tcgplayer-cdn.tcgplayer.com/product/678159_200w.jpg,89,24560,https://cpt.tcgcsv.com/chr7,2026-02-25T16:50:16.603,1,,,,,,,,,,,,,,,
-678162,Unleashed - Vault Bundle,Unleashed Vault Bundle,https://tcgplayer-cdn.tcgplayer.com/product/678162_200w.jpg,89,24560,https://cpt.tcgcsv.com/ghr7,2026-02-10T22:04:39.87,1,71.85,72.0,89.95,78.85,,Normal,,,,,,,,,
+678162,Unleashed - Vault Bundle,Unleashed Vault Bundle,https://tcgplayer-cdn.tcgplayer.com/product/678162_200w.jpg,89,24560,https://cpt.tcgcsv.com/ghr7,2026-02-10T22:04:39.87,1,71.84,72.0,89.95,78.85,,Normal,,,,,,,,,
 678898,Unleashed - Pre-Rift Kit,Unleashed Pre Rift Kit,https://tcgplayer-cdn.tcgplayer.com/product/678898_200w.jpg,89,24560,https://cpt.tcgcsv.com/-zr7,2026-02-25T16:46:42.007,1,,,,,,,,,,,,,,,
 683790,Baron Nashor,Baron Nashor,https://tcgplayer-cdn.tcgplayer.com/product/683790_200w.jpg,89,24560,https://cpt.tcgcsv.com/Qwt7,2026-03-17T21:21:17.087,1,150.0,150.0,150.0,,,Foil,Epic,147/219,10,3,12,Unit,The Void,Chaos,
 684102,Lillia - Bashful Bloom,Lillia Bashful Bloom,https://tcgplayer-cdn.tcgplayer.com/product/684102_200w.jpg,89,24560,https://cpt.tcgcsv.com/3Gt7,2026-03-17T21:27:46.833,1,5.0,5.0,5.0,,,Foil,Rare,189/219,0,0,0,Legend,Lillia,Calm;Mind,
@@ -202,3 +202,27 @@ A: Buy a new boat.</em>"
 685492,The Ruination,The Ruination,https://tcgplayer-cdn.tcgplayer.com/product/685492_200w.jpg,89,24560,https://cpt.tcgcsv.com/Scv7,2026-03-21T16:27:11.12,1,80.0,80.0,80.0,,,Foil,Epic,180/219,9,3,,Spell,,Order,"<em>""No price is too great. No atrocity beyond my reach. For her, I will do anything.""
 <br>—Viego</em>"
 685493,Black Flame Altar,Black Flame Altar,https://tcgplayer-cdn.tcgplayer.com/product/685493_200w.jpg,89,24560,https://cpt.tcgcsv.com/Tcv7,2026-03-21T16:28:21.053,1,,,,,,,Uncommon,208/219,,,,Battlefield,,None,
+685516,Red Brambleback,Red Brambleback,https://tcgplayer-cdn.tcgplayer.com/product/685516_200w.jpg,89,24560,https://cpt.tcgcsv.com/ldv7,2026-03-23T15:03:25.143,0,60.0,60.0,60.0,,,Foil,Epic,029/219,4,1,4,Unit,Ionia,Fury,
+685519,Scuttle Crab,Scuttle Crab,https://tcgplayer-cdn.tcgplayer.com/product/685519_200w.jpg,89,24560,https://cpt.tcgcsv.com/pdv7,2026-03-23T17:21:46.55,0,,,,,,,Rare,053/219,,,,,,,
+685520,Poppy - Paragon,Poppy Paragon,https://tcgplayer-cdn.tcgplayer.com/product/685520_200w.jpg,89,24560,https://cpt.tcgcsv.com/qdv7,2026-03-23T17:24:02.797,0,,,,,,,Rare,116/219,,,,,,,
+685521,Vi - Piltover Enforcer (Overnumbered),Vi Piltover Enforcer Overnumbered,https://tcgplayer-cdn.tcgplayer.com/product/685521_200w.jpg,89,24560,https://cpt.tcgcsv.com/rdv7,2026-03-23T17:25:40.453,0,,,,,,,Showcase,225/219,0,0,0,Legend,Vi,Fury;Order,
+685522,Vi - Piltover Enforcer (Signature),Vi Piltover Enforcer Signature,https://tcgplayer-cdn.tcgplayer.com/product/685522_200w.jpg,89,24560,https://cpt.tcgcsv.com/sdv7,2026-03-23T17:29:24.323,0,,,,,,,Showcase,225*/219,0,0,0,Legend,Vi,Fury;Order,
+685523,Diana - Lunari (Alternate Art),Diana Lunari Alternate Art,https://tcgplayer-cdn.tcgplayer.com/product/685523_200w.jpg,89,24560,https://cpt.tcgcsv.com/tdv7,2026-03-23T17:27:22.72,0,,,,,,,Showcase,079a/219,3,,3,Champion Unit,Mount Targon;Diana,Mind,"<em>""Follow no false light.""</em>"
+685524,Jhin - Virtuoso (Signature),Jhin Virtuoso Signature,https://tcgplayer-cdn.tcgplayer.com/product/685524_200w.jpg,89,24560,https://cpt.tcgcsv.com/vdv7,2026-03-23T17:29:02.887,0,,,,,,,Showcase,226*/219,0,0,0,Legend,Jhin,Fury;Mind,
+685525,Pyke - Bloodharbor Ripper (Signature),Pyke Bloodharbor Ripper Signature,https://tcgplayer-cdn.tcgplayer.com/product/685525_200w.jpg,89,24560,https://cpt.tcgcsv.com/wdv7,2026-03-23T17:32:30.99,0,,,,,,,Showcase,228*/219,,,,Legend,Pyke,Fury;Chaos,
+685526,Rengar - Pridestalker (Signature),Rengar Pridestalker Signature,https://tcgplayer-cdn.tcgplayer.com/product/685526_200w.jpg,89,24560,https://cpt.tcgcsv.com/xdv7,2026-03-23T17:42:49.97,0,,,,,,,Rare,227*/219,,,,Legend,Rengar,Fury;Body,
+685527,Master Yi - Wuju Master (Overnumbered),Master Yi Wuju Master Overnumbered,https://tcgplayer-cdn.tcgplayer.com/product/685527_200w.jpg,89,24560,https://cpt.tcgcsv.com/zdv7,2026-03-23T17:55:53.837,0,,,,,,,Showcase,231/219,,,,Legend,Master Yi,Calm;Body,
+685528,Revna the Lorekeeper,Revna the Lorekeeper,https://tcgplayer-cdn.tcgplayer.com/product/685528_200w.jpg,89,24560,https://cpt.tcgcsv.com/Bdv7,2026-03-23T17:59:06.53,0,,,,,,,Common,005/219,7,1,7,Unit,Freljord,Fury,"<em>""Nothing stops us! Not cold, not death!""</em>"
+685529,Starhound,Starhound,https://tcgplayer-cdn.tcgplayer.com/product/685529_200w.jpg,89,24560,https://cpt.tcgcsv.com/Cdv7,2026-03-23T18:01:50.28,0,,,,,,,Uncommon,167/219,5,1,6,Unit,Dog;Mount Targon,Order,"<em>It guards to flock, no matter where they stray.</em>"
+685530,Isolate,Isolate,https://tcgplayer-cdn.tcgplayer.com/product/685530_200w.jpg,89,24560,https://cpt.tcgcsv.com/Ddv7,2026-03-23T18:03:24.143,0,,,,,,,Common,124/219,2,,,Spell,None,Chaos,"<em>""Hey, where is everyone?""<br>
+—Common last words</em"
+685532,Forgotten Signpost,Forgotten Signpost,https://tcgplayer-cdn.tcgplayer.com/product/685532_200w.jpg,89,24560,https://cpt.tcgcsv.com/Gdv7,2026-03-23T18:05:50.583,0,,,,,,,Common,045/219,2,,,Gear,None,Calm,"<em>Great City of Demacia — 470
+<br>
+Immortal Bastion — 2,105
+<br>
+Bandle City — ????</em>"
+685534,Enthralling Protector,Enthralling Protector,https://tcgplayer-cdn.tcgplayer.com/product/685534_200w.jpg,89,24560,https://cpt.tcgcsv.com/Jdv7,2026-03-23T18:08:57.72,0,,,,,,,Uncommon,162/219,,,,,,,
+685535,Bone Skewer,Bone Skewer,https://tcgplayer-cdn.tcgplayer.com/product/685535_200w.jpg,89,24560,https://cpt.tcgcsv.com/Kdv7,2026-03-23T18:21:41.577,0,,,,,,,Rare,139/219,,,,,,,
+685536,Targonian Visionary,Targonian Visionary,https://tcgplayer-cdn.tcgplayer.com/product/685536_200w.jpg,89,24560,https://cpt.tcgcsv.com/Ldv7,2026-03-23T18:26:20.987,0,,,,,,,Common,098/219,6,0,6,Unit,Mount Targon,Body,<em>She has seen the world before. She will see that world again.</em>
+685537,Prepared Neophyte,Prepared Neophyte,https://tcgplayer-cdn.tcgplayer.com/product/685537_200w.jpg,89,24560,https://cpt.tcgcsv.com/Mdv7,2026-03-23T18:30:18.04,0,,,,,,,Common,004/219,3,0,1,Unit,Shadow Isles,Fury,<em>Power begets power.</em>
+685538,Determined Sentry,Determined Sentry,https://tcgplayer-cdn.tcgplayer.com/product/685538_200w.jpg,89,24560,https://cpt.tcgcsv.com/Ndv7,2026-03-23T18:33:03.483,0,,,,,,,Rare,111/219,1,0,1,Unit,Bandle City;Yordle,Body,<em>Discretion has nothing on valor.</em>

@@ -1,15 +1,17 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import { Box, Typography, useTheme, useMediaQuery } from '@mui/material';
 import { useCardData } from "../hooks/useCardData.jsx";
 import { useTradeState } from "../hooks/useTradeState.js";
 import Header from "../components/elements/Header.jsx";
 import CardPanel from "../components/ui/CardPanel.jsx";
 import TradeSummary from "../components/elements/TradeSummary.jsx";
+import SetView from "./SetView.jsx";
 import { fetchLastUpdatedTimestamp } from "../services/api.js";
 import { useThemeMode } from "../contexts/ThemeContext.jsx";
 
 const Home = () => {
     const [lastUpdatedTimestamp, setLastUpdatedTimestamp] = useState(null);
+    const [view, setView] = useState({ type: 'home' });
     const { isDark } = useThemeMode();
 
     const theme = useTheme();
@@ -31,6 +33,26 @@ const Home = () => {
 
     const tradeState = useTradeState(cardGroups, cardIdLookup);
 
+    // Build sets list for navigation drawer (ordered by set number ascending = newest first)
+    const sets = useMemo(() => {
+        if (!cards || cards.length === 0) return [];
+        const bySet = new Map();
+        for (const card of cards) {
+            if (!card._setName || !card.extNumber) continue;
+            const existing = bySet.get(card._setName);
+            if (existing) {
+                existing.count += 1;
+            } else {
+                bySet.set(card._setName, {
+                    name: card._setName,
+                    number: card._setNumber || 999,
+                    count: 1
+                });
+            }
+        }
+        return Array.from(bySet.values()).sort((a, b) => a.number - b.number);
+    }, [cards]);
+
     // Fetch last updated timestamp
     useEffect(() => {
         const fetchTimestamp = async () => {
@@ -39,6 +61,11 @@ const Home = () => {
         };
         fetchTimestamp();
     }, []);
+
+    // Reset scroll when switching views
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [view]);
 
     // Background gradients based on theme - Riftbound teal/navy
     const bgGradient = isDark 
@@ -79,66 +106,75 @@ const Home = () => {
         }}>
             <Header 
                 lastUpdatedTimestamp={lastUpdatedTimestamp}
+                sets={sets}
+                currentView={view}
+                onNavigate={setView}
             />
 
-            {/* Content */}
-            <Box sx={{ 
-                display: 'flex', 
-                flexGrow: 1, 
-                flexDirection: isLandscape ? 'row' : 'column',
-                width: '100%',
-                gap: isLandscape ? 2 : 0,
-                p: isLandscape ? 2 : 0
-            }}>
-                <CardPanel
-                    title="Cards I Have"
-                    cards={tradeState.haveList}
-                    cardOptions={cardOptions}
-                    allCards={cards}
-                    inputValue={tradeState.haveInput}
-                    onInputChange={(e, v) => tradeState.setHaveInput(v || "")}
-                    onAddCard={tradeState.addHaveCard}
-                    onRemoveCard={tradeState.removeHaveCard}
-                    onUpdateQuantity={tradeState.updateHaveCardQuantity}
-                    isMobile={isMobile}
-                    totalColor="primary"
-                    disabled={!dataReady}
-                    isLandscape={isLandscape}
+            {view.type === 'set' ? (
+                <SetView
+                    setName={view.setName}
+                    onBack={() => setView({ type: 'home' })}
                 />
-
-                {(tradeState.haveList.length >= 0 || tradeState.wantList.length >= 0) && (
-                    <TradeSummary
-                        haveList={tradeState.haveList}
-                        wantList={tradeState.wantList}
-                        haveTotal={tradeState.haveTotal}
-                        wantTotal={tradeState.wantTotal}
-                        diff={tradeState.diff}
+            ) : (
+                <Box sx={{ 
+                    display: 'flex', 
+                    flexGrow: 1, 
+                    flexDirection: isLandscape ? 'row' : 'column',
+                    width: '100%',
+                    gap: isLandscape ? 2 : 0,
+                    p: isLandscape ? 2 : 0
+                }}>
+                    <CardPanel
+                        title="Cards I Have"
+                        cards={tradeState.haveList}
+                        cardOptions={cardOptions}
+                        allCards={cards}
+                        inputValue={tradeState.haveInput}
+                        onInputChange={(e, v) => tradeState.setHaveInput(v || "")}
+                        onAddCard={tradeState.addHaveCard}
+                        onRemoveCard={tradeState.removeHaveCard}
+                        onUpdateQuantity={tradeState.updateHaveCardQuantity}
+                        isMobile={isMobile}
+                        totalColor="primary"
+                        disabled={!dataReady}
                         isLandscape={isLandscape}
-                        generateShareURL={tradeState.generateShareURL}
-                        clearURLTradeData={tradeState.clearURLTradeData}
-                        getURLSizeInfo={tradeState.getURLSizeInfo}
-                        testURLRoundTrip={tradeState.testURLRoundTrip}
-                        urlTradeData={tradeState.urlTradeData}
-                        hasLoadedFromURL={tradeState.hasLoadedFromURL}
                     />
-                )}
 
-                <CardPanel
-                    title="Cards I Want"
-                    cards={tradeState.wantList}
-                    cardOptions={cardOptions}
-                    allCards={cards}
-                    inputValue={tradeState.wantInput}
-                    onInputChange={(e, v) => tradeState.setWantInput(v || "")}
-                    onAddCard={tradeState.addWantCard}
-                    onRemoveCard={tradeState.removeWantCard}
-                    onUpdateQuantity={tradeState.updateWantCardQuantity}
-                    isMobile={isMobile}
-                    totalColor="success"
-                    disabled={!dataReady}
-                    isLandscape={isLandscape}
-                />
-            </Box>
+                    {(tradeState.haveList.length >= 0 || tradeState.wantList.length >= 0) && (
+                        <TradeSummary
+                            haveList={tradeState.haveList}
+                            wantList={tradeState.wantList}
+                            haveTotal={tradeState.haveTotal}
+                            wantTotal={tradeState.wantTotal}
+                            diff={tradeState.diff}
+                            isLandscape={isLandscape}
+                            generateShareURL={tradeState.generateShareURL}
+                            clearURLTradeData={tradeState.clearURLTradeData}
+                            getURLSizeInfo={tradeState.getURLSizeInfo}
+                            testURLRoundTrip={tradeState.testURLRoundTrip}
+                            urlTradeData={tradeState.urlTradeData}
+                            hasLoadedFromURL={tradeState.hasLoadedFromURL}
+                        />
+                    )}
+
+                    <CardPanel
+                        title="Cards I Want"
+                        cards={tradeState.wantList}
+                        cardOptions={cardOptions}
+                        allCards={cards}
+                        inputValue={tradeState.wantInput}
+                        onInputChange={(e, v) => tradeState.setWantInput(v || "")}
+                        onAddCard={tradeState.addWantCard}
+                        onRemoveCard={tradeState.removeWantCard}
+                        onUpdateQuantity={tradeState.updateWantCardQuantity}
+                        isMobile={isMobile}
+                        totalColor="success"
+                        disabled={!dataReady}
+                        isLandscape={isLandscape}
+                    />
+                </Box>
+            )}
         </Box>
     );
 };

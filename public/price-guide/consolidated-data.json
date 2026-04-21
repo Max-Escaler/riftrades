@@ -1,7 +1,7 @@
 {
   "metadata": {
     "game": "Riftbound",
-    "generatedAt": "2026-04-20T17:01:56.934Z",
+    "generatedAt": "2026-04-21T16:58:52.702Z",
     "totalFiles": 8,
     "totalRecords": 1452,
     "sourceManifest": {
@@ -35,7 +35,7 @@
       "24552": "Riftbound Judge Promotional Cards",
       "24560": "Unleashed"
     },
-    "cardmarketMergedAt": "2026-04-20T17:01:58.479Z",
+    "cardmarketMergedAt": "2026-04-21T16:58:53.942Z",
     "cardmarketProductsUrl": "https://downloads.s3.cardmarket.com/productCatalog/productList/products_singles_22.json",
     "cardmarketPricesUrl": "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_22.json",
     "cardmarketMatchCount": 1136,

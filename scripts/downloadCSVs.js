@@ -2,6 +2,7 @@
 
 import https from 'https';
 import { checkCSVStatus, clearDiffCache, downloadAllCSVs } from "../src/services/csv/index.js";
+import { HTTP_HEADERS } from "../src/services/csv/config.js";
 
 // Riftbound Game ID: 89
 const RIFTBOUND_GAME_ID = 89;
@@ -9,11 +10,13 @@ const RIFTBOUND_GAME_ID = 89;
 // Fetch product groups from the API and construct CSV URLs
 async function fetchProductGroupUrls() {
     const PRODUCT_GROUPS_URL = `https://tcgcsv.com/tcgplayer/${RIFTBOUND_GAME_ID}/groups`;
-    
+
     return new Promise((resolve, reject) => {
-        https.get(PRODUCT_GROUPS_URL, (res) => {
+        // tcgcsv.com requires a User-Agent header — Node's https.get omits one by default.
+        https.get(PRODUCT_GROUPS_URL, { headers: HTTP_HEADERS }, (res) => {
             if (res.statusCode !== 200) {
-                reject(new Error(`Failed to fetch product groups: ${res.statusCode}`));
+                res.resume();
+                reject(new Error(`Failed to fetch product groups: ${res.statusCode} ${res.statusMessage || ''}`.trim()));
                 return;
             }
 

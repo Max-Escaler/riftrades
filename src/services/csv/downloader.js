@@ -3,14 +3,17 @@ import https from 'https';
 import http from 'http';
 import csv from 'csv-parser';
 import crypto from 'crypto';
+import { HTTP_HEADERS } from './config.js';
 
 export function downloadCSV(url, outputPath) {
     return new Promise((resolve, reject) => {
         const protocol = url.startsWith('https:') ? https : http;
 
-        const request = protocol.get(url, (response) => {
+        const request = protocol.get(url, { headers: HTTP_HEADERS }, (response) => {
             if (response.statusCode !== 200) {
-                reject(new Error(`Failed to download ${url}: ${response.statusCode}`));
+                // Drain the response so the socket can be released.
+                response.resume();
+                reject(new Error(`Failed to download ${url}: ${response.statusCode} ${response.statusMessage || ''}`.trim()));
                 return;
             }
 

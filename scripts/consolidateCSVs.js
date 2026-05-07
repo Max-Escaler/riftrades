@@ -24,6 +24,7 @@ import path from 'path';
 import https from 'https';
 import Papa from 'papaparse';
 import { fileURLToPath } from 'url';
+import { HTTP_HEADERS } from '../src/services/csv/config.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -45,10 +46,12 @@ async function fetchProductGroups() {
     
     return new Promise((resolve, reject) => {
         console.log('📡 Fetching set names from API...');
-        
-        https.get(PRODUCT_GROUPS_URL, (res) => {
+
+        // tcgcsv.com requires a User-Agent header — Node's https.get omits one by default.
+        https.get(PRODUCT_GROUPS_URL, { headers: HTTP_HEADERS }, (res) => {
             if (res.statusCode !== 200) {
-                console.warn(`Failed to fetch product groups: ${res.statusCode}`);
+                res.resume();
+                console.warn(`Failed to fetch product groups: ${res.statusCode} ${res.statusMessage || ''}`.trim());
                 resolve({});
                 return;
             }

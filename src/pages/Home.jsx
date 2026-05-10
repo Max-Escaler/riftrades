@@ -101,6 +101,7 @@ const Home = () => {
             flexDirection: 'column', 
             height: '100vh', 
             width: '100%',
+            overflow: isLandscape ? 'hidden' : 'auto',
             background: bgGradient,
             backgroundAttachment: 'fixed'
         }}>
@@ -122,6 +123,7 @@ const Home = () => {
                     flexGrow: 1, 
                     flexDirection: isLandscape ? 'row' : 'column',
                     width: '100%',
+                    minHeight: 0,
                     gap: isLandscape ? 2 : 0,
                     p: isLandscape ? 2 : 0
                 }}>

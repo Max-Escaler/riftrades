@@ -27,7 +27,9 @@ const CardPanel = ({
                 flex: 1,
                 width: '100%',
                 maxWidth: '100%',
-                minHeight: isLandscape ? '400px' : { xs: '250px', sm: '300px', md: '350px' },
+                minHeight: isLandscape ? 0 : { xs: '250px', sm: '300px', md: '350px' },
+                height: isLandscape ? '100%' : 'auto',
+                overflow: 'hidden',
                 p: isLandscape ? 3 : { xs: 1.5, sm: 2, md: 2.5 },
                 display: 'flex',
                 flexDirection: 'column',
@@ -63,6 +65,7 @@ const CardPanel = ({
                 transition: 'all 0.3s ease',
                 width: '100%',
                 pb: 1.5,
+                flexShrink: 0,
                 borderBottom: `2px solid ${isDark ? 'rgba(212, 168, 83, 0.3)' : 'rgba(26, 90, 122, 0.15)'}`
             }}>
                 <Typography 

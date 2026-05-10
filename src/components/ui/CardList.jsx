@@ -92,17 +92,82 @@ const CardList = ({
 
     return (
         <>
-        <List sx={{
+        <Box sx={{
+            display: 'flex',
+            flexDirection: 'column',
             flexGrow: 1,
-            overflow: 'auto',
-            width: '100%',
-            p: 0,
-            m: 0,
-            '& .MuiListItem-root': {
-                width: '100%',
-                maxWidth: '100%'
-            }
+            minHeight: 0,
+            width: '100%'
         }}>
+            {/* Search Input pinned at the top of the panel */}
+            <Box sx={{
+                flexShrink: 0,
+                mb: 1,
+                border: isDark 
+                    ? '2px dashed rgba(58, 154, 186, 0.3)' 
+                    : '2px dashed rgba(26, 90, 122, 0.2)',
+                borderRadius: 2,
+                backgroundColor: isDark ? 'rgba(13, 48, 80, 0.6)' : 'rgba(255, 255, 255, 0.6)',
+                p: { xs: 1, sm: 1.25, md: 1.5, lg: 1.75, xl: 2 },
+                width: '100%',
+                transition: 'all 0.25s ease',
+                '&:hover': {
+                    backgroundColor: isDark ? 'rgba(13, 48, 80, 0.8)' : '#ffffff',
+                    borderColor: '#d4a853',
+                    boxShadow: '0 2px 8px rgba(212, 168, 83, 0.15)'
+                }
+            }}>
+                {isSmallScreen ? (
+                    <Box
+                        onClick={handleSearchClick}
+                        sx={{
+                            width: '100%',
+                            display: 'flex',
+                            alignItems: 'center',
+                            gap: 1,
+                            p: 1.5,
+                            border: isDark ? '1px solid rgba(58, 154, 186, 0.3)' : '1px solid #c0dce8',
+                            borderRadius: 1,
+                            backgroundColor: isDark ? '#0a2540' : '#e8f4f8',
+                            cursor: 'pointer',
+                            '&:hover': {
+                                backgroundColor: isDark ? '#0d3050' : '#d0e8f0'
+                            },
+                            transition: 'background-color 0.2s ease'
+                        }}
+                    >
+                        <SearchIcon sx={{ color: isDark ? '#a0c4d4' : '#1a5a7a' }} />
+                        <Typography variant="body1" sx={{ color: isDark ? '#a0c4d4' : '#1a4a6e' }}>
+                            Search for cards...
+                        </Typography>
+                    </Box>
+                ) : (
+                    <SearchInput
+                        label="Search for Cards"
+                        placeholder="Type to search..."
+                        items={cardOptions || []}
+                        value={inputValue || ""}
+                        onChange={onInputChange}
+                        onSelect={onAddCard}
+                        disabled={disabled}
+                        fullWidth
+                        placement="bottom"
+                    />
+                )}
+            </Box>
+
+            <List sx={{
+                flexGrow: 1,
+                overflow: 'auto',
+                minHeight: 0,
+                width: '100%',
+                p: 0,
+                m: 0,
+                '& .MuiListItem-root': {
+                    width: '100%',
+                    maxWidth: '100%'
+                }
+            }}>
             {cards.map((card, index) => {
                 const gradient = getCardGradient(card.subTypeName, '', isDark);
                 return (
@@ -248,74 +313,17 @@ const CardList = ({
                     </ListItem>
                 );
             })}
-            
-            {/* Search Input at End of List */}
-            <ListItem sx={{ 
-                border: isDark 
-                    ? '2px dashed rgba(58, 154, 186, 0.3)' 
-                    : '2px dashed rgba(26, 90, 122, 0.2)',
-                borderRadius: 2,
-                mb: 0,
-                backgroundColor: isDark ? 'rgba(13, 48, 80, 0.6)' : 'rgba(255, 255, 255, 0.6)',
-                p: { xs: 1, sm: 1.25, md: 1.5, lg: 1.75, xl: 2 },
-                width: '100%',
-                transition: 'all 0.25s ease',
-                '&:hover': {
-                    backgroundColor: isDark ? 'rgba(13, 48, 80, 0.8)' : '#ffffff',
-                    borderColor: '#d4a853',
-                    boxShadow: '0 2px 8px rgba(212, 168, 83, 0.15)'
-                }
-            }}>
-                {isSmallScreen ? (
-                    // Small screen: Clickable search button that opens full-screen dialog
-                    <Box
-                        onClick={handleSearchClick}
-                        sx={{
-                            width: '100%',
-                            display: 'flex',
-                            alignItems: 'center',
-                            gap: 1,
-                            p: 1.5,
-                            border: isDark ? '1px solid rgba(58, 154, 186, 0.3)' : '1px solid #c0dce8',
-                            borderRadius: 1,
-                            backgroundColor: isDark ? '#0a2540' : '#e8f4f8',
-                            cursor: 'pointer',
-                            '&:hover': {
-                                backgroundColor: isDark ? '#0d3050' : '#d0e8f0'
-                            },
-                            transition: 'background-color 0.2s ease'
-                        }}
-                    >
-                        <SearchIcon sx={{ color: isDark ? '#a0c4d4' : '#1a5a7a' }} />
-                        <Typography variant="body1" sx={{ color: isDark ? '#a0c4d4' : '#1a4a6e' }}>
-                            Search for cards...
-                        </Typography>
-                    </Box>
-                ) : (
-                    // Larger screens: Inline search input
-                    <SearchInput
-                        label="Search for Cards"
-                        placeholder="Type to search..."
-                        items={cardOptions || []}
-                        value={inputValue || ""}
-                        onChange={onInputChange}
-                        onSelect={onAddCard}
-                        disabled={disabled}
-                        fullWidth
-                        placement="bottom"
-                    />
-                )}
-            </ListItem>
+            </List>
+        </Box>
 
-            {/* Full-screen search dialog for small screens */}
-            <SearchDialog
-                open={searchDialogOpen}
-                onClose={handleDialogClose}
-                title={`Search Cards for ${title}`}
-                items={cardOptions || []}
-                onSelect={handleDialogAddCard}
-            />
-        </List>
+        {/* Full-screen search dialog for small screens */}
+        <SearchDialog
+            open={searchDialogOpen}
+            onClose={handleDialogClose}
+            title={`Search Cards for ${title}`}
+            items={cardOptions || []}
+            onSelect={handleDialogAddCard}
+        />
 
         {/* Image Modal for viewing full-size card images */}
         <CardImageModal

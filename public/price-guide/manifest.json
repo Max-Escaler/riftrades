@@ -1,44 +1,49 @@
 {
-  "lastUpdated": "2026-05-07T22:09:49.536Z",
-  "totalFiles": 8,
+  "lastUpdated": "2026-05-10T16:53:22.244Z",
+  "totalFiles": 9,
   "files": [
     {
       "name": "set_1.csv",
-      "url": "https://tcgcsv.com/tcgplayer/89/24560/ProductsAndPrices.csv",
+      "url": "https://tcgcsv.com/tcgplayer/89/24698/ProductsAndPrices.csv",
       "status": "downloaded"
     },
     {
       "name": "set_2.csv",
-      "url": "https://tcgcsv.com/tcgplayer/89/24519/ProductsAndPrices.csv",
+      "url": "https://tcgcsv.com/tcgplayer/89/24560/ProductsAndPrices.csv",
       "status": "downloaded"
     },
     {
       "name": "set_3.csv",
-      "url": "https://tcgcsv.com/tcgplayer/89/24552/ProductsAndPrices.csv",
+      "url": "https://tcgcsv.com/tcgplayer/89/24519/ProductsAndPrices.csv",
       "status": "downloaded"
     },
     {
       "name": "set_4.csv",
-      "url": "https://tcgcsv.com/tcgplayer/89/24344/ProductsAndPrices.csv",
+      "url": "https://tcgcsv.com/tcgplayer/89/24552/ProductsAndPrices.csv",
       "status": "downloaded"
     },
     {
       "name": "set_5.csv",
-      "url": "https://tcgcsv.com/tcgplayer/89/24439/ProductsAndPrices.csv",
+      "url": "https://tcgcsv.com/tcgplayer/89/24344/ProductsAndPrices.csv",
       "status": "downloaded"
     },
     {
       "name": "set_6.csv",
-      "url": "https://tcgcsv.com/tcgplayer/89/24528/ProductsAndPrices.csv",
+      "url": "https://tcgcsv.com/tcgplayer/89/24439/ProductsAndPrices.csv",
       "status": "downloaded"
     },
     {
       "name": "set_7.csv",
-      "url": "https://tcgcsv.com/tcgplayer/89/24343/ProductsAndPrices.csv",
+      "url": "https://tcgcsv.com/tcgplayer/89/24528/ProductsAndPrices.csv",
       "status": "downloaded"
     },
     {
       "name": "set_8.csv",
+      "url": "https://tcgcsv.com/tcgplayer/89/24343/ProductsAndPrices.csv",
+      "status": "downloaded"
+    },
+    {
+      "name": "set_9.csv",
       "url": "https://tcgcsv.com/tcgplayer/89/24502/ProductsAndPrices.csv",
       "status": "downloaded"
     }

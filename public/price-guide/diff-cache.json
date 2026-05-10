@@ -1,34 +1,38 @@
 {
   "https://tcgcsv.com/tcgplayer/89/24519/ProductsAndPrices.csv": {
-    "hash": "2df811b153a372d604ff1932bacf225c",
-    "lastDownloaded": "2026-05-07T22:09:50.167Z"
+    "hash": "83ec53db8fb901a076a6d44f6aa3d035",
+    "lastDownloaded": "2026-05-10T16:53:22.457Z"
   },
   "https://tcgcsv.com/tcgplayer/89/24344/ProductsAndPrices.csv": {
-    "hash": "9d9c4eae8a71d73c84983017d0704559",
-    "lastDownloaded": "2026-05-07T22:09:50.628Z"
+    "hash": "9562708e8d60721d8aa285eb4354fab0",
+    "lastDownloaded": "2026-05-10T16:53:22.558Z"
   },
   "https://tcgcsv.com/tcgplayer/89/24439/ProductsAndPrices.csv": {
-    "hash": "d33683aadf3628771b20259e560524bc",
-    "lastDownloaded": "2026-05-07T22:09:50.832Z"
+    "hash": "b0c707c9eb963b69d8d81885fa70a1c8",
+    "lastDownloaded": "2026-05-10T16:53:22.600Z"
   },
   "https://tcgcsv.com/tcgplayer/89/24528/ProductsAndPrices.csv": {
-    "hash": "7fed0af93affb7d9d549fc0bdc6f431a",
-    "lastDownloaded": "2026-05-07T22:09:51.088Z"
+    "hash": "044ddeaced1997db9ba8ec642b1cfec0",
+    "lastDownloaded": "2026-05-10T16:53:22.968Z"
   },
   "https://tcgcsv.com/tcgplayer/89/24343/ProductsAndPrices.csv": {
-    "hash": "342edd59a36ee3532eadda5cd33b580c",
-    "lastDownloaded": "2026-05-07T22:09:51.304Z"
+    "hash": "478ab3da5d75304795c0eaf1ab5bda75",
+    "lastDownloaded": "2026-05-10T16:53:23.009Z"
   },
   "https://tcgcsv.com/tcgplayer/89/24502/ProductsAndPrices.csv": {
     "hash": "d41d8cd98f00b204e9800998ecf8427e",
-    "lastDownloaded": "2026-05-07T22:09:51.447Z"
+    "lastDownloaded": "2026-05-10T16:53:23.049Z"
   },
   "https://tcgcsv.com/tcgplayer/89/24552/ProductsAndPrices.csv": {
-    "hash": "4f4361b35d167615ea821f8e5070d7c0",
-    "lastDownloaded": "2026-05-07T22:09:50.344Z"
+    "hash": "eeb35c52ce91f068f806e5383a94d72a",
+    "lastDownloaded": "2026-05-10T16:53:22.500Z"
   },
   "https://tcgcsv.com/tcgplayer/89/24560/ProductsAndPrices.csv": {
-    "hash": "1e076282a8098bf217d250055eb0edf6",
-    "lastDownloaded": "2026-05-07T22:09:49.839Z"
+    "hash": "8cea7e7a604d4bbcd6600519df0f3c60",
+    "lastDownloaded": "2026-05-10T16:53:22.382Z"
+  },
+  "https://tcgcsv.com/tcgplayer/89/24698/ProductsAndPrices.csv": {
+    "hash": "014f6485444725bfcb612b5cfde8c5fc",
+    "lastDownloaded": "2026-05-10T16:53:22.294Z"
   }
 }

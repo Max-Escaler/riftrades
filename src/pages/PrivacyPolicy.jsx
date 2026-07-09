@@ -7,12 +7,14 @@ import {
     Divider
 } from '@mui/material';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import { useNavigate } from 'react-router-dom';
 import { useThemeMode } from "../contexts/ThemeContext.jsx";
 
 const LAST_UPDATED = 'July 9, 2026';
 
-const PrivacyPolicy = ({ onBack }) => {
+const PrivacyPolicy = () => {
     const { isDark } = useThemeMode();
+    const navigate = useNavigate();
 
     const accent = isDark ? '#d4a853' : '#1a5a7a';
     const subtle = isDark ? 'rgba(160, 196, 212, 0.8)' : 'rgba(26, 74, 110, 0.8)';
@@ -70,7 +72,7 @@ const PrivacyPolicy = ({ onBack }) => {
                     <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, mb: 1 }}>
                         <Tooltip title="Back to trade calculator">
                             <IconButton
-                                onClick={onBack}
+                                onClick={() => navigate('/')}
                                 size="small"
                                 sx={{
                                     color: accent,

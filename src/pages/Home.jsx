@@ -6,7 +6,6 @@ import Header from "../components/elements/Header.jsx";
 import CardPanel from "../components/ui/CardPanel.jsx";
 import TradeSummary from "../components/elements/TradeSummary.jsx";
 import SetView from "./SetView.jsx";
-import PrivacyPolicy from "./PrivacyPolicy.jsx";
 import { fetchLastUpdatedTimestamp } from "../services/api.js";
 import { useThemeMode } from "../contexts/ThemeContext.jsx";
 
@@ -116,10 +115,6 @@ const Home = () => {
             {view.type === 'set' ? (
                 <SetView
                     setName={view.setName}
-                    onBack={() => setView({ type: 'home' })}
-                />
-            ) : view.type === 'privacy' ? (
-                <PrivacyPolicy
                     onBack={() => setView({ type: 'home' })}
                 />
             ) : (

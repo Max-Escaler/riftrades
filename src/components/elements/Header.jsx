@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import {
     AppBar,
     Toolbar,
@@ -29,10 +30,16 @@ import { useThemeMode } from "../../contexts/ThemeContext.jsx";
 const Header = ({ lastUpdatedTimestamp, sets = [], currentView = { type: 'home' }, onNavigate }) => {
     const { isDark, toggleMode } = useThemeMode();
     const [drawerOpen, setDrawerOpen] = useState(false);
+    const navigate = useNavigate();
 
     const handleNavigate = (view) => {
         setDrawerOpen(false);
         if (onNavigate) onNavigate(view);
+    };
+
+    const handleRoute = (path) => {
+        setDrawerOpen(false);
+        navigate(path);
     };
 
     return (
@@ -200,8 +207,7 @@ const Header = ({ lastUpdatedTimestamp, sets = [], currentView = { type: 'home' 
                     </ListItemButton>
 
                     <ListItemButton
-                        selected={currentView.type === 'privacy'}
-                        onClick={() => handleNavigate({ type: 'privacy' })}
+                        onClick={() => handleRoute('/privacy')}
                         sx={{
                             mx: 1,
                             borderRadius: 2,

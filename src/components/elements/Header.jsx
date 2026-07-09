@@ -20,7 +20,8 @@ import {
     Menu as MenuIcon,
     Close as CloseIcon,
     Home as HomeIcon,
-    LocalOffer as SetIcon
+    LocalOffer as SetIcon,
+    PrivacyTip as PrivacyIcon
 } from '@mui/icons-material';
 import { formatTimestamp } from "../../utils/helpers.js";
 import { useThemeMode } from "../../contexts/ThemeContext.jsx";
@@ -191,6 +192,32 @@ const Header = ({ lastUpdatedTimestamp, sets = [], currentView = { type: 'home' 
                         </ListItemIcon>
                         <ListItemText
                             primary="Trade Calculator"
+                            primaryTypographyProps={{
+                                fontWeight: 600,
+                                color: isDark ? '#e8f4f8' : '#0a2540'
+                            }}
+                        />
+                    </ListItemButton>
+
+                    <ListItemButton
+                        selected={currentView.type === 'privacy'}
+                        onClick={() => handleNavigate({ type: 'privacy' })}
+                        sx={{
+                            mx: 1,
+                            borderRadius: 2,
+                            '&.Mui-selected': {
+                                backgroundColor: isDark ? 'rgba(212, 168, 83, 0.15)' : 'rgba(26, 90, 122, 0.1)',
+                                '&:hover': {
+                                    backgroundColor: isDark ? 'rgba(212, 168, 83, 0.2)' : 'rgba(26, 90, 122, 0.15)'
+                                }
+                            }
+                        }}
+                    >
+                        <ListItemIcon sx={{ color: isDark ? '#d4a853' : '#1a5a7a', minWidth: 40 }}>
+                            <PrivacyIcon />
+                        </ListItemIcon>
+                        <ListItemText
+                            primary="Privacy Policy"
                             primaryTypographyProps={{
                                 fontWeight: 600,
                                 color: isDark ? '#e8f4f8' : '#0a2540'

@@ -1,6 +1,7 @@
 // CardDataContext for Riftbound
 import React, { createContext, useContext, useState, useEffect, useMemo } from 'react';
 import { usePriceType } from '../contexts/PriceContext.jsx';
+import { loadCardDataFromSupabase } from '../services/supabaseCardData.js';
 
 // Create context
 const CardDataContext = createContext();
@@ -282,36 +283,56 @@ export const CardDataProvider = ({ children }) => {
     const [metadata, setMetadata] = useState(null);
 
     useEffect(() => {
+        const buildFromRecords = (sourceData, source) => {
+            setMetadata(sourceData.metadata);
+
+            const allCards = processJsonData(sourceData.data);
+            const enhancedCards = enhanceDisplayNames(allCards);
+
+            // Create unique ID lookup map
+            const idLookup = {};
+            enhancedCards.forEach(card => {
+                if (card._uniqueId) {
+                    idLookup[card._uniqueId] = card;
+                }
+            });
+
+            setCards(enhancedCards);
+            setCardIdLookup(idLookup);
+            setDataSource(source);
+
+            console.log(`Successfully loaded ${enhancedCards.length} cards from ${source}`);
+        };
+
         const loadCardData = async () => {
             try {
                 setLoading(true);
                 setError(null);
 
+                // Primary source: RiftTrades Supabase database.
+                try {
+                    console.log('Loading card data from Supabase...');
+                    const supabaseData = await loadCardDataFromSupabase();
+
+                    if (!supabaseData.data || supabaseData.data.length === 0) {
+                        throw new Error('Supabase returned no card records');
+                    }
+
+                    buildFromRecords(supabaseData, 'supabase');
+                    return;
+                } catch (supabaseError) {
+                    console.error('Supabase load failed, falling back to consolidated JSON:', supabaseError);
+                }
+
+                // Fallback: bundled consolidated JSON.
                 const consolidatedStatus = await checkConsolidatedData();
 
                 if (consolidatedStatus.available) {
                     console.log('Using consolidated JSON data...');
-                    setDataSource('consolidated-json');
 
                     const consolidatedData = await loadConsolidatedData();
-                    
-                    setMetadata(consolidatedData.metadata);
+                    buildFromRecords(consolidatedData, 'consolidated-json');
 
-                    const allCards = processJsonData(consolidatedData.data);
-                    const enhancedCards = enhanceDisplayNames(allCards);
-
-                    // Create unique ID lookup map
-                    const idLookup = {};
-                    enhancedCards.forEach(card => {
-                        if (card._uniqueId) {
-                            idLookup[card._uniqueId] = card;
-                        }
-                    });
-
-                    setCards(enhancedCards);
-                    setCardIdLookup(idLookup);
-
-                    console.log(`Successfully loaded ${enhancedCards.length} cards from consolidated JSON`);
                     if (consolidatedStatus.hasCardmarket) {
                         console.log('CardMarket prices available');
                     }

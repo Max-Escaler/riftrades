@@ -1,8 +1,18 @@
+import { fetchLastUpdatedFromSupabase } from './supabaseCardData.js';
+
 export async function fetchLastUpdatedTimestamp() {
+    // Primary source: most recent price update in the RiftTrades Supabase DB.
     try {
-        // Read from the local manifest written when CSVs were last pulled.
-        // The previous remote endpoint (tcgcsv.com/last-updated.txt) lacks
-        // CORS headers and gets blocked by the browser.
+        const supabaseTimestamp = await fetchLastUpdatedFromSupabase();
+        if (supabaseTimestamp) {
+            return supabaseTimestamp;
+        }
+    } catch (error) {
+        console.error('Error fetching last updated timestamp from Supabase:', error);
+    }
+
+    // Fallback: local manifest written when CSVs were last pulled.
+    try {
         const base = import.meta.env?.BASE_URL ?? '/';
         const response = await fetch(`${base}price-guide/manifest.json`, { cache: 'no-store' });
         if (!response.ok) {

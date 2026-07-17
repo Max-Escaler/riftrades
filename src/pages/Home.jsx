@@ -157,6 +157,8 @@ const Home = () => {
                             testURLRoundTrip={tradeState.testURLRoundTrip}
                             urlTradeData={tradeState.urlTradeData}
                             hasLoadedFromURL={tradeState.hasLoadedFromURL}
+                            onAddHaveCard={tradeState.addHaveCard}
+                            onAddWantCard={tradeState.addWantCard}
                         />
                     )}
 

@@ -11,15 +11,19 @@ import {
     DialogContent,
     DialogActions,
     ToggleButtonGroup,
-    ToggleButton
+    ToggleButton,
+    Snackbar
 } from '@mui/material';
 import { 
     Warning as WarningIcon,
-    Clear as ClearIcon
+    Clear as ClearIcon,
+    AutoFixHigh as AutoFixHighIcon
 } from '@mui/icons-material';
 import { formatCurrency } from "../../utils/helpers.js";
 import { usePriceType } from "../../contexts/PriceContext.jsx";
 import { useThemeMode } from "../../contexts/ThemeContext.jsx";
+import FindFillerDialog from "./FindFillerDialog.jsx";
+import { FILLER_BALANCE_THRESHOLD } from "../../utils/findFiller.js";
 
 const TradeSummary = ({ 
     haveList, 
@@ -30,11 +34,17 @@ const TradeSummary = ({
     isLandscape = false,
     clearURLTradeData,
     urlTradeData,
-    hasLoadedFromURL
+    hasLoadedFromURL,
+    onAddHaveCard,
+    onAddWantCard
 }) => {
     const { priceType, setPriceType, priceSource, setPriceSource } = usePriceType();
     const { isDark } = useThemeMode();
     const [showClearConfirm, setShowClearConfirm] = useState(false);
+    const [showFiller, setShowFiller] = useState(false);
+    const [snackbar, setSnackbar] = useState({ open: false, message: '' });
+
+    const isUnbalanced = Math.abs(diff) >= FILLER_BALANCE_THRESHOLD;
 
     // Calculate total card count including quantities
     const getTotalCardCount = (cardList) => {
@@ -270,7 +280,8 @@ const TradeSummary = ({
                     gap: isLandscape ? 1 : 2,
                     flexDirection: isLandscape ? 'column' : 'row',
                     justifyContent: 'center',
-                    flexGrow: !isLandscape ? 1 : 'none'
+                    flexGrow: !isLandscape ? 1 : 'none',
+                    flexWrap: 'wrap'
                 }}>
                     <Typography variant="h6" sx={{ 
                         fontWeight: 'bold', 
@@ -286,6 +297,31 @@ const TradeSummary = ({
                         variant="filled"
                         size={isLandscape ? 'small' : 'medium'}
                     />
+                    {isUnbalanced && onAddHaveCard && onAddWantCard && (
+                        <Button
+                            size="small"
+                            variant="contained"
+                            startIcon={<AutoFixHighIcon sx={{ fontSize: '14px !important' }} />}
+                            onClick={() => setShowFiller(true)}
+                            sx={{
+                                textTransform: 'none',
+                                fontWeight: 700,
+                                fontSize: isLandscape ? '0.7rem' : { xs: '0.7rem', sm: '0.75rem' },
+                                px: 1.25,
+                                py: 0.35,
+                                borderRadius: 5,
+                                backgroundColor: isDark ? '#3a9aba' : '#1a5a7a',
+                                color: isDark ? '#0a2540' : '#ffffff',
+                                boxShadow: 'none',
+                                '&:hover': {
+                                    backgroundColor: isDark ? '#5abada' : '#0d4560',
+                                    boxShadow: 'none'
+                                }
+                            }}
+                        >
+                            Find Trade Filler
+                        </Button>
+                    )}
                 </Box>
 
                 {/* Clear Button - on the right side for portrait mode */}
@@ -391,6 +427,29 @@ const TradeSummary = ({
                 </Button>
             </DialogActions>
         </Dialog>
+
+        <FindFillerDialog
+            open={showFiller}
+            onClose={() => setShowFiller(false)}
+            haveTotal={haveTotal}
+            wantTotal={wantTotal}
+            onAddHave={onAddHaveCard}
+            onAddWant={onAddWantCard}
+            onAdded={(card, fillSide) => {
+                setSnackbar({
+                    open: true,
+                    message: `Added ${card.name} to ${fillSide === 'have' ? 'your' : 'their'} side`
+                });
+            }}
+        />
+
+        <Snackbar
+            open={snackbar.open}
+            autoHideDuration={2000}
+            onClose={() => setSnackbar({ open: false, message: '' })}
+            message={snackbar.message}
+            anchorOrigin={{ vertical: 'bottom', horizontal: 'center' }}
+        />
         </>
     );
 };

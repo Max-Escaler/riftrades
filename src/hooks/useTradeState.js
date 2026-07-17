@@ -32,38 +32,52 @@ export function useTradeState(cardGroups, cardIdLookup = {}) {
         } else {
             return;
         }
-        
-        const cardExists = selectedCard 
-            ? list.some(item => item.uniqueId === selectedCard._uniqueId)
-            : list.some(item => item.name === cardName);
-            
-        if (cardName && !cardExists) {
-            const cardGroup = getCardGroup(cardName);
-            if (cardGroup && cardGroup.editions.length > 0) {
-                let edition, subTypeName;
-                if (selectedCard) {
-                    subTypeName = selectedCard.subTypeName || 'Normal';
-                    edition = cardGroup.editions.find(e => e.subTypeName === subTypeName) || cardGroup.editions[0];
-                } else {
-                    edition = cardGroup.editions[0];
-                    subTypeName = edition.subTypeName || 'Normal';
-                }
-                
-                setList([
-                    ...list,
-                    {
-                        name: cardName,
-                        price: edition.cardPrice,
-                        cardGroup,
-                        availableEditions: cardGroup.editions,
-                        quantity: 1,
-                        subTypeName: subTypeName,
-                        uniqueId: selectedCard ? selectedCard._uniqueId : edition.uniqueId,
-                        imageUrl: selectedCard ? selectedCard.imageUrl : ''
-                    }
-                ]);
-                inputSetter("");
+
+        if (!cardName) return;
+
+        // Same printing already on this side → bump quantity (matches mobile trade filler).
+        const existingIndex = selectedCard
+            ? list.findIndex(item => item.uniqueId === selectedCard._uniqueId)
+            : list.findIndex(item => item.name === cardName);
+
+        if (existingIndex >= 0) {
+            const updatedList = [...list];
+            updatedList[existingIndex] = {
+                ...updatedList[existingIndex],
+                quantity: (updatedList[existingIndex].quantity || 1) + 1
+            };
+            setList(updatedList);
+            inputSetter("");
+            return;
+        }
+
+        const cardGroup = getCardGroup(cardName);
+        if (cardGroup && cardGroup.editions.length > 0) {
+            let edition, subTypeName;
+            if (selectedCard) {
+                edition = cardGroup.editions.find(e => e.uniqueId === selectedCard._uniqueId)
+                    || cardGroup.editions.find(e => e.subTypeName === (selectedCard.subTypeName || 'Normal'))
+                    || cardGroup.editions[0];
+                subTypeName = selectedCard.subTypeName || edition.subTypeName || 'Normal';
+            } else {
+                edition = cardGroup.editions[0];
+                subTypeName = edition.subTypeName || 'Normal';
             }
+            
+            setList([
+                ...list,
+                {
+                    name: cardName,
+                    price: edition.cardPrice,
+                    cardGroup,
+                    availableEditions: cardGroup.editions,
+                    quantity: 1,
+                    subTypeName: subTypeName,
+                    uniqueId: selectedCard ? selectedCard._uniqueId : edition.uniqueId,
+                    imageUrl: selectedCard ? selectedCard.imageUrl : ''
+                }
+            ]);
+            inputSetter("");
         }
     };
 
